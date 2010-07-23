@@ -101,6 +101,8 @@ ol.authors li {
   margin: 0 0 5px;
   min-height: 32px;
   color: #999;
+  float: left;
+  width: 130px;
 }
 
 ol.authors li strong{
@@ -111,7 +113,7 @@ ol.authors li strong{
 
 #behind {
   background: url(images/radiant_earth.png) no-repeat;
-  opadding: 2px 0 0 57px;
+  padding: 2px 0 0 57px;
   min-height: 48px;
 }
 
