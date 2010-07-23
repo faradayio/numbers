@@ -1,5 +1,6 @@
 #content {
   background: #e1e1e1 url(images/content.png) -237px 0 repeat-y;
+  overflow: auto;
 }
 
 #head {
@@ -12,7 +13,7 @@
 }
 
 p.summary {
-  font-size: 16px;
+  font-size: 18px;
   color: gray;
   display: inline;
   margin: 0 !important;
@@ -23,5 +24,87 @@ p.summary a {
 }
 
 #main {
-  width: 530px;
+  width: 516px;
+  padding: 0 20px 0 0;
+  float: left;
+}
+
+ol.posts {
+  list-style: none;
+}
+
+ol.posts li {
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+ol.posts li>p {
+  margin: 10px 0 0 150px;
+  line-height: 1.4;
+}
+
+ol.posts li p.meta {
+  margin: 0;
+  float: left;
+  width: 93px;
+  padding: 0 0 0 37px;
+  font-size: 11px;
+  min-height: 32px;
+  color: gray;
+}
+
+.andy { background-image: url(images/andy.jpg) }
+.patti { background-image: url(images/patti.jpg) }
+.seamus { background-image: url(images/seamus.jpg) }
+.ian { background-image: url(images/ian.jpg) }
+.robbie { background-image: url(images/robbie.jpg) }
+.matt { background-image: url(images/matt.jpg) }
+.derek { background-image: url(images/derek.jpg) }
+
+pre {
+  margin-right: -20px;
+  margin-top: 15px;
+}
+
+#aux {
+  float: left;
+  width: 200px;
+  padding: 0 0 0 20px;
+}
+
+#aux h3 {
+  margin: 20px 0 5px;
+  color: gray;
+  font-size: 14px;
+}
+
+#aux>h3:first-child {
+  margin-top: 0;
+}
+
+#aux p {
+  color: gray;
+}
+
+#aux p a {
+  color: gray;
+}
+
+ol.authors {
+  list-style: none;
+}
+
+ol.authors li {
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  padding: 0 0 0 37px;
+  margin: 0 0 5px;
+  min-height: 32px;
+  color: #999;
+}
+
+ol.authors li strong{
+  display: block;
+  font-weight: normal;
+  color: gray;
 }

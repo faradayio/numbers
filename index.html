@@ -1,0 +1,14 @@
+---
+title: Strength in Numbers
+layout: default
+---
+
+<ol class="posts">
+{% for post in site.posts %}
+  <li class="{{ post.author | downcase }}">
+    <p class="meta">Posted by {{ post.author }} on {{ post.date | date: "%A, %B %d, %Y" }}.</p>
+    <h2>{{ post.title }}</h2>
+{{ post.content }}
+  </li>
+{% endfor %}
+</ol>

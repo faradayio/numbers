@@ -65,12 +65,27 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, dl, dt, dd {
   padding: 0;
 }
 
-pre {
+pre, kbd {
   font-family: "DejaVu Mono", monospace;
+}
+
+pre {
+  display: block;
+  line-height: 1.4;
+  overflow: auto;
+  background: white;
+  padding: 10px;
+  margin: 10px -15px;
+  border-top: 1px solid #ddd;
+  -moz-box-shadow: inset 0 5px 5px #eee;
 }
 
 a {
   outline: none;
+}
+
+a img {
+  border: none;
 }
 
 #header {
@@ -268,6 +283,30 @@ a {
   margin: 25px 10px 20px 150px;
   text-shadow: 1px 1px 0 white;
   color: gray;
+}
+
+#content h3 {
+  margin: 30px 15px 0 150px;
+}
+
+#content>ul {
+  list-style: square;
+  margin: 10px 15px 10px 150px;
+  padding: 0 0 0 1em
+}
+
+#content p.cta {
+  border: 1px solid #5FBBFF;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  overflow: auto;
+}
+
+p.cta a {
+  display: block;
+  padding: 10px;
+  color: blue;
 }
 
 #content form dl dt {
@@ -731,4 +770,65 @@ p.flash.error:before {
   text-shadow: none;
   font-size: 13px;
   -moz-box-shadow: black 1px 1px 0;
+}
+
+ul.pages {
+  background: #F1F1F1;
+  padding: 15px 15px 10px 165px;
+  list-style: none;
+  overflow: auto;
+}
+
+ul.pages li {
+  float: left;
+  margin: 0 5px 0 0;
+}
+
+ul.pages li:first-child {
+  margin-left: -6px;
+}
+
+ul.pages li.current {
+  background: white;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  font-weight: bold;
+  -moz-box-shadow: -1px -1px 0 silver;
+  -webkit-box-shadow: -1px -1px 0 silver;
+  box-shadow: -1px -1px 0 silver;
+}
+
+ul.pages li.current:first-child {
+  margin-left: 0;
+}
+
+ul.pages li.current, ul.pages li a {
+  line-height: 24px;
+  padding: 0 6px;
+}
+
+ul.pages li a {
+  display: block;
+  color: blue;
+}
+
+ul.pages li a:hover {
+  background-image:
+    -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(0, rgb(230,230,230)),
+      color-stop(1, rgb(200,200,200))
+    );
+  background-image:
+    -moz-linear-gradient(
+      center top,
+      rgb(230,230,230) 0%,
+      rgb(200,200,200) 100%
+    );
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
 }

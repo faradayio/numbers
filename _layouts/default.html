@@ -1,13 +1,15 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr" id="brighterplanet-com">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr" id="numbers-brighterplanet-com">
   <title>{{ page.title }}</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="Content-Language" content="en" />
-  <link rel="stylesheet" type="text/css" href="/stylesheets/brighter_planet.css" /><link rel="stylesheet" type="text/css" href="/stylesheets/application.css" />
+  <link rel="stylesheet" type="text/css" href="/stylesheets/brighter_planet.css" />
+  <link rel="stylesheet" type="text/css" href="/stylesheets/application.css" />
+  <link rel="stylesheet" type="text/css" href="/stylesheets/syntax.css" />
   <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
 </head>
 <body>
-{% include google_analytics.html %}
+<!--{ include google_analytics.html }-->
 <div id="content">
   <div id="main">
     <div id="head">
@@ -15,6 +17,20 @@
       <p class="summary"><a href="http://brighterplanet.com">Brighter Planet</a>'s blog about climate science, Ruby, Rails, data, transparency, and, well, us.</p>
     </div>
     {{ content }}
+  </div>
+  <div id="aux">
+    <h3>Who's behind this?</h3>
+    <p>We're <a href="http://brighterplanet.com">Brighter Planet</a>, a climate-change technology company leading the way toward more open, efficient, transparent, meaningful carbon information.</p>
+    <h3>Who's blogging here?</h3>
+    <ol class="authors">
+      <li class="seamus"><strong>Seamus Abshere</strong> Engineering director</li>
+      <li class="robbie"><strong>Robbie Adler</strong> Biz dev director</li>
+      <li class="ian"><strong>Ian Hough</strong> Staff scientist</li>
+      <li class="derek"><strong>Derek Kastner</strong> Rails developer</li>
+      <li class="matt"><strong>Matt Kling</strong> Science analyst</li>
+      <li class="patti"><strong>Patti Prairie</strong> CEO</li>
+      <li class="andy"><strong>Andy Rossmeissl</strong> Co-founder</li>
+    </ol>
   </div>
 </div>
 {% include footer.html %}
