@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr" id="numbers-brighterplanet-com">
-  <title>{{ page.title }}</title>
+  <title>{{ page.title }} [Brighter Planet's Strength in Numbers]</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="Content-Language" content="en" />
   <link rel="stylesheet" type="text/css" href="/stylesheets/brighter_planet.css" />
@@ -13,12 +13,18 @@
 <div id="content">
   <div id="main">
     <div id="head">
-      <h1>Strength in Numbers</h1>
-      <p class="summary"><a href="http://brighterplanet.com">Brighter Planet</a>'s blog about climate science, Ruby, Rails, data, transparency, and, well, us.</p>
+      <h1><a href="/">Strength in Numbers</a></h1>
+      <p class="summary">Brighter Planet's blog</p>
     </div>
-    {{ content }}
+    <div class="post {{ page.author | downcase }}">
+      <p class="meta">Posted by {{ page.author }} on {{ page.date | date: "%A, %B %d, %Y" }}.</p>
+      <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+{{ content }}
+    </div>
   </div>
   <div id="aux">
+    <h3>What blog is this?</h3>
+    <p><a href="/">Strength in Numbers</a> is Brighter Planet's blog about climate science, Ruby, Rails, data, transparency, and, well, us.</p>
     {% include who.html %}
   </div>
   <div id="dice"></div>

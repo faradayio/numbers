@@ -4,7 +4,7 @@
 }
 
 #head {
-  padding: 0 0 0 150px;
+  padding: 0 0 25px 150px;
 }
 
 #content h1 {
@@ -19,7 +19,7 @@ p.summary {
   margin: 0 !important;
 }
 
-p.summary a {
+#head a {
   color: #2DB56A;
 }
 
@@ -38,12 +38,22 @@ ol.posts li {
   background-position: 0 0;
 }
 
-ol.posts li>p {
+ol.posts li h2 a, .post h2 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ol.posts li h2 a:hover, .post h2 a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+ol.posts li>p, .post>p {
   margin: 10px 0 0 150px;
   line-height: 1.4;
 }
 
-ol.posts li p.meta {
+p.meta {
   margin: 0;
   float: left;
   width: 98px;
@@ -51,6 +61,15 @@ ol.posts li p.meta {
   font-size: 11px;
   min-height: 32px;
   color: gray;
+}
+
+p.jump {
+  color: gray;
+  font-style: italic;
+}
+
+p.jump a {
+  color: inherit;
 }
 
 .andy { background-image: url(images/andy.jpg) }
@@ -124,4 +143,10 @@ ol.authors li strong{
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.post {
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  margin: -10px 0 0;
 }
