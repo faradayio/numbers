@@ -4,7 +4,7 @@
 }
 
 #head {
-  margin: 0 0 0 150px;
+  padding: 0 0 0 150px;
 }
 
 #content h1 {
@@ -46,7 +46,7 @@ ol.posts li>p {
 ol.posts li p.meta {
   margin: 0;
   float: left;
-  width: 93px;
+  width: 98px;
   padding: 0 0 0 37px;
   font-size: 11px;
   min-height: 32px;
@@ -68,7 +68,7 @@ pre {
 
 #aux {
   float: left;
-  width: 300px;
+  width: 350px;
   padding: 0 0 0 20px;
 }
 
@@ -107,4 +107,19 @@ ol.authors li strong{
   display: block;
   font-weight: normal;
   color: gray;
+}
+
+#behind {
+  background: url(images/radiant_earth.png) no-repeat;
+  opadding: 2px 0 0 57px;
+  min-height: 48px;
+}
+
+#dice {
+  background: url(images/dice.png) no-repeat -2px -15px;
+  width: 165px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
