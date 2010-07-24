@@ -153,7 +153,16 @@ ol.authors li strong{
 }
 
 .stamp {
-  margin: 20px 0 0;
   font-size: 11px;
   color: #999;
+}
+
+.feed {
+  margin: 20px 0 0;
+}
+
+.feed a {
+  padding: 0 0 0 18px;
+  display: block;
+  background: url(images/feed.png) no-repeat;
 }
