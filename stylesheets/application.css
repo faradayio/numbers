@@ -111,6 +111,7 @@ pre {
 
 ol.authors {
   list-style: none;
+  overflow: auto;
 }
 
 ol.authors li {
@@ -149,4 +150,10 @@ ol.authors li strong{
   background-position: 0 0;
   background-repeat: no-repeat;
   margin: -10px 0 0;
+}
+
+.stamp {
+  margin: 20px 0 0;
+  font-size: 11px;
+  color: #999;
 }
