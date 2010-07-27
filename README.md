@@ -1,6 +1,6 @@
 # numbers
 
-This repository drives Brighter Planet's blog, [Strength in Numbers](http://numbers.brighterplanet.com) via [Jekyll](http://github.com/mojombo/jekyll) on [GitHub Pages](http://pages.github.com).
+This repository drives Brighter Planet's blog, [Safety in Numbers](http://numbers.brighterplanet.com) via [Jekyll](http://github.com/mojombo/jekyll) on [GitHub Pages](http://pages.github.com).
 
 ## To start blogging
 
