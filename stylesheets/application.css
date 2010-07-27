@@ -142,15 +142,6 @@ ol.authors li strong{
   min-height: 48px;
 }
 
-#dice {
-  background: url(images/dice.png) no-repeat -2px -15px;
-  width: 165px;
-  height: 100px;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 .post {
   background-position: 0 0;
   background-repeat: no-repeat;
