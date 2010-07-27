@@ -197,3 +197,13 @@ p.tag a {
 p.tag a:hover {
   color: blue;
 }
+
+ol.posts li>ul {
+  list-style: square;
+  margin: 0 0 0 150px;
+  padding: 0 0 0 1em;
+}
+
+ol.posts li p img {
+  max-width: 370px;
+}
