@@ -1,3 +1,4 @@
 pygments: true
 auto: true
-permalink: pretty
+permalink: /:year/:month/:day/:title
+cats: [rails, middleware, meta]

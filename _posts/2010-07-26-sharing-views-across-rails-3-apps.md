@@ -2,6 +2,7 @@
 title: Sharing views across Rails 3 apps
 author: Andy
 layout: post
+categories: rails
 ---
 
 Here at Brighter Planet we run several production Rails 3 apps, including the [emission estimates service](http://carbon.brighterplanet.com), the [climate data service](http://data.brighterplanet.com), and our [keyserver](http://keys.brighterplanet.com). As the person reponsible for much of our recent front-end work, I wasn't really looking forward to maintaining a half-dozen different versions of what is mostly the same layout. I wanted to [DRY](http://www.c2.com/cgi/wiki?DontRepeatYourself) the situation up. What I really wanted was to put all the shared stuff into a gem that I could require from all of our apps that would just sort of insinuate itself into all the right places.

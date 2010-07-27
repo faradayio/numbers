@@ -2,6 +2,7 @@
 title: Real code examples in our integration guide
 author: Seamus
 layout: post
+categories: [rails, middleware]
 ---
 
 I realize that not everybody uses Ruby/Rails, so integration with our [emission estimate web service](http://carbon.brighterplanet.com) won't always be facilitated by [our sharp little carbon gem](http://rubygems.org/gems/carbon).

@@ -166,3 +166,37 @@ ol.authors li strong{
   display: block;
   background: url(images/feed.png) no-repeat;
 }
+
+ul.tags {
+  list-style: none;
+}
+
+ul.tags li {
+  display: inline;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+ul.tags li:after {
+  content: " · ";
+}
+
+ul.tags li:last-child:after {
+  content: none;
+}
+
+ul.tags li a {
+  color: gray;
+}
+
+p.tag {
+  margin: 0 0 0 150px;
+}
+
+p.tag a {
+  color: inherit;
+}
+
+p.tag a:hover {
+  color: blue;
+}
