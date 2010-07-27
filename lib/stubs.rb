@@ -4,6 +4,22 @@ module Link
   end
 end
 
+class Header
+  include Link
+  
+  def render(*args)
+    ''
+  end
+
+  def flash
+    {}
+  end
+  
+  def get_binding
+    binding
+  end
+end
+
 class Footer
   include Link
 
