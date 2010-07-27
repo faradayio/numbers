@@ -1,10 +1,11 @@
 ---
-title: Safety in Numbers
+title: Science [Safety in Numbers]
 layout: default
 ---
+<p class="tag">Showing <strong>Science</strong> posts. <a href="/">Go back home</a>.</p>
 
 <ol class="posts">
-{% for post in site.posts limit:10 %}
+{% for post in site.categories.science %}
   <li class="{{ post.author | downcase }}">
     <p class="meta">Posted by {{ post.author }} on {{ post.date | date: "%A, %B %d, %Y" }}.</p>
     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>

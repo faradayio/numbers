@@ -1,4 +1,4 @@
 pygments: true
 auto: true
 permalink: /:year/:month/:day/:title
-cats: [rails, middleware, meta]
+cats: [company, meta, middleware, rails, science, technology]
