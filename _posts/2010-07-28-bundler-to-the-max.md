@@ -21,7 +21,7 @@ $ rake
 
 And Bob's your uncle!
 
-## Bundler + Gemspecs
+### Bundler + Gemspecs
 The first goodie that bundler provides is the ability to use the gem's own gemspec to define the dependencies needed for development. For instance, our flight gem has a gemspec with dependencies:
 
 {% highlight ruby %}
@@ -54,7 +54,7 @@ Instead of defining these dependencies in both flight.gemspec and in Gemfile, we
 gemspec :path => '.'
 {% endhighlight %}
 
-## Bundler + Paths
+### Bundler + Paths
 
 We have a chain of gem dependencies, where an emitter gem depends on the sniff gem for development, which in turn depends on the earth gem for data models. In the olden days (like, 4 months ago) if I made a change to sniff, I would have to rebuild the gem and reinstall it. With bundler, I can simply tell my emitter gem to use a path to my local sniff repo as the gem source:
 
@@ -82,41 +82,47 @@ gem 'sniff', :path => ENV['LOCAL_SNIFF'] if ENV['LOCAL_SNIFF']
 
 So now, if I want to make some changes to the sniff gem and test them out in my emitter, I do:
 
-    cd snif
-    # work work work
-    cd ../[emitter]
-    export LOCAL_SNIFF=~/sniff
-    rake gemspec
-    bundle update
-    # ...
-    sniff (0.0.13) using path /Users/dkastner/sniff
-    # ...
+{% highlight console %}
+$ cd sniff
+  # work work work
+$ cd ../[emitter]
+$ export LOCAL_SNIFF=~/sniff
+$ rake gemspec
+$ bundle update
+  # ...
+sniff (0.0.13) using path /Users/dkastner/sniff
+  # ...
+{% endhighlight %}
 
 And then Bob is my uncle.
 
-## Bundler + Rakefile
+### Bundler + Rakefile
 
 This next idea has some drawbacks in terms of code cleanliness, but I think it offers a good way to point contributers in the right direction. One thing that frustrated me about Jeweler was that if I wanted to contribute to a gem, my typical work flow went like:
 
-    > cd [project]
-    # work work work
-    > rake test
-    LoadError: No such file: 'jeweler'
-    > gem install jeweler
-    > rake test
-    LoadError: No such file: 'shoulda'
-    # etc etc
+{% highlight console %}
+$ cd [project]
+  # work work work
+$ rake test
+LoadError: No such file: 'jeweler'
+$ gem install jeweler
+$ rake test
+LoadError: No such file: 'shoulda'
+  # etc etc
+{% endhighlight %}
 
 I attempted to simplify this process, so a new developer who doesn't read the README should be able to just do:
 
-    > cd [emitter]
-    # work work work
-    > rake test
-    You need to `gem install bundler` and then run `bundle install` to run rake tasks
-    > gem install bundler
-    > bundle install
-    > rake test
-    All tests pass!
+{% highlight console %}
+$ cd [emitter]
+  # work work work
+$ rake test
+You need to `gem install bundler` and then run `bundle install` to run rake tasks
+$ gem install bundler
+$ bundle install
+$ rake test
+All tests pass!
+{% endhighlight %}
 
 I achieved this by adding the following code to the top of the Rakefile:
 
@@ -145,57 +151,61 @@ end
 {% endhighlight %}
 So, if you're really desparate, you can run `rake test NOBUNDLE=true`
 
-## More on Local Gems
+### More on Local Gems
 
 Now that I had a way to easily tell bundler to use an actual gem or a local repo holding the gem, I wanted a way to quickly "flip the switch." I wrote up a quick function in my ~/.bash_profile:
 
-    function mod_devgem() {
-      var="LOCAL_`echo $2 | tr 'a-z' 'A-Z'`"
+{% highlight bash %}
+function mod_devgem() {
+  var="LOCAL_`echo $2 | tr 'a-z' 'A-Z'`"
 
-      if [ "$1" == "disable" ]
-      then
-        echo "unset $var"
-        unset $var
-      else
-        dir=${3:-"~/$2"}
-        echo "export $var=$dir"
-        export $var=$dir
-      fi
-    }
+  if [ "$1" == "disable" ]
+  then
+    echo "unset $var"
+    unset $var
+  else
+    dir=${3:-"~/$2"}
+    echo "export $var=$dir"
+    export $var=$dir
+  fi
+}
 
-    function devgems () {
-      # Usage: devgems [enable|disable] [gemname]
-      cmd=${1:-"enable"}
+function devgems () {
+  # Usage: devgems [enable|disable] [gemname]
+  cmd=${1:-"enable"}
 
-      if [ "$1" == "list" ]
-      then
-        env | grep LOCAL
-        return
-      fi
+  if [ "$1" == "list" ]
+  then
+    env | grep LOCAL
+    return
+  fi
 
-      if [ -z $2 ]
-      then
-        mod_devgem $cmd characterizable
-        mod_devgem $cmd cohort_scope
-        mod_devgem $cmd falls_back_on
-        mod_devgem $cmd leap
-        mod_devgem $cmd loose_tight_dictionary
-        mod_devgem $cmd sniff
-        mod_devgem $cmd data_miner
-        mod_devgem $cmd earth
-      else
-        mod_devgem $cmd $2
-      fi
-    }
+  if [ -z $2 ]
+  then
+    mod_devgem $cmd characterizable
+    mod_devgem $cmd cohort_scope
+    mod_devgem $cmd falls_back_on
+    mod_devgem $cmd leap
+    mod_devgem $cmd loose_tight_dictionary
+    mod_devgem $cmd sniff
+    mod_devgem $cmd data_miner
+    mod_devgem $cmd earth
+  else
+    mod_devgem $cmd $2
+  fi
+}
+{% endhighlight %}
 
 This gives me a few commands:
 
-    > devgems enable sniff
-    # sets LOCAL_SNIFF=~/sniff
-    > devgems disable sniff
-    # clears LOCAL_SNIFF
-    > devgems list
-    # lists each LOCAL_ environment variable
+{% highlight console %}
+$ devgems enable sniff
+  # sets LOCAL_SNIFF=~/sniff
+$ devgems disable sniff
+  # clears LOCAL_SNIFF
+$ devgems list
+  # lists each LOCAL_ environment variable
+{% endhighlight %}
 
 I now have a well-oiled gem development machine!
 
