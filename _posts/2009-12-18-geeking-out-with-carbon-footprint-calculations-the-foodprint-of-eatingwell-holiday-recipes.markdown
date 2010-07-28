@@ -10,7 +10,8 @@ Sometimes we really geek out with carbon emissions calculations at Brighter Plan
 
 Here are the general estimates for the carbon footprint of these recipes, measured in lbs. of [C02e](http://brighterplanet.com/entries/7-units_and_measures).  
 
-<img src="http://farm3.static.flickr.com/2532/4190041803_7a1215ac56_m.jpg" width="240" height="180" alt="English roast meat by fire with flames" /></a>
+<p> <img src="http://farm3.static.flickr.com/2532/4190041803_7a1215ac56_m.jpg" width="240" height="180" alt="English roast meat by fire with flames" /></a> </p>
+
 
 <a href="http://www.eatingwell.com/recipes/horseradish_beef.html">Horseradish crusted beef tenderloin</a> and <a href="http://www.eatingwell.com/recipes/vt_cheddar_potatoes.html">Vermont Cheddar Mashed Yukon Golds</a>: 
  
@@ -28,7 +29,7 @@ servings- 8
 lbs co2e- 21.5	        
 lbs co2e/serving- 2.7
     
-<img src="http://farm3.static.flickr.com/2700/4190801806_de5d016a4e_m.jpg" width="240" height="159" alt="blog- veggies" /></a> 
+<p> <img src="http://farm3.static.flickr.com/2700/4190801806_de5d016a4e_m.jpg" width="240" height="159" alt="blog- veggies" /></a> </P>
 
 <a href="http://www.eatingwell.com/recipes/cheddar_vegetable_tart.html">Roasted Fall Vegetables in Cheddar Crust</a> and <a href="http://www.eatingwell.com/recipes/green_beans_mushrooms.html">Green and Yellow Beans with Wild Mushrooms</a>: 
        
