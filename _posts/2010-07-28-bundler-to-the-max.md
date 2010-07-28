@@ -79,9 +79,10 @@ gem 'sniff', :path => ENV['LOCAL_SNIFF'] if ENV['LOCAL_SNIFF']
 {% endhighlight %}
 
 So now, if I want to make some changes to the sniff gem and test them out in my emitter, I do:
+
     cd snif
     # work work work
-    cd ../<emitter>
+    cd ../[emitter]
     export LOCAL_SNIFF=~/sniff
     rake gemspec
     bundle update
@@ -94,7 +95,8 @@ And then Bob is my uncle.
 ## Bundler + Rakefile
 
 This next idea has some drawbacks in terms of code cleanliness, but I think it offers a good way to point contributers in the right direction. One thing that frustrated me about Jeweler was that if I wanted to contribute to a gem, my typical work flow went like:
-    > cd <project>
+
+    > cd [project]
     # work work work
     > rake test
     LoadError: No such file: 'jeweler'
@@ -104,7 +106,8 @@ This next idea has some drawbacks in terms of code cleanliness, but I think it o
     # etc etc
 
 I attempted to simplify this process, so a new developer who doesn't read the README should be able to just do:
-    > cd <emitter>
+
+    > cd [emitter]
     # work work work
     > rake test
     You need to `gem install bundler` and then run `bundle install` to run rake tasks
