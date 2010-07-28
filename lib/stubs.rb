@@ -8,7 +8,7 @@ class Header
   include Link
   
   def render(*args)
-    ''
+    "{% include title.html %}"
   end
 
   def flash

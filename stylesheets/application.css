@@ -1,7 +1,3 @@
-#title {
-  display: none;
-}
-
 #content {
   background: #e1e1e1 url(images/content.png) -237px 0 repeat-y;
   overflow: auto;
