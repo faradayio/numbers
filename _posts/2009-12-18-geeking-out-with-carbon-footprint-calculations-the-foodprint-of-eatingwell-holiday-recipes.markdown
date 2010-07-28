@@ -6,9 +6,9 @@ title: "Geeking out with carbon footprint calculations: the foodprint of EatingW
 categories: science
 wordpress_url: http://blog.brighterplanet.com/?p=3481
 ---
-Sometimes we really geek out with carbon emissions calculations at Brighter Planet.  We crunch numbers down to the thousandth decimal in order to make recommendations about what is better to buy/do/eat in terms of one’s (http://brighterplanet.com/entries/8-carbon_footprint/ "carbon footprint").  In light of our (http://blog.brighterplanet.com/sustainable-cooking/tips-to-choose-from/ "Sustainable Cooking Contest")(which runs two more weeks through December 31st!) and the stories we've received about reducing impact in the kitchen, we’re going to break down some fantastic (http://www.eatingwell.com/recipes_menus/collections/holiday_collection_1 "holiday recipes from EatingWell") for you.  
+Sometimes we really geek out with carbon emissions calculations at Brighter Planet.  We crunch numbers down to the thousandth decimal in order to make recommendations about what is better to buy/do/eat in terms of one’s [carbon footprint](http://brighterplanet.com/entries/8-carbon_footprint/). In light of our [Sustainable Cooking Contest](http://blog.brighterplanet.com/sustainable-cooking/tips-to-choose-from/)(which runs two more weeks through December 31st!) and the stories we've received about reducing impact in the kitchen, we’re going to break down some fantastic [holiday recipes from EatingWell](http://www.eatingwell.com/recipes_menus/collections/holiday_collection_1) for you.  
 
-Here are the general estimates for the carbon footprint of these recipes, measured in lbs. of (http://brighterplanet.com/entries/7-units_and_measures "CO2e".  
+Here are the general estimates for the carbon footprint of these recipes, measured in lbs. of [C02e](http://brighterplanet.com/entries/7-units_and_measures).  
 
 <img src="http://farm3.static.flickr.com/2532/4190041803_7a1215ac56_m.jpg" width="240" height="180" alt="English roast meat by fire with flames" /></a>
 
