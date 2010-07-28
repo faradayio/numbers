@@ -198,3 +198,5 @@ This gives me a few commands:
 I now have a well-oiled gem development machine!
 
 Overall, after a few frustrations with bundler, I'm now quite happy with it, especially the power and convenience it gives me in developing gems.
+
+I'm really interested to hear any of your thoughts on this. Drop me a line at [@dkastner](http://twitter.com/dkastner).
