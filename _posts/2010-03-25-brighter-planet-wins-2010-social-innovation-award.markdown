@@ -14,7 +14,7 @@ The  <a href="http://brighterplanet.com/project_fund_projects">Project Fund</a>,
 
 As I  told the audience at the Hudson Theatre when I accepted the award, the  recognition by the Financial Times, Justmeans, and the distinguished  panel of judges is a tribute to the 150,000 Brighter Planet customers  who endow the Project Fund, to the 100 projects submitted over the past  six months, and to the tens of thousands of voters across the nation.    And, of course, to our Project Fund grantees which range from post-coal  sustainability projects in Appalachia, to youth activism in Copenhagen,  to tree planting in Wisconsin.
 
-It’s  so satisfying to be able to jump-start deserving projects like these.   So now we’re providing this crowd-sourced philanthropy technology to  other businesses, campaigns, foundations, and non-profits.  Our social  giving platform, <span style="text-decoration: underline;"><a href="http://wowcrowd.com/">wowcrowd</a></span> (in private  beta but live soon!), lets organizations engage their members to  propose, discuss, and vote on ideas to receive project funding.
+It’s  so satisfying to be able to jump-start deserving projects like these.   So now we’re providing this crowd-sourced philanthropy technology to  other businesses, campaigns, foundations, and non-profits.  Our social  giving platform, [wowcrowd](http://wowcrowd.com/)(in private  beta but live soon!), lets organizations engage their members to  propose, discuss, and vote on ideas to receive project funding.
 
 Thank  you to the Financial Times, Justmeans, and the panel of judges for your  recognition.
 
