@@ -39,6 +39,14 @@ ol.posts li {
   background-position: 0 0;
 }
 
+ol.posts li h2 {
+  margin-top: 35px !important;
+}
+
+ol.posts li:first-child h2 {
+  margin-top: 0 !important;
+}
+
 ol.posts li h2 a, .post h2 a {
   color: inherit;
   text-decoration: none;
