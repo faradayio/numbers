@@ -18,25 +18,25 @@ Wednesday, April 14, 2010 at 111 Minna Gallery, San Francisco
 
 <!-- 		@page { margin: 0.79in } 		P { margin-bottom: 0.08in } --><span style="color: #34382e;"><span style="font-family: Helvetica Neue,sans-serif;"><span style="font-size: small;">Employee Engagement is becoming an increasingly popular means to drive corporate sustainability efforts.  Around the world, companies and communities are mobilizing their workforces to lessen pollution, waste and operational inefficiencies.  However, a new analysis by Brighter Planet suggests that employees are generally dissatisfied with their employers’ sustainability initiatives.  Moreover, many employers are unable to quantify the effects of their internal efforts.  This finding is especially timely in light of increasing executive pressure to measure the impact of sustainability work on bottom line.</span></span></span>
 
-<span style="color: #34382e;"><span style="font-family: Helvetica Neue,sans-serif;"><span style="font-size: small;">Please join the <a href="http://www.carboncollaborative.org/">San Francisco Carbon Collaborative</a>, <a href="http://brighterplanet.com/about">Brighter Planet</a>, and <a href="http://www.climatini.org/">Climatini </a>on April 14th, for a panel discussion and an exploration of how to better foster Employee Engagement in the sustainability arena.  We’ll preview the new Brighter Planet study and consider the following:</span></span></span>
+Please join the <a href="http://www.carboncollaborative.org/">San Francisco Carbon Collaborative</a>, <a href="http://brighterplanet.com/about">Brighter Planet</a>, and <a href="http://www.climatini.org/">Climatini </a>on April 14th, for a panel discussion and an exploration of how to better foster Employee Engagement in the sustainability arena.  We’ll preview the new Brighter Planet study and consider the following:
 
-<span style="color: #34382e;">• <span style="font-family: Helvetica Neue,sans-serif;"><span style="font-size: small;">How can companies enhance CSR strategies by fusing employee initiative and forward green thinking?
-</span></span></span><span style="color: #34382e;">• <span style="font-size: small;"><span style="font-family: Helvetica Neue,sans-serif;">How does the strategy of sustainable employee engagement ft within the larger theme of CSR?</span></span></span><span style="color: #34382e;">
-• <span style="font-size: small;"><span style="font-family: Helvetica Neue,sans-serif;">How can we measure CSR/EE impacts upon triple bottom lines?</span></span>
-• <span style="font-size: small;"><span style="font-family: Helvetica Neue,sans-serif;">What are the pros and cons of implementing top-down vs. bottom-up sustainability programs?</span></span></span><span style="color: #34382e;">
-• <span style="font-size: small;"><span style="font-family: Helvetica Neue,sans-serif;">How should companies incentivize employee-led initiatives?</span></span>
-• <span style="font-size: small;"><span style="font-family: Helvetica Neue,sans-serif;">Where are the cutting-edge opportunities and best-practice ideas?</span></span></span>
+*How can companies enhance CSR strategies by fusing employee initiative and forward green thinking?
+*How does the strategy of sustainable employee engagement ft within the larger theme of CSR?
+*How can we measure CSR/EE impacts upon triple bottom lines?
+*What are the pros and cons of implementing top-down vs. bottom-up sustainability programs?
+*How should companies incentivize employee-led initiatives?
+*Where are the cutting-edge opportunities and best-practice ideas?
 
-<span style="font-size: small;"><span style="color: #34382e;"><span style="font-family: Helvetica Neue,sans-serif;">This event is free of charge with a cash bar.  Space is limited, so please <a href="http://www.carboncollaborative.org/index.php?q=civicrm/event/info&amp;reset=1&amp;id=27">register by clicking here</a>.</span></span></span>
+This event is free of charge with a cash bar.  Space is limited, so please <a href="http://www.carboncollaborative.org/index.php?q=civicrm/event/info&amp;reset=1&amp;id=27">register by clicking here</a>.
 
-<span style="color: #000000;"><span style="font-family: Helvetica Neue,sans-serif;"><span style="font-size: small;"><strong>Panelists</strong></span></span></span>
 
-<span style="color: #34382e;"><span style="font-family: arial,sans-serif;"><span style="font-size: small;"><strong>Patti Prairie, CEO, Brighter Planet</strong>:  Brighter Planet provides technology-driven climate change solutions that help people and businesses manage their environmental impact.</span></span></span>
 
-<span style="font-size: small;"><strong><span style="color: #34382e;"><span style="font-family: arial,sans-serif;">Andrew Bryson, Senior Director, Saatchi &amp; Saatchi S</span></span></strong><span style="color: #34382e;"><span style="font-family: arial,sans-serif;">:  Saatchi S is a leader in sustainability consulting, having successfully designed and implemented employee engagement programs for some of the world's largest corporations.</span></span></span>
+<strong>Patti Prairie, CEO, Brighter Planet</strong>:  Brighter Planet provides technology-driven climate change solutions that help people and businesses manage their environmental impact.
 
-<span style="font-size: small;"><span style="color: #34382e;"><span style="font-family: arial,sans-serif;"><strong>Lisa Carpenter, Director of Strategy and Communications for Social and Environmental Responsibility, Gap, Inc.</strong>:  Gap is a pioneer in the areas of CSR &amp; environmental sustainability, having successfully reduced the social and environmental impacts of their business operations in four key areas: </span></span><span style="color: #000000;"><span style="font-family: arial,sans-serif;">supply chain, environment, employees and community investment.</span></span></span>
+<strong>Andrew Bryson, Senior Director, Saatchi &amp; Saatchi S</strong>:  Saatchi S is a leader in sustainability consulting, having successfully designed and implemented employee engagement programs for some of the world's largest corporations.
 
-<span style="font-size: small;"><span style="color: #34382e;"><span style="font-family: arial,sans-serif;"><strong>Ellen Lee, HR Director, Sun, Light &amp; Power</strong>: </span></span><span style="color: #424b3d;"><span style="font-family: Arial,Helvetica,sans-serif;">Sun Light &amp; Power is a small solar power integrator based in Berkeley, CA. The company's culture is built on a commitment to employee engagement that extends the environmental benefit of their core business.</span></span></span>
+<<strong>Lisa Carpenter, Director of Strategy and Communications for Social and Environmental Responsibility, Gap, Inc.</strong>:  Gap is a pioneer in the areas of CSR &amp; environmental sustainability, having successfully reduced the social and environmental impacts of their business operations in four key areas: supply chain, environment, employees and community investment.
 
-<span style="color: #34382e;"><span style="font-family: Helvetica Neue,sans-serif;"><span style="font-size: small;"><strong>Moderator -- David Pascal, President, San Francisco Carbon Collaborative</strong>: David is co-founder of the SF Carbon Collaborative and was most recently the Clean Tech and Green Business Advocate for the City and County of San Francisco.</span></span></span>
+<strong>Ellen Lee, HR Director, Sun, Light &amp; Power</strong>: Sun Light &amp; Power is a small solar power integrator based in Berkeley, CA. The company's culture is built on a commitment to employee engagement that extends the environmental benefit of their core business.
+
+<strong>Moderator -- David Pascal, President, San Francisco Carbon Collaborative</strong>: David is co-founder of the SF Carbon Collaborative and was most recently the Clean Tech and Green Business Advocate for the City and County of San Francisco.
