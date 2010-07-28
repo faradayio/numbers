@@ -20,12 +20,12 @@ Employee Engagement is becoming an increasingly popular means to drive corporate
 
 Please join the <a href="http://www.carboncollaborative.org/">San Francisco Carbon Collaborative</a>, <a href="http://brighterplanet.com/about">Brighter Planet</a>, and <a href="http://www.climatini.org/">Climatini </a>on April 14th, for a panel discussion and an exploration of how to better foster Employee Engagement in the sustainability arena.  We’ll preview the new Brighter Planet study and consider the following:
 
-*How can companies enhance CSR strategies by fusing employee initiative and forward green thinking?
-*How does the strategy of sustainable employee engagement ft within the larger theme of CSR?
-*How can we measure CSR/EE impacts upon triple bottom lines?
-*What are the pros and cons of implementing top-down vs. bottom-up sustainability programs?
-*How should companies incentivize employee-led initiatives?
-*Where are the cutting-edge opportunities and best-practice ideas?
+* How can companies enhance CSR strategies by fusing employee initiative and forward green thinking?
+* How does the strategy of sustainable employee engagement ft within the larger theme of CSR?
+* How can we measure CSR/EE impacts upon triple bottom lines?
+* What are the pros and cons of implementing top-down vs. bottom-up sustainability programs?
+* How should companies incentivize employee-led initiatives?
+* Where are the cutting-edge opportunities and best-practice ideas?
 
 This event is free of charge with a cash bar.  Space is limited, so please <a href="http://www.carboncollaborative.org/index.php?q=civicrm/event/info&amp;reset=1&amp;id=27">register by clicking here</a>.
 
