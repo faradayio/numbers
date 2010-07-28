@@ -6,8 +6,8 @@ title: "Upcoming SF event: panel discussion on employee sustainability"
 categories: company
 wordpress_url: http://blog.brighterplanet.com/?p=4016
 ---
-<!-- 		@page { margin: 0.79in } 		P { margin-bottom: 0.08in } --><span style="font-family: Helvetica Neue,sans-serif;"><span style="font-size: small;">We're pleased to announce that Brighter Planet is partnering with <a href="http://www.carboncollaborative.org/">San Francisco Carbon Collaborative</a> to host a lively event in our newest home, San Francisco!  If you're on the west coast, come join us on Wednesday, April 14 for a high-level panel discussion that will examine findings from our recently published report on employee engagement in corporate sustainability.  We'll hand the conversation to our panelists, who will share their experiences, strategies, and best practices in an interactive forum.  It will be a great opportunity to learn from companies who are leading the charge in incorporating employees (and their ideas!) into a sustainability strategy.  And yes, there will be <a href="http://www.climatini.org/about/">drinks</a>.  Hope you can make it!  See the details below...
-</span></span>
+We're pleased to announce that Brighter Planet is partnering with [San Francisco Carbon Collaborative](http://www.carboncollaborative.org/)  to host a lively event in our newest home, San Francisco!  If you're on the west coast, come join us on Wednesday, April 14 for a high-level panel discussion that will examine findings from our recently published report on employee engagement in corporate sustainability.  We'll hand the conversation to our panelists, who will share their experiences, strategies, and best practices in an interactive forum.  It will be a great opportunity to learn from companies who are leading the charge in incorporating employees (and their ideas!) into a sustainability strategy.  And yes, there will be [drink](http://www.climatini.org/about/).  Hope you can make it!  See the details below...
+
 
 <span style="font-family: Helvetica Neue,sans-serif;"><span style="font-size: small;">
 </span></span>
