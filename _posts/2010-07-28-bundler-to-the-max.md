@@ -5,7 +5,7 @@ layout: post
 categories: [ruby, bundler, gems]
 ---
 
-I have been spending the past couple of weeks creating and refactoring our [carbon model gems](http://carbon.brighterplanet.com/science), with the goal of making them easy to enhance, fix, and test by climate scientists and Ruby developers. I wanted to make contributing a simple process and [bundler](http://rubybundler.com) fit the bill quite well.
+I have been spending the past few weeks creating and refactoring our [carbon model gems](http://carbon.brighterplanet.com/science), with the goal of making them easy to enhance, fix, and test by climate scientists and Ruby developers. I wanted to make contributing a simple process and [bundler](http://rubybundler.com) fit the bill quite well.
 
 A not-so-widely-known feature of the [Rubygems](http://rubygems.org) API is the ability to declare a gem's development dependencies, along with its runtime dependencies. If one planned on making changes to one of the emitter gems and testing it, she could run `gem install <emitter_gem> --development` and have any needed testing gems installed for the emitter gem.
 
