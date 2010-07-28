@@ -10,7 +10,7 @@ wordpress_url: http://blog.brighterplanet.com/?p=4203
 
 <span style="color: #008000;"><strong>201,938,091 pounds of carbon dioxide pollution that never was.</strong></span>
 
-As of today that's the greenhouse gas emissions that you, the Brighter Planet community, have prevented from being released.  More than <strong><span style="color: #008000;">150,000 individuals and businesses</span></strong> have come together to support the construction of <strong><span style="color: #008000;">19 community renewable energy projects</span></strong> (and counting).  These wind turbines and cow power facilities at schools and family farms across the country generate clean electricity and prove the viability of new energy technologies, create green jobs and economic opportunity in rural America, and reduce the environmental and social burdens of fossil fuel use, coal mining, and methane pollution.
+As of today that's the greenhouse gas emissions that you, the Brighter Planet community, have prevented from being released.  More than <span style="color: #008000;"> <strong>150,000 individuals and businesses</strong> </span> have come together to support the construction of <span style="color: #008000;"> <strong> 19 community renewable energy projects</strong> </span> (and counting).  These wind turbines and cow power facilities at schools and family farms across the country generate clean electricity and prove the viability of new energy technologies, create green jobs and economic opportunity in rural America, and reduce the environmental and social burdens of fossil fuel use, coal mining, and methane pollution.
 
 The greenhouse gas emissions you've prevented so far is equivalent to:
 
