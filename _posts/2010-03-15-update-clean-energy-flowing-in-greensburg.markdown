@@ -14,7 +14,7 @@ Leveled in 2007 by a EF-5 tornado that destroyed more than 95% of the buildings 
 
 <img class="alignnone" title="greensburg tornato devastation" src="http://farm5.static.flickr.com/4025/4423383366_7ecc3d3367.jpg" alt="" width="500" height="168" />
 
-The Greensburg Wind Farm by NativeEnergy came online this month, and we're thrilled that members of the Brighter Planet community were able to play a key role in making this story a reality.  As charter supporters of this wind farm, every Brighter Planet cardholder helped fund its construction every time you swiped your <a href="http://brighterplanet.com/products/debit_card">card</a> to buy gas and groceries.  Thanks everybody!  It's great to see another inspiring example of innovative ways we can come together to build a clean energy future.
+The Greensburg Wind Farm by NativeEnergy came online this month, and we're thrilled that members of the Brighter Planet community were able to play a key role in making this story a reality.  As charter supporters of this wind farm, every Brighter Planet cardholder helped fund its construction every time you swiped your [card](http://brighterplanet.com/products/debit_card) to buy gas and groceries.  Thanks everybody!  It's great to see another inspiring example of innovative ways we can come together to build a clean energy future.
 
 The ten turbines, each capable of producing up to 1.25 MW of electricity, will provide enough clean energy to power the town several times over -- this allows Brighter Planet members who contributed to the project to claim rights to some of the clean energy produced, with enough left over for the town of Greensburg also to claim carbon neutrality.
 
