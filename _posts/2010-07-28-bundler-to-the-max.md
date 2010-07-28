@@ -11,11 +11,13 @@ A not-so-widely-known feature of the [Rubygems](http://rubygems.org) API is the 
 
 This is all fine and good, but I chose to use bundler to manage our dependencies, as it adds a few extras that have been a tremendous help to us. To contribute to any of our gems, a developer can follow a simple process:
 
-    git clone git://github.com/brighterplanet/<gem>.git
-    cd <gem>
-    gem install bundler --pre  (this is needed until bundler 1.0 is released)
-    bundle install
-    rake
+{% highlight console %}
+$ git clone git://github.com/brighterplanet/<gem>.git
+$ cd <gem>
+$ gem install bundler --pre  # this is needed until bundler 1.0 is released
+$ bundle install
+$ rake
+{% endhighlight %}
 
 And Bob's your uncle!
 
