@@ -207,3 +207,8 @@ ol.posts li>ul {
 ol.posts li p img {
   max-width: 370px;
 }
+
+ol.posts li>object {
+  max-width: 370px;
+  margin: 10px 0 10px 150px;
+}
