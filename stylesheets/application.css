@@ -216,3 +216,7 @@ ol.posts li>object {
   max-width: 370px;
   margin: 10px 0 10px 150px;
 }
+
+#disqus_thread h3 {
+  margin-left: 0;
+}
