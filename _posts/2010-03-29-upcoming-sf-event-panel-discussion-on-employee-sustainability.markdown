@@ -31,12 +31,12 @@ This event is free of charge with a cash bar.  Space is limited, so please <a hr
 
 
 
-<strong>Patti Prairie, CEO, Brighter Planet</strong>:  Brighter Planet provides technology-driven climate change solutions that help people and businesses manage their environmental impact.
+**Patti Prairie, CEO, Brighter Planet**:  Brighter Planet provides technology-driven climate change solutions that help people and businesses manage their environmental impact.
 
-<strong>Andrew Bryson, Senior Director, Saatchi &amp; Saatchi S</strong>:  Saatchi S is a leader in sustainability consulting, having successfully designed and implemented employee engagement programs for some of the world's largest corporations.
+**Andrew Bryson, Senior Director, Saatchi &amp; Saatchi S**:  Saatchi S is a leader in sustainability consulting, having successfully designed and implemented employee engagement programs for some of the world's largest corporations.
 
-<strong>Lisa Carpenter, Director of Strategy and Communications for Social and Environmental Responsibility, Gap, Inc.</strong>:  Gap is a pioneer in the areas of CSR &amp; environmental sustainability, having successfully reduced the social and environmental impacts of their business operations in four key areas: supply chain, environment, employees and community investment.
+**Lisa Carpenter, Director of Strategy and Communications for Social and Environmental Responsibility, Gap, Inc.**:  Gap is a pioneer in the areas of CSR &amp; environmental sustainability, having successfully reduced the social and environmental impacts of their business operations in four key areas: supply chain, environment, employees and community investment.
 
-<strong>Ellen Lee, HR Director, Sun, Light &amp; Power</strong>: Sun Light &amp; Power is a small solar power integrator based in Berkeley, CA. The company's culture is built on a commitment to employee engagement that extends the environmental benefit of their core business.
+**Ellen Lee, HR Director, Sun, Light &amp; Power**: Sun Light &amp; Power is a small solar power integrator based in Berkeley, CA. The company's culture is built on a commitment to employee engagement that extends the environmental benefit of their core business.
 
-<strong>Moderator -- David Pascal, President, San Francisco Carbon Collaborative</strong>: David is co-founder of the SF Carbon Collaborative and was most recently the Clean Tech and Green Business Advocate for the City and County of San Francisco.
+**Moderator -- David Pascal, President, San Francisco Carbon Collaborative**: David is co-founder of the SF Carbon Collaborative and was most recently the Clean Tech and Green Business Advocate for the City and County of San Francisco.
