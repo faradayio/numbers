@@ -50,4 +50,5 @@ lbs/serving- 0.8
 Choose the veggie-based dishes and you'll have over 30% reduction in CO2e.  This shows how replacing a few meaty holiday dishes with non-meat dishes, or choosing poultry and fish over red meats, can shave off a significant chunk of your “foodprint.”  The other thing to keep in mind is that 11% of food emissions comes from transportation, so buying locally-sourced produce can decrease total food-miles from dirt to plate and reduce the total emissions.
 
 If you want to do some more estimating and playing around with food emissions, check out the Food section of our <a href="http://brighterplanet.com/users/me/footprint/components/food">Footprint Calculator</a>. 
+
 -<a href="http://brighterplanet.com/users/Carolyn">Carolyn</a>
