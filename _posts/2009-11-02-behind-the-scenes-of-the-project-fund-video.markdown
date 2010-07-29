@@ -8,9 +8,9 @@ wordpress_url: http://blog.brighterplanet.com/?p=3063
 ---
 <object width="400" height="225"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=7327532&amp;server=vimeo.com&amp;show_title=0&amp;show_byline=0&amp;show_portrait=0&amp;color=00A850&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=7327532&amp;server=vimeo.com&amp;show_title=0&amp;show_byline=0&amp;show_portrait=0&amp;color=00A850&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="400" height="225"></embed></object>
 
-Check out our latest video made with the wonderful <a href="http://www.blender.org/">Blender</a> animation software.
+Check out our latest video made with the wonderful [Blender](http://www.blender.org/) animation software.
 
-<a href="http://blog.brighterplanet.com/wp-content/themes/bp/assets/brighter_planet_project_fund.zip">Download</a> the behind the scenes files!
+[Download](http://blog.brighterplanet.com/wp-content/themes/bp/assets/brighter_planet_project_fund.zip) the behind the scenes files!
 
 This project began with a script about plants, which turned into a storyboard of pencil sketches, plants, flowers, seeds of all kinds swelling and dropping from their branches.  These sketches evolved into a collection of 3d models, and rigs and everything seemed to be going according to plan.
 
