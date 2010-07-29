@@ -17,7 +17,6 @@ How to tell the good from the bad?
 As we’ve looked at projects to add to our portfolio over the last 18 months, we’ve subjected each to intense scrutiny. Those selected to date have been the best of the best from [NativeEnergy](http://www.nativeenergy.com/), cited in GOOD’s piece as one of three trusted sellers. The piece also pulls some good questions for buyers to ask, from a report by [Clean Air-Cool Planet](http://cleanair-coolplanet.org/), our partner on retiring carbon offsets once they’ve been used.
 
 Here’s how we do it at Brighter Planet:
-
 1. Brighter Planet earns the trust of our 100,000 customers by providing practical education about their [lifestyle’s impact on climate](http://brighterplanet.com/learn) and helping them [find ways to reduce it](http://brighterplanet.com/conservation_recommendations).
 2. We make it easy for our customers to [offset their remaining impact](http://brighterplanet.com/act) by supporting real, [additional](http://brighterplanet.com/entries/quality_of_additionality), transparent [projects that help local communities and the environment](http://brighterplanet.com/impact).
 3. We meticulously review every project to ensure it meets our [carbon offset policy](http://brighterplanet.com/policy) and only accept those that are unanimously approved by the highly respected luminaries who sit on our [project selection committee](http://brighterplanet.com/groups/4).
