@@ -25,6 +25,8 @@ end
 
 class Footer
   include Link
+  
+  def render(*args); end
 
   def get_binding
     binding
