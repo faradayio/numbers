@@ -210,3 +210,7 @@ ol.posts li>object {
 #disqus_thread h3 {
   margin-left: 0;
 }
+
+#elsewhere {
+  display: none;
+}
