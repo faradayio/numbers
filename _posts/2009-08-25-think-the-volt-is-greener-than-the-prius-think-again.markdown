@@ -19,6 +19,6 @@ While we applaud products that reduce our dependence on foreign oil, it’s time
 For this comparison we used:
 
 * 2010 Toyota Prius – [50 miles per gallon](http://www.fueleconomy.gov/)
-* Chevrolet Volt – [25 kWh per 100 miles](http://media.gm.com/servlet/GatewayServlet? target=http://image.emerald.gm.com/gmnews/viewpressreldetail.do?domain=12&docid=56132) (running on electric only)
+* Chevrolet Volt – [25 kWh per 100 miles](http://media.gm.com/servlet/GatewayServlet?target=http://image.emerald.gm.com/gmnews/viewpressreldetail.do?domain=12&docid=56132) (running on electric only)
 * Gasoline emissions – 19.777 lbs CO <sub>2</sub> e / gallon (based on [US EPA GHG Inventory](http://epa.gov/climatechange/emissions/usinventoryreport.html))
 * Electricity emissions – year 2005 data from [eGRID2007 v1.1](http://www.epa.gov/cleanenergy/energy-resources/egrid/index.html)
