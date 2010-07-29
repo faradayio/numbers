@@ -6,7 +6,7 @@ title: "Employee sustainability survey results:  the good, the bad, the ugly"
 categories: science
 wordpress_url: http://blog.brighterplanet.com/?p=3808
 ---
-<!-- 		@page { margin: 0.79in } 		P { margin-bottom: 0.08in } 		A:link { so-language: zxx } --><img class="alignnone" title="employee engagement" src="http://farm3.static.flickr.com/2682/4343440271_4a509b24bc.jpg" alt="" width="500" height="237" />
+<img SRC="http://farm3.static.flickr.com/2682/4343440271_4a509b24bc.jpg" ALT="employee" />
 
 We've finally wrapped up the crunching, sifting, charting, and interpreting of the 30,000+ datapoints collected in our recent online survey about the employee engagement practices of US employers.  Thanks to all of you who took the time to respond to the <a href="http://attachments.brighterplanet.com/press_items/local_copies/57/original/ee_survey_questions.pdf?1265742090">survey questions</a>.  Today we released the report that details our findings.
 
@@ -19,4 +19,4 @@ Here are a few of the findings at a glance. <a href="http://brighterplanet.com/p
 	<li><span style="color: #000000;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><strong>The 	most effective engagement programs feature an organization’s 	management or board as the main advocate for employee 	sustainability. </strong>These programs are three times as effective as 	those in which an employee sustainability director was the main 	advocate.</span></span></span></li>
 	<li><span style="color: #000000;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><strong>Employees 	are generally dissatisfied with their employers’ sustainability 	engagement efforts.</strong> Over 60% of respondents want to learn more 	about their employers’ and co-workers’ sustainability efforts, 	and 67% would like their employers to change their stance on 	sustainability. </span></span></span></li>
 </ul>
---<a href="http://brighterplanet.com/users/matthew">Matthew</a>
+--[Matthew](http://brighterplanet.com/users/matthew)
