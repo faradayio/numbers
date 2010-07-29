@@ -6,7 +6,7 @@ title: "\xE2\x80\x9CMastering the Art of Sustainable Cooking\xE2\x80\x9D Contest
 categories: company
 wordpress_url: http://blog.brighterplanet.com/?p=2055
 ---
-[MASC_logo]!http://farm3.static.flickr.com/2550/3940523063_83c435f5f5.jpg)
+![MASC_logo](http://farm3.static.flickr.com/2550/3940523063_83c435f5f5.jpg)
 
 The idea is simple--share your own experiences reducing your “foodprint,” learn how others are making great food that’s also good for the planet, and win some killer prizes!
 
