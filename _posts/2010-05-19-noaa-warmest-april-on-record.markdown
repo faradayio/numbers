@@ -17,3 +17,5 @@ The March and April heat was more than enough to pull the entire four-month Janu
 Expect to see more of the same as we move into the rest of 2010: NASA researchers predict the trend to continue, <a href="http://data.giss.nasa.gov/gistemp/paper/gistemp2010_draft0319.pdf">forecasting</a> that 2010 will weigh in as warmest year in recorded history.
 
 The effects?  Well for one, warmer sea surface temperatures are a key element in predictions by folks at [CSU](http://hurricane.atmos.colostate.edu/Forecasts/2010/april2010/apr2010.pdf), [NCSU](http://news.ncsu.edu/releases/hurricane10/), and [Accuweather](http://www.accuweather.com/blogs/news/story/25984/joe-bastardi-more-active-2010-1.asp) that the 2010 Atlantic hurricane season (which opens on June 1) will  be significantly more active than average and "has the chance to be an extreme season."  Critics have called the Gulf oil spill ["Obama's Katrina"](http://www.nytimes.com/2010/05/19/opinion/19friedman.html?hp), but chances appear better than average he'll get a literal Katrina of his own.
+
+--Matthew
