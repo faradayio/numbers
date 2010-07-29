@@ -12,9 +12,8 @@ The 2009 <em>State of the Future </em>report, <a href="http://www.independent.co
 
 The bad, but probably not surprising news, is first: the findings about climate change are grim.
 
-- Half the world could face violence and unrest due to severe unemployment combined with scarce water, food and energy supplies and the cumulative effects of climate change.
-
-- "The scope and scale of the future effects of climate change – ranging from changes in weather patterns to loss of livelihoods and disappearing states – has unprecedented implications for political and social stability."  In conclusion, climate change "will cause civilization to collapse."  
+* Half the world could face violence and unrest due to severe unemployment combined with scarce water, food and energy supplies and the cumulative effects of climate change.
+* "The scope and scale of the future effects of climate change – ranging from changes in weather patterns to loss of livelihoods and disappearing states – has unprecedented implications for political and social stability."  In conclusion, climate change "will cause civilization to collapse."  
 
 But, there are still some hopeful perspectives.  The authors suggest the threats may end up being catalysts for positive change.  "The good news is that the global financial crisis and climate change planning may be helping humanity to move from its often selfish, self-centered adolescence to a more globally responsible adulthood... Many perceive the current economic disaster as an opportunity to invest in the next generation of greener technologies, to rethink economic and development assumptions, and to put the world on course for a better future."  
 
