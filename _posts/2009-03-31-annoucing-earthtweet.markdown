@@ -15,13 +15,11 @@ If you're already on Twitter, all you have to do is tell us what you are doing -
 If you're not yet among the converted, this is a perfect opportunity to give Twitter a try. Twitter is like CB radio, but for text messaging -- it's a great way to stay connected to friends, family, and as many other people as you like. <a href="http://twitter.com">Sign up</a> and then you can "follow" <a href="http://twitter.com/earthtweet">@earthtweet</a> and <a href="http://twitter.com/brighterplanet">@brighterplanet</a>!
 
 In the last few months we've seen people achieve amazing things through collective effort on Twitter. Some examples:
-<ul>
-<li> Two months ago, a group called <a href="http://www.charitywater.org/">charity: water</a> issued through Twitter a call for help raising awareness and funds to bring clean drinking water to some of the poorest people in the world. The twitter community responded, <a href="http://www.twestival.com/">organizing fundraisers in more than 200 cities around the world</a> and raising a quarter million dollars for the cause.
 
-<li> Last Christmas, a TVA coal-burning power plant spilled millions of gallons of toxic coal ash into an East Tennessee river. Advocates on the ground -- with support from Twitter folks all over the country -- used Twitter to report on the immense scale of the disaster. <a href="http://www.mnn.com/technology/computers/stories/media-mayhem-can-twitter-save-the-earth">The buzz grew loud enough that the sluggish national media finally began to cover the story</a>; since then, the Obama administration has made clean-up of thousands of dangerous coal-ash ponds all over the nation part of its agenda.
+* Two months ago, a group called [charity: water](http://www.charitywater.org/) issued through Twitter a call for help raising awareness and funds to bring clean drinking water to some of the poorest people in the world. The twitter community responded, [organizing fundraisers in more than 200 cities around the world](http://www.twestival.com/) and raising a quarter million dollars for the cause.
+* Last Christmas, a TVA coal-burning power plant spilled millions of gallons of toxic coal ash into an East Tennessee river. Advocates on the ground -- with support from Twitter folks all over the country -- used Twitter to report on the immense scale of the disaster. [The buzz grew loud enough that the sluggish national media finally began to cover the story](http://www.mnn.com/technology/computers/stories/media-mayhem-can-twitter-save-the-earth); since then, the Obama administration has made clean-up of thousands of dangerous coal-ash ponds all over the nation part of its agenda.
+* PowerShift09 organizers and attendees [used Twitter to serve notice that young people are energized and out in force](http://powershift09.org/node/894), working to drive the nation toward a clean energy economy.
 
-<li> PowerShift09 organizers and attendees <a href="http://powershift09.org/node/894">used Twitter to serve notice that young people are energized and out in force</a>, working to drive the nation toward a clean energy economy.
-</ul>
 
 Well, we want some of that action! We really hope that #earthtweet can make some noise about doing one's part to solve the climate problem. It's really up to all of you -- #earthtweet will go exactly as far as you take it.
 
