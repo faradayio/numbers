@@ -19,13 +19,13 @@ A few highlights:
 
 Yes, the climate impact of our dining habits is substantial.  But it's pretty straightforward for each of us to make changes that significantly reduce those impacts.  We distilled the learnings into seven take-home tips:
 
-	* Eat fewer animals and more plants
-	* Buy unprocessed foods with less packaging
-	* Grow and harvest your own food
-	* Minimize car trips to restaurants and stores
-	* Cook at home more and eat out less
-	* Cook with efficient appliances and techniques
-	* Compost, recycle, and relish leftovers
+* Eat fewer animals and more plants
+* Buy unprocessed foods with less packaging
+* Grow and harvest your own food
+* Minimize car trips to restaurants and stores
+* Cook at home more and eat out less
+* Cook with efficient appliances and techniques
+* Compost, recycle, and relish leftovers
 
 Check out the [full paper](http://attachments.brighterplanet.com/press_items/local_copies/52/original/carbon_foodprint_wp.pdf?1264533289) to get answers to all the carbon foodprint questions you never knew you had, and let us know what you think.
 
