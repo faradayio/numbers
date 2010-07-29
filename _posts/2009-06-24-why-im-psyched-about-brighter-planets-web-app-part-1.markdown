@@ -16,9 +16,9 @@ Over time, through stints as a book editor and then as a web nerd, I gravitated 
 
 And anyone can learn new habits -- *IF* one goes about it in the right way. It's *process and practice* that we get tangled up in. At least that's how I'm built, it seems: give me a cut-and-dried blueprint of exactly what I want to do a little differently in a given situation, and I'm a lot more likely to start making the change. Give me a way to track the fruits of choosing a new option at a given decision point -- or to see, plain as day, the stagnancy of *not* doing that new option, and I'll be much more likely to really commit to the change.
 
-We're still building it out, but this is exactly what this next-generation of <a href="http://beta.brighterplanet.com">Brighter Planet</a> will give me:
+We're still building it out, but this is exactly what this next-generation of [Brighter Planet](http://beta.brighterplanet.com) will give me:
 
-1. What to do next time I'm (<a href="http://beta.brighterplanet.com/conservation-tips/148-buy-in-season-fruits-and-vegetables-all-week">buying some fruit</a>; <a href="http://beta.brighterplanet.com/conservation-tips/55-take-one-military-shower-this-week">taking a shower</a>; <a href="http://beta.brighterplanet.com/conservation-tips/90-drip-dry-the-dishes-all-week">running the dishwasher</a> -- on and on, ad infinitum)
-2. What making that more-sustainable choice actually does to my overall footprint -- e.g. immediate feedback on the consequences of a given behavior.
+* What to do next time I'm ([buying some fruit](http://beta.brighterplanet.com/conservation-tips/148-buy-in-season-fruits-and-vegetables-all-week); [taking a shower](http://beta.brighterplanet.com/conservation-tips/55-take-one-military-shower-this-week); [running the dishwasher](http://beta.brighterplanet.com/conservation-tips/90-drip-dry-the-dishes-all-week) -- on and on, ad infinitum)
+* What making that more-sustainable choice actually does to my overall footprint -- e.g. immediate feedback on the consequences of a given behavior.
 
 Ain't that cool? And even better: That's just for starters. There's a lot more to come, as I'll explain soon in Part II of this series.
