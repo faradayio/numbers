@@ -17,7 +17,7 @@ While we applaud products that reduce our dependence on foreign oil, it’s time
 -<a href="http://brighterplanet.com/users/rksaunders">Rich</a> + <a href="http://brighterplanet.com/users/ihough">Ian</a>
 
 For this comparison we used:
-2010 Toyota Prius – <a href="http://www.fueleconomy.gov/">50 miles per gallon</a>
-Chevrolet Volt – <a href="http://media.gm.com/servlet/GatewayServlet?target=http://image.emerald.gm.com/gmnews/viewpressreldetail.do?domain=12&docid=56132">25 kWh per 100 miles</a> (running on electric only)
-Gasoline emissions – 19.777 lbs CO<sub>2</sub>e / gallon (based on <a href="http://epa.gov/climatechange/emissions/usinventoryreport.html">US EPA GHG Inventory</a>)
-Electricity emissions – year 2005 data from <a href="http://www.epa.gov/cleanenergy/energy-resources/egrid/index.html">eGRID2007 v1.1</a>
+2010 Toyota Prius – [50 miles per gallon](http://www.fueleconomy.gov/)
+Chevrolet Volt – [25 kWh per 100 miles](http://media.gm.com/servlet/GatewayServlet?target=http://image.emerald.gm.com/gmnews/viewpressreldetail.do?domain=12&docid=56132) (running on electric only)
+Gasoline emissions – 19.777 lbs CO <sub>2</sub> e / gallon (based on [US EPA GHG Inventory](http://epa.gov/climatechange/emissions/usinventoryreport.html))
+Electricity emissions – year 2005 data from [eGRID2007 v1.1](http://www.epa.gov/cleanenergy/energy-resources/egrid/index.html)
