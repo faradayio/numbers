@@ -28,12 +28,12 @@ class Footer
   end
 end
 
+class BrighterPlanetLayout
+  def self.application; self end
+  def self.google_analytics_ua_number; 'UA-1667526-18' end
+end
+
 class GoogleAnalytics
-  class Rails
-    def self.application; self end
-    def self.google_analytics_ua_number; 'UA-1667526-18' end
-  end
-  
   def javascript_tag(&blk)
     @output << '<script type="text/javascript">'
     yield
