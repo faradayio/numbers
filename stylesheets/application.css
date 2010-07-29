@@ -173,17 +173,7 @@ ul.tags {
 }
 
 ul.tags li {
-  display: inline;
-  text-transform: uppercase;
-  font-size: 11px;
-}
-
-ul.tags li:after {
-  content: " · ";
-}
-
-ul.tags li:last-child:after {
-  content: none;
+  font-size: 18px;
 }
 
 ul.tags li a {
