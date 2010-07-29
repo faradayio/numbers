@@ -10,38 +10,37 @@ Sometimes we really geek out with carbon emissions calculations at Brighter Plan
 
 Here are the general estimates for the carbon footprint of these recipes, measured in lbs. of [C02e](http://brighterplanet.com/entries/7-units_and_measures).  
 
- <img src="http://farm3.static.flickr.com/2532/4190041803_7a1215ac56_m.jpg" width="240" height="180" alt="English roast meat by fire with flames" /></a> 
+![English roast meat by fire with flames](http://farm3.static.flickr.com/2532/4190041803_7a1215ac56_m.jpg)
 
-
-<a href="http://www.eatingwell.com/recipes/horseradish_beef.html">Horseradish crusted beef tenderloin</a> and <a href="http://www.eatingwell.com/recipes/vt_cheddar_potatoes.html">Vermont Cheddar Mashed Yukon Golds</a>: 
+[Horseradish crusted beef tenderloin](http://www.eatingwell.com/recipes/horseradish_beef.html")and [Vermont Cheddar Mashed Yukon Golds](http://www.eatingwell.com/recipes/vt_cheddar_potatoes.html): 
  
- <strong>Total- 56</strong> lbs CO2e, or <strong>7</strong> lbs per serving.              	  	    
+**Total- 56** lbs CO2e, or **7** lbs per serving.              	  	    
 
-<strong>Beef    </strong> 
+**Beef** 
 kcal/serving- 220
 servings- 8	         
 lbs co2e- 34.5	    
 lbs co2e/serving- 4.3
 
-<strong>Potatoes	              </strong>
+**Potatoes**
 kcal/serving- 223	            
 servings- 8	         
 lbs co2e- 21.5	        
 lbs co2e/serving- 2.7
     
- <img src="http://farm3.static.flickr.com/2700/4190801806_de5d016a4e_m.jpg" width="240" height="159" alt="blog- veggies" /></a> 
+![blog_veggies](http://farm3.static.flickr.com/2700/4190801806_de5d016a4e_m.jpg) 
 
-<a href="http://www.eatingwell.com/recipes/cheddar_vegetable_tart.html">Roasted Fall Vegetables in Cheddar Crust</a> and <a href="http://www.eatingwell.com/recipes/green_beans_mushrooms.html">Green and Yellow Beans with Wild Mushrooms</a>: 
+[Roasted Fall Vegetables in Cheddar Crust](http://www.eatingwell.com/recipes/cheddar_vegetable_tart.html) and [Green and Yellow Beans with Wild Mushrooms](http://www.eatingwell.com/recipes/green_beans_mushrooms.html): 
        
-<strong>Total- 38 </strong> lbs CO2e, or <strong>4.6</strong> lbs. per serving.	
+**Total- 38** lbs CO2e, or **4.6** lbs. per serving.	
 	 
-<strong>Vegetable Pie</strong>	         
+**Vegetable Pie**	         
 kcal/serving- 378	                 
 servings- 8	         
 lbs co2e- 29.8	  
 lbs/serving- 3.7
 
-<strong>Beans/Mushrooms</strong>	  
+**Beans/Mushrooms**	  
 kcal/serving- 75	                
 servings- 10	         
 lbs co2e- 8.3	  
@@ -51,4 +50,4 @@ Choose the veggie-based dishes and you'll have over 30% reduction in CO2e.  This
 
 If you want to do some more estimating and playing around with food emissions, check out the Food section of our <a href="http://brighterplanet.com/users/me/footprint/components/food">Footprint Calculator</a>. 
 
--<a href="http://brighterplanet.com/users/Carolyn">Carolyn</a>
+-[Carolyn](http://brighterplanet.com/users/Carolyn)
