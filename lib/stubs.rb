@@ -2,6 +2,9 @@ module Link
   def link_to(text, url)
     "<a href=\"#{url}\">#{text}</a>"
   end
+  def link_to_homesite(text, path = '')
+    link_to text, 'http://brighterplanet.com/' + path
+  end
 end
 
 class Header
