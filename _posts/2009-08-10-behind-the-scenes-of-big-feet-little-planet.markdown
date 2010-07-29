@@ -29,6 +29,7 @@ If you are curious to look deeper into the process, here are the production file
 	<li><a title="foot2.blend" href="http://blog.brighterplanet.com/wp-content/themes/bp/assets/foot2.blend " target="_blank">foot2.blend</a></li>
 	<li><a title="foot3.blend" href="http://blog.brighterplanet.com/wp-content/themes/bp/assets/foot3.blend " target="_blank">foot3.blend</a></li>
 </ul>
+
 If you've never used Blender feel free to <a title="download" href="http://www.blender.org/download/get-blender/" target="_blank">download</a> it.  You'll need it in order to explore the files above.
 
 Once you've got Blender installed, just double click on a file to open it.  Then tap your left or right arrow keys to step through the animation frame by frame.
