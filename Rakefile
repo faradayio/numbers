@@ -22,7 +22,7 @@ namespace :layout do
       f.puts Net::HTTP.get(URI.parse('http://github.com/brighterplanet/brighter_planet_layout/raw/master/public/stylesheets/brighter_planet.css'))
     end
     
-    %w(bg cards emitters gears logo prism).each do |image|
+    %w(bg cards emitters gears logo prism radiant_earth-small).each do |image|
       File.open File.join(File.dirname(__FILE__), 'stylesheets', 'images', "#{image}.png"), 'wb' do |f|
         f.puts Net::HTTP.get(URI.parse("http://github.com/brighterplanet/brighter_planet_layout/raw/master/public/stylesheets/images/#{image}.png"))
       end
