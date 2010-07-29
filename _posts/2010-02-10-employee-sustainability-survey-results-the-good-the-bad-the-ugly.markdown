@@ -6,7 +6,7 @@ title: "Employee sustainability survey results:  the good, the bad, the ugly"
 categories: science
 wordpress_url: http://blog.brighterplanet.com/?p=3808
 ---
-<img SRC="http://farm3.static.flickr.com/2682/4343440271_4a509b24bc.jpg" ALT="employee" />
+<img SRC="http://farm3.static.flickr.com/2682/4343440271_4a509b24bc.jpg" ALT="employee" height="237" width="500" />
 
 We've finally wrapped up the crunching, sifting, charting, and interpreting of the 30,000+ datapoints collected in our recent online survey about the employee engagement practices of US employers.  Thanks to all of you who took the time to respond to the <a href="http://attachments.brighterplanet.com/press_items/local_copies/57/original/ee_survey_questions.pdf?1265742090">survey questions</a>.  Today we released the report that details our findings.
 
