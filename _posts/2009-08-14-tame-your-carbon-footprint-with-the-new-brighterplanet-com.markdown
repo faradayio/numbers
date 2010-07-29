@@ -24,8 +24,9 @@ Feedback from early-bird users was immensely helpful in refining the app through
 	<li><em>More third-party integration.</em> We're all set to start doing data handshakes with some of the big get-things-done services (spots where you pay your bills, do some shopping, make travel plans, etc).</li>
 	<li><em>Historical data / visualizations.</em> Set conservation goals and track your progress over time.</li>
 </ul>
+
 What's missing from this list?  What new feature (or change to an existing one) would make you the most excited?
 
-Leave your thoughts here, or on <a href="http://getsatisfaction.com/brighterplanet">our GetSatisfaction.com support site</a>. Talk to us on <a href="http://twitter.com/brighterplanet">Twitter</a>, or <a href="http://facebook.com/brighterplanet">Facebook</a>. Wait... What?! You're not signed up yet?!! Good grief, there's no time for delay — <a href="https://brighterplanet.com/sign-up">get thee to the registration page</a>!!
+Leave your thoughts here, or on <a href="http://getsatisfaction.com/brighterplanet">our GetSatisfaction.com support site</a>. Talk to us on <a href="http://twitter.com/brighterplanet">Twitter</a>, or <a href="http://facebook.com/brighterplanet">Facebook</a>. Wait... What?! You're not signed up yet?!! Good grief, there's no time for delay — [get thee to the registration page](https://brighterplanet.com/sign-up)!!
 
 <p>- <a href="http://brighterplanet.com/users/iwilker">Ian</a> and <a href="http://brighterplanet.com/users/adam">Adam</a> @ Brighter Planet</p>
