@@ -6,7 +6,9 @@ title: Brighter Planet wins 2010 Social Innovation Award!
 categories: company
 wordpress_url: http://blog.brighterplanet.com/?p=3997
 ---
+<p style="text-align: center;">
 <img class="alignnone" title="2010 Social Innovation Award" src="http://farm5.static.flickr.com/4039/4461874747_f988073cee.jpg" alt="" width="500" height="248" />
+</p>
 
 At a  dinner in NYC last night, I learned that we won the 2010 Financial  Times &amp; Justmeans <a href="http://www.socialinnovationawards.com/">Social Innovation  Award</a> for most strategic philanthropy program!
 
