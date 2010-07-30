@@ -10,6 +10,9 @@ We've added five new farmer-owned distributed wind turbines to our project portf
 
 <p style="text-align: center;">
 ![Red Marker](http://maps.google.com/mapfiles/ms/micons/red.png)New turbines
+</p>
+
+<p style="text-align: center;">
 ![Green Marker](http://maps.google.com/mapfiles/ms/micons/green.png) Original turbines
 </p>
 
