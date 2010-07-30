@@ -9,7 +9,7 @@ wordpress_url: http://blog.brighterplanet.com/?p=4455
 Last week, our friends at <a href="http://www.casefoundation.org/about/our-story">The Case Foundation</a> sat down with Brighter Planet's Robbie Adler to talk about the release of our new crowdsourcing technology platform <a href="http://wowcrowd.com/">Wowcrowd</a>:
 
 
->**Josh:** Thanks again for speaking to us today Robbie. Just to clarify for all of those who might be a bit confused, what exactly<em>is</em>Wowcrowd?
+>**Josh:** Thanks again for speaking to us today Robbie. Just to clarify for all of those who might be a bit confused, what exactly *is* Wowcrowd?
 >
 >
 >**Robbie:** Wowcrowd is a social web application that gives organizations the tools to crowdsource the allocation of funds, which helps them engage their stakeholders and surface bright ideas.
