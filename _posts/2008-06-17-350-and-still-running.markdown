@@ -14,7 +14,9 @@ To understand the real impact of 122,500 pounds offset, we've done some math for
 
 Due to the success of this campaign, and our commitment to helping spread the word about <a href="http://www.350.org">350.org</a> we're going to keep the 350 Challenge going for the time being for any new people that want to post our badge. And we'll still be donating 350 pounds in their name to <a href="http://brighterplanet.com/impact">our renewable energy projects</a>.
 
+<p style="text-align: center;">
 <a href="http://350.brighterplanet.com/"><img src="http://350.brighterplanet.com/images/badges/BP_badge_180x201.jpg" border="0" alt="Brighter Planet's 350 Challenge" /></a>
+</p>
 
 Many, many thanks to everyone who participated!
 
