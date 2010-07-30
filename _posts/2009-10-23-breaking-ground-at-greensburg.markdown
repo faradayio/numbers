@@ -6,7 +6,9 @@ title: Breaking ground in Greensburg
 categories: company
 wordpress_url: http://blog.brighterplanet.com/?p=2916
 ---
+<p style="text-align: center;">
 <a href="http://www.flickr.com/photos/brighterplanet/4035652754/"><img src="http://farm4.static.flickr.com/3497/4035652754_3b87df48c1.jpg" alt="Greensburg Satellite Photo" width="500" height="200" /></a>
+</p>
 
 Today is a big day in Greensburg, Kansas. This morning is the official groundbreaking on the <a href="http://brighterplanet.com/projects/19-greensburg-wind-farm">Greensburg Wind Farm</a> by <em>Native</em>Energy, the most recent offset project funded by Brighter Planet members. The project has been years in the planning, but with construction beginning today the ten 1.25 Mw turbines are set to be operational by this coming spring. They’ll generate enough clean electricity to power the 4,000 homes in the community several times over, and prevent the release of more than a billion pounds of CO2 over twenty years.
 
