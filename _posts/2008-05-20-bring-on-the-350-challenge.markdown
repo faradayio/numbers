@@ -12,4 +12,6 @@ Our goal is to reach 350 bloggers, which will offset <em>122,500 pounds</em> of 
 
 Just click on the badge to get your own. And if you've already done it? Thank you. 
 
+<p style="text-align: center;">
 <a href="http://350.brighterplanet.com/"><img src="http://350.brighterplanet.com/images/badges/BP_badge_180x201.jpg" border="0" alt="Brighter Planet's 350 Challenge" /></a>
+</p>
