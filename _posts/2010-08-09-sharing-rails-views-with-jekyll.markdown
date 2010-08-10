@@ -51,7 +51,7 @@ class Layout
   def javascript_include_tag(*args); end
   
   def render(options = {})
-    "{% include #{options[:partial][/[a-z_]*$/]}.html %}"
+    "{٪ include #{options[:partial][/[a-z_]*$/]}.html ٪}"
   end
   
   def get_binding
