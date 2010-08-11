@@ -5,7 +5,7 @@ layout: post
 categories: [middleware]
 ---
 
-You can queue up requests to our [emission estimate web service](http://carbon.brighterplanet.com) using [Amazon SQS](http://aws.amazon.com/sqs):
+You can get emission estimates by queueing up messages on [Amazon SQS](http://aws.amazon.com/sqs):
 
 {% highlight console %}
 $ curl -v https://queue.amazonaws.com/121562143717/cm1_production_incoming -X POST --data "Action=SendMessage&Version=2009-02-01&MessageBody=emitter%3Dautomobile%26make%3DNissan%26guid%3DMyFavoriteCar%26key%3D86f7e437faa5a7fce15d1ddcb9eaeaea377667b8"
@@ -52,28 +52,39 @@ $ curl -v https://queue.amazonaws.com/121562143717/cm1_production_incoming -X PO
 <SendMessageResponse xmlns="http://queue.amazonaws.com/doc/2009-02-01/"><SendMessageResult><MD5OfMessageBody>fb29551a9e1c36dcf1b8ba624695210a</MD5OfMessageBody><MessageId>5d48a63b-5416-4d35-8bc5-65ace74f4d42</MessageId></SendMessageResult><ResponseMetadata><RequestId>a3e0d71a-9e47-493b-a92c-29b37393e899</RequestId></ResponseMetadata></SendMessageResponse>
 {% endhighlight %}
 
+You need to use this SQS queue: (but you don't need an SQS account, it's just a standard HTTP POST)
+
+    https://queue.amazonaws.com/121562143717/cm1_production_incoming
+
 As you can see, the MessageBody is the url-encoded form of a querystring:
 
     emitter=automobile&make=Nissan&guid=MyFavoriteCar&key=86f7e437faa5a7fce15d1ddcb9eaeaea377667b8
 
-Since we passed a key and a guid, the result will be found at
+### Wait a minute, isn't that an empty response body?
 
-http://storage.carbon.brighterplanet.com/745c4bcda8234186178e8430ae55f38913a5f042
+Correct. This is an asynchronous way of doing things. The [result in JSON format](http://storage.carbon.brighterplanet.com/745c4bcda8234186178e8430ae55f38913a5f042) will appear as soon as it is calculated (usually in a few seconds).
 
-It will be JSON encoded.
+If you need an answer in realtime, then you should skip SQS and hit [mostly the same querystring](http://carbon.brighterplanet.com/automobiles.json?make=Nissan&guid=MyFavoriteCar&key=86f7e437faa5a7fce15d1ddcb9eaeaea377667b8).
 
 ### Why use SQS?
 
 Depending on your environment, you may already have an excellent SQS client library. You'll have the high availability of Amazon web services combined with competitive Brighter Planet pricing for asynchronous (rather than realtime) emission estimates.
 
-Depending on your application, set-it-and-forget-it may be a natural fit. We'll store the result for you in JSON format at an effectively randomized URL, which is perfect for AJAX calls to display results in a browser. In general, if you can queue up the emission estimate now and count on a JSON-enabled client to pull the results later, this is a good way to go.
+Depending on your application, set-it-and-forget-it may be a natural fit. We'll store the result for you in JSON format at an effectively randomized URL, which is perfect for AJAX calls that display results in a browser. In general, if you can queue up the emission estimate now and count on a JSON-enabled client to pull the results later, this is a good way to go.
 
-### How did you calculate the storage URL?
+### How did you calculate the result URL?
 
+Just SHA1 the string <tt>key</tt> plus <tt>guid</tt>. No salt or separators or anything, just <tt>86f7e437faa5a7fce15d1ddcb9eaeaea377667b8MyFavoriteCar</tt> in this case.
+
+{% highlight console %}
+ruby-1.8.7-head > require 'digest/sha1'
+ => true 
 ruby-1.8.7-head > Digest::SHA1.hexdigest('86f7e437faa5a7fce15d1ddcb9eaeaea377667b8MyFavoriteCar')
  => "745c4bcda8234186178e8430ae55f38913a5f042"
+{% endhighlight %}
 
 ### Other notes
 
-* We host the storage on Amazon S3, so you'll get high-availability there too.
-* If you're using ruby, you can use our [carbon gem](http://rubygems.org/gems/carbon) with the <tt>:guid</tt> option.
+* We host the storage on [Amazon S3](http://aws.amazon.com/s3), so you'll benefit from high-availability there too.
+* If you're using Ruby, you can use our [carbon gem](http://rubygems.org/gems/carbon) with the <tt>:guid</tt> option.
+* If you would rather have us POST the result back to your waiting servers, you can pass <tt>&callback=http%3A%2F%2Fmyserver.example.com%2Fcallback-receiver.php</tt>.
