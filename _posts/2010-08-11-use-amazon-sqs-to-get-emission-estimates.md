@@ -12,26 +12,7 @@ $ curl -v https://queue.amazonaws.com/121562143717/cm1_production_incoming -X PO
 * About to connect() to queue.amazonaws.com port 443 (#0)
 *   Trying 72.21.211.87... connected
 * Connected to queue.amazonaws.com (72.21.211.87) port 443 (#0)
-* successfully set certificate verify locations:
-*   CAfile: /opt/local/share/curl/curl-ca-bundle.crt
-  CApath: none
-* SSLv3, TLS handshake, Client hello (1):
-* SSLv3, TLS handshake, Server hello (2):
-* SSLv3, TLS handshake, CERT (11):
-* SSLv3, TLS handshake, Server finished (14):
-* SSLv3, TLS handshake, Client key exchange (16):
-* SSLv3, TLS change cipher, Client hello (1):
-* SSLv3, TLS handshake, Finished (20):
-* SSLv3, TLS change cipher, Client hello (1):
-* SSLv3, TLS handshake, Finished (20):
-* SSL connection using RC4-MD5
-* Server certificate:
-* 	 subject: C=US; ST=Washington; L=Seattle; O=Amazon.com Inc.; CN=queue.amazonaws.com
-* 	 start date: 2010-04-23 00:00:00 GMT
-* 	 expire date: 2011-04-23 23:59:59 GMT
-* 	 subjectAltName: queue.amazonaws.com matched
-* 	 issuer: C=US; O=VeriSign, Inc.; OU=VeriSign Trust Network; OU=Terms of use at https://www.verisign.com/rpa (c)09; CN=VeriSign Class 3 Secure Server CA - G2
-* 	 SSL certificate verify ok.
+  # eliding some standard server messages for brevity . . .
 > POST /121562143717/cm1_production_incoming HTTP/1.1
 > User-Agent: curl/7.20.0 (i386-apple-darwin9.8.0) libcurl/7.20.0 OpenSSL/0.9.8m zlib/1.2.3 libidn/1.16
 > Host: queue.amazonaws.com
