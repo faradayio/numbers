@@ -5,7 +5,7 @@ layout: post
 categories: company
 ---
 
-Quick version: [Wowcrowd](http://wowcrowd.com), our web application for crowdsourced funding allocation, has been acquired by our friends at [GOOD](http://good.is).
+ Quick version: [Wowcrowd](http://wowcrowd.com), our web application for crowdsourced funding allocation, has been acquired by our friends at [GOOD](http://good.is).
 
 Now here's the background.
 
