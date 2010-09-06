@@ -1,8 +1,0 @@
----
-title: Staging test
-author: Andy
-layout: post
-categories: meta
----
-
-This is only a test 2.
