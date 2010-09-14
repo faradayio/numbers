@@ -2,3 +2,4 @@ pygments: true
 auto: true
 permalink: /:year/:month/:day/:title
 cats: [company, meta, middleware, rails, science, technology]
+future: false
