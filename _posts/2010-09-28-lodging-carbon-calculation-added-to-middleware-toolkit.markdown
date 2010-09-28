@@ -11,4 +11,6 @@ The lodging module lets software developers calculate emissions from hotel energ
 
 The calculations are based on the EIA's [Commercial Buildings Energy Consumption Survey](http://www.eia.doe.gov/emeu/cbecs/) and the EPA's [eGRID](http://www.epa.gov/egrid/) dataset, both of which are imported automatically to our system on a daily basis to ensure currency.
 
+Possible applications of the lodging emitter include a company calculating scope 3 emissions from hotel stays, a hotel booking website calculating your stay's emissions, a travel agent adding offsets for lodging emissions to a vacation package... but don't let us limit your thinking!
+
 We're hard at work cranking out more emitters, so stay tuned for updates.
