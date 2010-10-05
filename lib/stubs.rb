@@ -35,7 +35,7 @@ end
 
 class BrighterPlanetLayout
   def self.application; self end
-  def self.google_analytics_ua_number; 'UA-1667526-18' end
+  def self.google_analytics_ua_number; 'UA-1667526-19' end
 end
 
 class GoogleAnalytics
