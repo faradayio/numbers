@@ -207,6 +207,15 @@ ol.posts li>object {
   margin: 10px 0 10px 150px;
 }
 
+ol.posts li>.wide {
+  margin-right: -80px;
+  margin-left: -15px;
+}
+
+ol.posts li>.wide object {
+  margin-top: 15px;
+}
+
 #disqus_thread h3 {
   margin-left: 0;
 }
