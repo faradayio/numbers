@@ -1,5 +1,5 @@
 ---
-title: New offset project: redwood forest management
+title: New redwood forest offset project
 author: Matt
 layout: post
 categories: [company]
