@@ -5,7 +5,7 @@ layout: post
 categories: technology, middleware
 ---
 
-You can talk to Carbon Middleware with XML: (or JSON, or URL encoded form-style)
+You can talk to Carbon Middleware in XML:
 
 {% highlight console %}
 $ curl -v http://carbon.brighterplanet.com/automobiles.xml \
@@ -30,4 +30,4 @@ You can receive responses in XML:
 </hash>
 {% endhighlight %}
 
-Just trying to make it easy!
+We're just trying to make it easy to connect with us, whether your application speaks XML, JSON, or even <tt>x-www-form-urlencoded</tt>.
