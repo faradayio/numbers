@@ -1,11 +1,11 @@
 ---
-title: We are an XML web service
+title: We are an XML web service, too
 author: Seamus
 layout: post
 categories: technology, middleware
 ---
 
-You can talk to Carbon Middleware with XML:
+You can talk to Carbon Middleware with XML: (or JSON, or URL encoded form-style)
 
 {% highlight console %}
 $ curl -v http://carbon.brighterplanet.com/automobiles.xml \
@@ -14,7 +14,7 @@ $ curl -v http://carbon.brighterplanet.com/automobiles.xml \
        --data "<make>Nissan</make>"
 {% endhighlight %}
 
-You will receive a response in XML:
+You can receive responses in XML:
 
 {% highlight xml %}
 <?xml version="1.0" encoding="UTF-8"?>
