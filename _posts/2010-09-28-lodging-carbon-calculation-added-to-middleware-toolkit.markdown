@@ -2,7 +2,7 @@
 title: Calculating hotel emissions
 author: Ian
 layout: post
-categories: [company, middleware, science, technology]
+categories: [company, science, technology]
 ---
 
 Following up on our [recent release](http://numbers.brighterplanet.com/2010/09/22/event-carbon-calculation-added-to-middleware-toolkit/) of an event module for our carbon middleware service, we're excited to announce the release of a [lodging module](http://carbon.brighterplanet.com/lodgings/options).

@@ -2,7 +2,7 @@
 title: Event carbon calculation added to middleware toolkit
 author: Matt
 layout: post
-categories: [company, middleware, science, technology]
+categories: [company, science, technology]
 ---
 
 For years we've been doing custom carbon emissions inventories for meetings and events ranging from conventions and conferences to music festivals and sporting events.  Now we've released a new [meetings module](http://carbon.brighterplanet.com/meetings/) of our carbon middleware service that lets software developers build event carbon calculation into their own applications.

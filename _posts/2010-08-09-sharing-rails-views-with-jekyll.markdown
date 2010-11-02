@@ -2,7 +2,7 @@
 title: Sharing Rails views with Jekyll
 author: Andy
 layout: post
-categories: [rails, jekyll]
+categories: technology
 ---
 
 In my last post I discussed how we [share a single layout between Rails apps](http://numbers.brighterplanet.com/2010/07/26/sharing-views-across-rails-3-apps). This has been a lifesaver for us as we manage a half-dozen production apps. But a couple of our sites---our [developer hub](http://brighterplanet.github.com) and this here blog---don't use Rails. They're both [Jekyll](http://github.com/mojombo/jekyll) sites running on [GitHub Pages](http://pages.github.com).

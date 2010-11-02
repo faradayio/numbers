@@ -2,7 +2,7 @@
 title: Use Amazon SQS to get emission estimates
 author: Seamus
 layout: post
-categories: [middleware]
+categories: technology
 ---
 
 You can get emission estimates by queueing up messages on [Amazon SQS](http://aws.amazon.com/sqs):

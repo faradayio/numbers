@@ -2,7 +2,7 @@
 title: Our carbon gem is now also a command-line carbon calculator
 author: Andy
 layout: post
-categories: middleware science
+categories: [technology, science]
 ---
 
 Version 0.3.0 of the [`carbon` gem](http://github.com/brighterplanet/carbon)---our Ruby wrapper for the [emission estimates service](http://carbon.brighterplanet.com) API---includes "command-line access" to the web service:

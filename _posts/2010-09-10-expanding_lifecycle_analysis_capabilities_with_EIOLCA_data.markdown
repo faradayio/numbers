@@ -2,7 +2,7 @@
 title: Expanding lifecycle analysis capabilities with EIO-LCA data
 author: Matt
 layout: post
-categories: [company, middleware, science]
+categories: [company, technology, science]
 ---
 
 We're pleased to announce that we've just added the [Economic Input-Output Life Cycle Assessment (EIO-LCA)](http://www.eiolca.net/) model to our carbon data resources. Licensing this authoritative model further expands our ability to perform lifecycle and supply chain carbon emissions analysis.

@@ -2,7 +2,7 @@
 title: We are an XML web service, too
 author: Seamus
 layout: post
-categories: technology, middleware
+categories: technology
 ---
 
 You can talk to Carbon Middleware in XML:

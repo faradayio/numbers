@@ -2,7 +2,7 @@
 title: Back From JRubyConf
 author: Derek
 layout: post
-categories: middleware science
+categories: [technology, science]
 ---
 
 I just got back from [JRubyConf](http://jrubyconf.com) in Columbus, Ohio.  I had a great time meeting other Rubyists and learned a great deal about how Ruby is being integrated into enterprise environments via JRuby.  It's really exciting to see "the big guys" embracing a language and ecosystem that we at Brighter Planet enjoy using on a daily basis.

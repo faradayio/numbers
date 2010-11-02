@@ -2,7 +2,7 @@
 title: Bundler to the Max
 author: Derek
 layout: post
-categories: [ruby, bundler, gems]
+categories: technology
 ---
 
 I have been spending the past few weeks creating and refactoring our [carbon model gems](http://carbon.brighterplanet.com/science), with the goal of making them easy to enhance, fix, and test by climate scientists and Ruby developers. I wanted to make contributing a simple process and [bundler](http://rubybundler.com) fit the bill quite well.
