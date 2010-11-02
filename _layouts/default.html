@@ -21,7 +21,9 @@
     <h3>What are we talking about?</h3>
     <ul class="tags">
     {% for category in site.cats %}
-      <li><a href="/{{ category }}.html">{{ category | capitalize }}</a></li>
+      {% if category != 'homepage' %}
+        <li><a href="/{{ category }}.html">{{ category | capitalize }}</a></li>
+      {% endif %}
     {% endfor %}
     </ul>
     <p class="feed"><a href="http://feeds.feedburner.com/brighterplanet">Feed</a></p>
