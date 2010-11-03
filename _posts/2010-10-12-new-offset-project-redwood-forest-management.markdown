@@ -2,7 +2,7 @@
 title: New redwood forest offset project
 author: Matt
 layout: post
-categories: [company]
+categories: [company, homepage]
 ---
 
 We've just added a new project to our carbon offset portfolio, the [Big River and Salmon Creek forests](http://brighterplanet.com/projects/20-big_salmon_forest/).  Comprising a combined 16,000 acres of redwood and Douglas fir forest in Northern California's Mendocino County, these two tracts of land were recently purchased from a timber company by a consortium of conservation groups and converted to sustainable management.  They represent a hopeful example of nonprofit organizations, state agencies, and private interests coming together to find creative land management solutions that maximize carbon sequestration and forest biodiversity while preserving sustainable forestry jobs and recreation opportunities.  We're pleased to play a role.

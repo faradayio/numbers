@@ -2,7 +2,7 @@
 title: 10/10/10
 author: Andy
 layout: post
-categories: company
+categories: [company, homepage]
 ---
 
 Just got back from my [10/10/10 work event](http://www.350.org/node/18302): canvassing North Cambridge with free CFLs to give residents in exchange for their incandescents.
