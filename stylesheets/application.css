@@ -198,6 +198,10 @@ ol.posts li>ul {
   padding: 0 0 0 1em;
 }
 
+ol.posts li>ul>li>p {
+  margin: 0;
+}
+
 ol.posts li p img {
   max-width: 370px;
 }
@@ -214,6 +218,20 @@ ol.posts li>.wide {
 
 ol.posts li>.wide object {
   margin-top: 15px;
+}
+
+ol.posts li blockquote {
+  -moz-box-shadow:0 5px 5px #EEEEEE inset;
+  background:none repeat scroll 0 0 white;
+  border-top:1px solid #DDDDDD;
+  display:block;
+  line-height:1.4;
+  margin:10px -80px 10px -15px;
+  overflow:auto;
+  padding:10px;
+  font-size: 16px;
+  font-style: italic;
+  color: #444;
 }
 
 #disqus_thread h3 {
