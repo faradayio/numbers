@@ -1,5 +1,5 @@
 ---
-title: Tim Juliani Joins Our Advisory Board
+title: Tim Juliani joins our advisory board
 author: Robbie
 layout: post
 categories: company
