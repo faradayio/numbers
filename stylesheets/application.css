@@ -192,35 +192,35 @@ p.tag a:hover {
   color: blue;
 }
 
-ol.posts li>ul {
+ol.posts li>ul, .post>ul {
   list-style: square;
   margin: 0 0 0 150px;
   padding: 0 0 0 1em;
 }
 
-ol.posts li>ul>li>p {
+ol.posts li>ul>li>p, .post>ul>li>p {
   margin: 0;
 }
 
-ol.posts li p img {
+ol.posts li p img, .post p img {
   max-width: 370px;
 }
 
-ol.posts li>object {
+ol.posts li>object, .post>object {
   max-width: 370px;
   margin: 10px 0 10px 150px;
 }
 
-ol.posts li>.wide {
+ol.posts li>.wide, .post>.wide {
   margin-right: -80px;
   margin-left: -15px;
 }
 
-ol.posts li>.wide object {
+ol.posts li>.wide object, .post>.wide object {
   margin-top: 15px;
 }
 
-ol.posts li blockquote {
+ol.posts li blockquote, .post blockquote {
   -moz-box-shadow:0 5px 5px #EEEEEE inset;
   background:none repeat scroll 0 0 white;
   border-top:1px solid #DDDDDD;
