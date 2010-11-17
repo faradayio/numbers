@@ -1,5 +1,5 @@
 ---
-title: Our latest tool: rapid lifecycle carbon assessment
+title: Our latest tool, rapid lifecycle carbon assessment
 author: Matt
 layout: post
 categories: [company, science, technology, homepage]
