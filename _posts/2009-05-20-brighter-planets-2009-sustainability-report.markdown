@@ -15,4 +15,4 @@ wordpress_url: http://blog.brighterplanet.com/?p=1348
 <p style="text-align: left;">We welcome your comments and suggestions.</p>
 
 <p style="text-align: left;">Sincerely,
-<a href="http://brighterplanet.com/users/19/public">Patti Prairie, CEO</a>
+<a href="http://brighterplanet.com/users/19/public">Patti Prairie, CEO</a></p>
