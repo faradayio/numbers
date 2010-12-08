@@ -7,7 +7,7 @@ categories: company
 
 We at Brighter Planet are extremely excited about our Carbon Middleware platform that we [launched](http://numbers.brighterplanet.com/2010/08/13/announcing-carbon-middleware/) this year. We believe the platform is well positioned to change the way carbon information is gathered, viewed, and assessed. The challenge for any small company is getting eyeballs so others can see what you've been up to.
 
-Tech Crunch's [2010 Crunchies Award](http://crunchies2010.techcrunch.com/) is an opportunity to help us do just that. So if you like what we've been working on please nominate us for best [CleanTech start-up of the year] http://crunchies2010.techcrunch.com/nominate/?MzE6QnJpZ2h0ZXIgUGxhbmV0.
+Tech Crunch's [2010 Crunchies Award](http://crunchies2010.techcrunch.com/) is an opportunity to help us do just that. So if you like what we've been working on please nominate us for best [CleanTech start-up of the year](http://crunchies2010.techcrunch.com/nominate/?MzE6QnJpZ2h0ZXIgUGxhbmV0).
 
 If you're somewhat undecided, here are a few ways we're changing the game:
 
