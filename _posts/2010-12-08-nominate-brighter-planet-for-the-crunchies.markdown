@@ -5,16 +5,17 @@ layout: post
 categories: company
 ---
 
-We at Brighter Planet are extremely excited about our Carbon Middleware platform we [launched](http://numbers.brighterplanet.com/2010/08/13/announcing-carbon-middleware/) this year.  Carbon Middleware has continued to add climate intelligence to the constant stream of footprint and credit card data we process.  It's such a game-changing service that we think it's worthy of winning Tech Crunch's [2010 Crunchies Award](http://crunchies2010.techcrunch.com/).
+We at Brighter Planet are extremely excited about our Carbon Middleware platform that we [launched](http://numbers.brighterplanet.com/2010/08/13/announcing-carbon-middleware/) this year. We believe the platform is well positioned to change the way carbon information is gathered, viewed, and assessed. The challenge for any small company is getting eyeballs so others can see what you've been up to.
 
-<a href="http://crunchies2010.techcrunch.com/nominate/?MzE6QnJpZ2h0ZXIgUGxhbmV0"><img src="http://crunchies2010.techcrunch.com/wp-content/themes/crunchies/images/badges/31.png" align="right" /></a>
+Tech Crunch's [2010 Crunchies Award](http://crunchies2010.techcrunch.com/) is an opportunity to help us do just that. So if you like what we've been working on please nominate us for best [CleanTech start-up of the year] http://crunchies2010.techcrunch.com/nominate/?MzE6QnJpZ2h0ZXIgUGxhbmV0.
 
-The science behind our platform is unmatched.  The scientific models we use to calculate carbon emissions are [open source](http://carbon.brighterplanet.com/science) and include [methodology statements](http://carbon.brighterplanet.com/flights?origin_airport[iata_code]=JFK&destination_airport[iata_code]=SFO).  This means our platform offers a level of transparency and trust that no one else in the industry comes close to.  Furthermore, these models have been approved by third parties, such as [DMV](http://ineedalinktodmvhere.com).
+If you're somewhat undecided, here are a few ways we're changing the game:
 
-Many carbon footprint analysis systems require a minimum set of data to work.  Carbon Middleware is flexible enough to work with any data available.  The more data available, the more precise our calculations are.  This means we can integrate with another system much more easily than others.
+1. Carbon information on demand and integrated. What if every time you wanted to know the caloric impact of your favorite snack you had to go to some third party to tell you. Chance are you probably wouldn't spend the time and you'd eat away calories be damned. At Brighter Planet, we think the problem with carbon information is it's too hard to find out about impact. We designed Carbon Middleware, so that you could learn about the carbon impact of your decisions contextually, whether that be when you're booking a flight on [kayak](http://www.careplane.org/), sending a package with [FedEx](yaktrak.org), or using some other online tool.
+2. No more black box. If you enter information into ten carbon calculators chance are you'll get ten different scores and have no idea why. We think this causes a trust problem. To combat it, Brighter Planet is embracing radical transparency. To begin our carbon models are open source. Then every calculation we provide, includes methodology documentation so you can see how we derived our estimate. And lastly, our models are being third party verified so you can be assured that we're not just making this up.
+3. Less than a penny. Carbon is so ubiquitous that if you have to pay a fortune to account for it, you'll probably break the bank long before you reduce your impact. With Carbon Middleware you pay a fraction of a cent per calculation. You don't have some large upfront fee or monthly hosting cost, you just pay for what you use.
 
-Our platform is "in the cloud," meaning that our customers don't have to worry about on-site installations and we can scale to meet growing demand.
-
-From the beginning, our company's mission was to make managing your carbon footprint simple, whether you're an individual or an organization.  The more we know about and can mitigate our environmental impact, the faster we can work together to solve the climate crisis!
+While there are a lot of hurdles to confronting climate change, information accessability doesn't need to be one of them.
 
 So what are you waiting for? [Nominate us now](http://crunchies2010.techcrunch.com/nominate/?MzE6QnJpZ2h0ZXIgUGxhbmV0) and tell your friends!
+
