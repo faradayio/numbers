@@ -1,0 +1,28 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Strength in Numbers</title>
+ <link href="http://numbers.brighterplanet.com/atom.xml" rel="self"/>
+ <link href="http://numbers.brighterplanet.com/"/>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>http://numbers.brighterplanet.com</id>
+ <author>
+   <name>Brighter Planet</name>
+   <email>staff@brighterplanet.com</email>
+ </author>
+
+ <entry>
+   <title>{{ site.posts.first.title }}</title>
+   <link href="http://numbers.brighterplanet.com{{ site.posts.first.url }}"/>
+   <updated>{{ site.posts.first.date | date_to_xmlschema }}</updated>
+   <id>http://numbers.brighterplanet.com{{ site.posts.first.id }}</id>
+   <author>
+     <name>{{ site.posts.first.author }}</name>
+   </author>
+   <content type="html">{{ site.posts.first.content | xml_escape }}</content>
+ </entry>
+ 
+</feed>
