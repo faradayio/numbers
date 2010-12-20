@@ -9,9 +9,9 @@ Like many Ruby shops, we took for granted [ParseTree](http://parsetree.rubyforge
 
 {% highlight ruby %}
 ## DOESN'T WORK IN RUBY 1.9
-# gem 'ParseTree', :require => false
-# require 'parse_tree'
-# require 'parse_tree_extensions'
+gem 'ParseTree', :require => false
+require 'parse_tree'
+require 'parse_tree_extensions'
 
 ## WORKS IN RUBY 1.9
 gem 'sourcify'
@@ -22,14 +22,12 @@ gem 'file-tail'
 In particular, we replaced ParseTree's <tt>Proc#to_ruby</tt> with sourcify's <tt>Proc#to_source</tt>.
 
 {% highlight ruby %}
-def show_quorum_source(carbon_calculation_proc)
-  ## The old ParseTree way
-  # carbon_calculation_proc.to_ruby
-  ## The sourcify way - but raised NoMatchingProcError or MultipleMatchingProcsPerLineError
-  # carbon_calculation_proc.to_source
-  ## The sourcify way - giving :attached_to a symbol to help it find the correct Proc
-  carbon_calculation_proc.to_source :attached_to => :quorum
-end
+## The old ParseTree way
+proc.to_ruby
+## The sourcify way - but raised NoMatchingProcError or MultipleMatchingProcsPerLineError
+proc.to_source
+## The sourcify way - giving :attached_to a symbol to help it find the correct Proc
+proc.to_source :attached_to => :quorum
 {% endhighlight %}
 
 We needed to pass the <tt>:attached_to</tt> option because our [carbon calculation code](https://github.com/brighterplanet/flight/blob/master/lib/flight/carbon_model.rb) has multiply nested procs and we would get <tt>NoMatchingProcError</tt> or <tt>MultipleMatchingProcsPerLineError</tt>:
