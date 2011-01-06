@@ -6,7 +6,10 @@ title: "Announcing #earthtweet"
 categories: technology
 wordpress_url: http://blog.brighterplanet.com/?p=1077
 ---
-<img src="http://static.brighterplanet.com/creative/campaigns/earthtweet/site/images/badge.png" align="left" style="padding: 10px;"> We just launched <a href="http://earthtweet.com">#earthtweet</a>, a campaign to raise awareness of the fight against climate change in the days leading up to Earth Day (April 22) -- and beyond.
+
+<img src="http://static.brighterplanet.com/creative/campaigns/earthtweet/site/images/badge.png" align="left" style="padding: 10px;">
+
+We just launched <a href="http://earthtweet.com">#earthtweet</a>, a campaign to raise awareness of the fight against climate change in the days leading up to Earth Day (April 22) -- and beyond.
 
 Here's the idea: #earthtweet uses Twitter -- the booming social network of the moment -- to bring together tips, news, information about events, and anything else that's relevant to solving our climate problem. (Yeah, most of us here at Brighter Planet have caught the Twitter bug -- it's the most useful, vibrant, and fun social network we've seen to date.)
 

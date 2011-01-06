@@ -8,7 +8,9 @@ wordpress_url: http://blog.brighterplanet.com/?p=1833
 ---
 There has been some interest in how the video Big Feet, Little Planet was made.  Here is a breakdown of the workflow.
 
-<object width="400" height="300"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=5938106&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=5938106&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="400" height="300"></embed></object><p><a href="http://vimeo.com/5938106">Big Feet, Little Planet</a> from <a href="http://vimeo.com/brighterplanet">Brighter Planet</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+<object width="400" height="300"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=5938106&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=5938106&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="400" height="300"></embed></object>
+
+[Big Feet, Little Planet](http://vimeo.com/5938106) from [Brighter Planet](http://vimeo.com/brighterplanet) on [Vimeo](http://vimeo.com).
 
 I was trying to visualize the idea of people stepping onto a scale and finding out the weight of their carbon footprint, so I spent a couple of hours designing a sheet of glass that I could film from beneath which would safely support a full grown human standing on top.
 
