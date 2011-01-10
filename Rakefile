@@ -41,7 +41,7 @@ namespace :layout do
       f.puts get('https://github.com/brighterplanet/brighter_planet_layout/raw/master/public/stylesheets/fonts.css')
     end
     
-    %w(bg cards logo radiant_earth-small).each do |image|
+    %w(bg cards logo radiant_earth-small glow).each do |image|
       File.open File.join(File.dirname(__FILE__), 'stylesheets', 'images', "#{image}.png"), 'wb' do |f|
         f.puts get("https://github.com/brighterplanet/brighter_planet_layout/raw/master/public/stylesheets/images/#{image}.png")
       end
