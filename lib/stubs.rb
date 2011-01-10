@@ -55,3 +55,14 @@ class String
     self
   end
 end
+
+class Rails
+  class << self
+    def env
+      self
+    end
+    def production?
+      true
+    end
+  end
+end
