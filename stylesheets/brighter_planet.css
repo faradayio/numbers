@@ -1,59 +1,16 @@
-/*------------*/
-
-@font-face {
-  font-family: 'Brighter Planet';
-  src: url('fonts/KievitWebPro.eot');
-  src: local('☺'), url("fonts/KievitWebPro.woff") format("woff"), url("fonts/KievitOT-Regular.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
+/* Fixed-width hints */
+#header, #footer { max-width: 990px; }
+#title { max-width: 975px; }
+#content { max-width: 960px; }
+#header, #title, #content, #footer {
+  margin: 0 auto;
 }
-
-@font-face {
-  font-family: 'Brighter Planet';
-  src: url('fonts/KievitWebPro-Bold.eot');
-  src: local('☺'), url("fonts/KievitWebPro-Bold.woff") format("woff"), url("fonts/KievitOT-Bold.otf") format("opentype");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Brighter Planet';
-  src: url('fonts/KievitWebPro-BoldIta.eot');
-  src: local('☺'), url("fonts/KievitWebPro-BoldIta.woff") format("woff"), url("fonts/KievitOT-BoldItalic.otf") format("opentype");
-  font-weight: bold;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Brighter Planet';
-  src: url('fonts/KievitWebPro-Ita.eot');
-  src: local('☺'), url("fonts/KievitWebPro-Ita.woff") format("woff"), url("fonts/KievitOT-Italic.otf") format("opentype");
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'DejaVu Mono';
-  src: url('fonts/DejaVuSansMono.eot');
-  src: local('☺'), url("fonts/DejaVuSansMono.ttf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'DejaVu Mono';
-  src: url('fonts/DejaVuSansMono-Oblique.eot');
-  src: local('☺'), url("fonts/DejaVuSansMono-Oblique.ttf") format("opentype");
-  font-weight: normal;
-  font-style: italic;
-}
-
-/* ---------- */
+/* end fixed-width hints */
 
 body {
   margin: 0;
   font-size: 13px;
-  background: #111;
+  background: #ccc url(images/glow.png) repeat-y 50% 0;
 }
 
 body, input, select, button {
@@ -93,6 +50,7 @@ a img {
 }
 
 #header {
+  position: relative;
   background-image:
     -webkit-gradient(
       linear,
@@ -115,14 +73,6 @@ a img {
 }
 
 #header h1 {
-  height: 34px;
-  float: left;
-  width: 129px;
-  margin: 13px;
-  background: url(images/logo.png) no-repeat
-}
-
-#header h1 span {
   display: none;
 }
 
@@ -138,6 +88,10 @@ a img {
   width: 120px;
 }
 
+#header ul li.home {
+  width: 164px;
+}
+
 #header ul li a {
   border-left: 1px solid #555;
   display: block;
@@ -151,6 +105,12 @@ a img {
   padding: 23.5px 0;
 }
 
+#header ul li.home a {
+  background: url(images/logo.png) no-repeat 13px 50%;
+  text-indent: -150px;
+  text-align: left;
+}
+
 #header li:last-child {
   border-right: 1px solid #555;
 }
@@ -160,8 +120,54 @@ a img {
 }
 
 #header ul li a:hover {
-  background: rgba(0,0,0,0.1);
+  background-color: rgba(0,0,0,0.1);
 }
+
+#header p {
+  position: absolute;
+  right: 15px;
+  top: 0;
+  width: 200px;
+  line-height: 58px;
+  color: #aaa;
+  text-align: right;
+}
+
+#header p a {
+  color: inherit;
+  font-size: 12px;
+  text-shadow: -1px -1px 0 black;
+}
+
+#header p a:hover {
+  color: silver;
+}
+
+
+/* full-width #header fixes */
+
+#header {
+  max-width: none;
+}
+
+#header ul {
+  margin: 0 auto;
+  width: 994px;
+}
+
+#header ul li {
+  position: relative;
+  z-index: 10;
+}
+
+#header p {
+  left: 50%;
+  right: auto;
+  width: 485px;
+  padding: 0 10px 0 0;
+}
+
+/* end full-width #header fixed */
 
 #nav {
   background-image:
@@ -237,7 +243,7 @@ a img {
   background-color: #5FBBFF;
   background-repeat: no-repeat;
   background-position: 20px 20%;
-  padding: 20px 0 0 165px;
+  padding: 20px 0 0 15px;
   height: 70px;
   border-bottom: 1px solid #0070C4;
   -moz-box-shadow: inset 0 10px 10px rgba(0,0,0,0.1);
@@ -248,6 +254,7 @@ a img {
 #title h1, #title h2 {
   font-size: 18px;
   text-shadow: 1px 1px 0px rgba(255,255,255,0.5);
+  margin: 0 0 0 150px;
 }
 
 #title h1 a {
@@ -272,6 +279,7 @@ a img {
 
 #content {
   padding: 15px 15px 50px;
+  position: relative;
 }
 
 #content>p {
@@ -489,6 +497,10 @@ p.flash.error:before {
   color: #F16262;
 }
 
+#footer {
+  background: #111;
+}
+
 #footer #shortcuts {
   background-image:
     -webkit-gradient(
@@ -506,6 +518,7 @@ p.flash.error:before {
     );
   overflow: auto;
   font-size: 11px;
+  min-height: 15px;
 }
 
 #footer #shortcuts h3 {
@@ -516,16 +529,19 @@ p.flash.error:before {
   text-shadow: -1px -1px 0px black;
   padding: 1px 0 0;
   font-size: 12px;
+  display: none;
 }
 
 #footer #shortcuts h3:after {
   content: " →";
+  display: none;
 }
 
 #footer #shortcuts ul {
   list-style: none;
   overflow: auto;
   margin: 0 0 0 165px;
+  display: none;
 }
 
 #footer #shortcuts ul li {
@@ -568,8 +584,8 @@ p.flash.error:before {
 }
 
 #footer #map #slogan {
-  margin: 25px 10px 0 13px;
-  width: 147px;
+  margin: 25px 15px 0 13px;
+  width: 142px;
   float: left;
 }
 
@@ -593,19 +609,9 @@ p.flash.error:before {
   color: silver;
 }
 
-#footer #map #slogan p.terms a {
-  font-size: 11px;
-  color: gray;
-}
-
-#footer #map #middleware, #footer #map #applications {
-  margin: 25px 30px 0 0;
+#footer #map #applications {
   float: left;
   width: 225px;
-}
-
-#footer #map #middleware {
-  font-size: 11px;
 }
 
 #footer #map h3 {
@@ -613,55 +619,6 @@ p.flash.error:before {
   text-transform: uppercase;
   font-weight: normal;
   font-size: 11px;
-}
-
-#footer #map #middleware p {
-  color: gray;
-}
-
-#footer #map #middleware p a {
-  color: #999;
-}
-
-#footer #map #middleware ul.links {
-  list-style: none;
-  border-top: 1px solid #222;
-  padding: 10px 0 0;
-}
-
-#footer #map #middleware ul.links li {
-  margin: 0 0 7px;
-  color: #444;
-}
-
-#footer #map #middleware ul.links li:before {
-  content: "▶";
-  display: block;
-  float: left;
-  width: 1em;
-  background: #555;
-  color: #222;
-  padding: 0 0 1px 2px;
-  line-height: 14px;
-  margin: 0 5px 0 0;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  text-shadow: none;
-  font-size: 13px;
-  -moz-box-shadow: black 1px 1px 0;
-}
-
-#footer #map #middleware ul.links li a {
-  color: gray;
-  display: block;
-}
-
-#footer #map #middleware .main {
-  padding: 0 0 10px 80px;
-  background: url(images/gears.png) no-repeat;
-  min-height: 47px;
-  border-bottom: 1px solid black;
 }
 
 #footer #map #applications {
@@ -704,19 +661,13 @@ p.flash.error:before {
   background: url(images/cards.png) no-repeat 50% 4px;
 }
 
-#footer #map #applications ul li.profiler {
-  font-size: 11px;
-  padding-left: 50px;
-  background: url(images/meter.png) no-repeat 10px 60%;
-}
-
 #footer #map #applications ul li a {
   color: silver;
 }
 
 #footer #map #elsewhere {
   float: left;
-  width: 300px;
+  width: 545px;
   margin: 25px 0 0;
   color: silver;
 }
@@ -744,13 +695,13 @@ p.flash.error:before {
   background-repeat: no-repeat;
   background-position: 100% 100%;
 }
-#footer #map #elsewhere #blog.derek { background-image: url(http://numbers.brighterplanet.com/stylesheets/images/derek.jpg); }
-#footer #map #elsewhere #blog.andy { background-image: url(http://numbers.brighterplanet.com/stylesheets/images/andy.jpg); }
-#footer #map #elsewhere #blog.ian { background-image: url(http://numbers.brighterplanet.com/stylesheets/images/ian.jpg); }
-#footer #map #elsewhere #blog.matt { background-image: url(http://numbers.brighterplanet.com/stylesheets/images/matt.jpg); }
-#footer #map #elsewhere #blog.patti { background-image: url(http://numbers.brighterplanet.com/stylesheets/images/patti.jpg); }
-#footer #map #elsewhere #blog.robbie { background-image: url(http://numbers.brighterplanet.com/stylesheets/images/robbie.jpg); }
-#footer #map #elsewhere #blog.seamus { background-image: url(http://numbers.brighterplanet.com/stylesheets/images/seamus.jpg); }
+#footer #map #elsewhere #blog.derek { background-image: url(images/derek.jpg); }
+#footer #map #elsewhere #blog.andy { background-image: url(images/andy.jpg); }
+#footer #map #elsewhere #blog.ian { background-image: url(images/ian.jpg); }
+#footer #map #elsewhere #blog.matt { background-image: url(images/matt.jpg); }
+#footer #map #elsewhere #blog.patti { background-image: url(images/patti.jpg); }
+#footer #map #elsewhere #blog.robbie { background-image: url(images/robbie.jpg); }
+#footer #map #elsewhere #blog.seamus { background-image: url(images/seamus.jpg); }
 
 #footer #map #elsewhere>div p {
   background: #222;
