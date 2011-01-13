@@ -95,6 +95,13 @@ pre {
   margin-top: 15px;
 }
 
+.highlight + .highlight pre {
+  margin-top: -10px;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
 #aux {
   float: left;
   width: 290px;
