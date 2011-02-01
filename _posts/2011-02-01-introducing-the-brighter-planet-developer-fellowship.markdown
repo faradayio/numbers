@@ -1,16 +1,12 @@
 ---
-title: Introducing the Brighter Planet Developer Fellowship
+title: Meet Scott Bulua, our first Developer Fellow
 author: Andy
 layout: post
 categories: technology
 ---
 
-At Brighter Planet, the infrastructure behind our [web services](http://brighterplanet.com/services) is built around literally dozens of open-source packages created and maintained by communities of developers working around the world, including Ruby, Rails, Vagrant, Nginx, and Rack.
+![Scott Bulua headshot](/images/scott.jpg){: style="float:left; margin: 0 10px 10px 0;" } We're thrilled to welcome our first Developer Fellow, [Scott Bulua](http://twitter.com/iamscott). Scott's building a plugin for [TripIt](http://tripit.com) that tracks the carbon footprints of users' itineraries using calculations powered by our [CM1 web service](http://carbon.brighterplanet.com). We'll be hearing from Scott on this blog from time to time as he develops his tool; check back for updates.
 
-We like to think of our own [open source carbon models](http://carbon.brighterplanet.com/models) and [other general-purpose packages](http://brighterplanet.github.com/projects.html) as a valuable contribution to the free software movement. But we recently decided that we also wanted to provide more direct support for important projects and their developers.
-
-To that end, we're pleased to announce the [Brighter Planet Developer Fellowship](http://brighterplanet.github.com/fellowship.html). This program is a way for us to provide financial support to two types of efforts. First, start-up funding for projects just getting off the ground that make use of Brighter Planet services. And second, grants that accelerate the continued development of tools that play an important role in the Brighter Planet technology ecosystem.
-
-We're also happy to announce our first Developer Fellow, Scott Bulua. Scott's building a plugin for [TripIt](http://tripit.com) that tracks the carbon footprints of users' itineraries. We'll be hearing from Scott on this blog from time to time as he develops his tool; check back for updates.
+This is also an announcement of sorts of the brand-new [Brighter Planet Developer Fellowship](http://brighterplanet.github.com/fellowship.html). This program is a way for us to provide financial support to two types of efforts. First, start-up funding for software projects just getting off the ground that make use of Brighter Planet services. And second, grants that accelerate the continued development of tools that play an important role in the Brighter Planet technology ecosystem.
 
 Interested? The Developer Fellowship accepts unsolicited applications, so visit [the Fellowship page](http://brighterplanet.github.com/fellowship.html) for details. 
