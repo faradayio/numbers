@@ -1,5 +1,5 @@
 ---
-title: Meet Scott Bulua, our first Developer Fellow
+title: Meet Scott Bulua, our first Developer Fellow&mdash;plus a call for applications
 author: Andy
 layout: post
 categories: technology
