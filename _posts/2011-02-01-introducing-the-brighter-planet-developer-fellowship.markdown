@@ -5,7 +5,7 @@ layout: post
 categories: technology
 ---
 
-At Brighter Planet, nearly all of our software infrastructure consists of open-source packages created and maintained by communities of developers working around the world: Ruby, Rails, Vagrant, Nginx, Rack, and literally dozens more.
+At Brighter Planet, the infrastructure behind our [web services](http://brighterplanet.com/services) is built around literally dozens of open-source packages created and maintained by communities of developers working around the world, including Ruby, Rails, Vagrant, Nginx, and Rack.
 
 We like to think of our own [open source carbon models](http://carbon.brighterplanet.com/models) and [other general-purpose packages](http://brighterplanet.github.com/projects.html) as a valuable contribution to the free software movement. But we recently decided that we also wanted to provide more direct support for important projects and their developers.
 
