@@ -5,7 +5,7 @@ layout: post
 categories: science, technology, company
 ---
 
-We've just switched on version 0.0.1 of our newest carbon model, [Electricty Use](http://carbon.brighterplanet.com/models/electricity_use), hosted on our [CM1](http://carbon.brighterplanet.com/) footprint calculation platform.
+We've just switched on version 0.0.1 of our newest carbon model, [Electricity Use](http://carbon.brighterplanet.com/models/electricity_use), hosted on our [CM1](http://carbon.brighterplanet.com/) footprint calculation platform.
 
 The new tool takes electricity carbon calculation functionality that's long been an integral part of many of our existing [models](http://carbon.brighterplanet.com/models), and packages it in a standalone module for use in apps dealing more directly with electricity data.
 
