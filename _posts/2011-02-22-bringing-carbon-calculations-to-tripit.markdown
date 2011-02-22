@@ -32,4 +32,5 @@ The data I get from TripIt isn't always consistent, since it gets pulled from co
 I’m still working on my app, but I look forward to sharing it with you soon. Thanks for reading.
 
 Scott Bulua
+
 Developer Fellow
