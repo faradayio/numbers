@@ -214,6 +214,10 @@ ol.posts li p img, .post p img {
   max-width: 370px;
 }
 
+ol.posts li p.wide img, .post p.wide img {
+  max-width: 651px;
+}
+
 ol.posts li>object, .post>object {
   max-width: 370px;
   margin: 10px 0 10px 150px;
