@@ -7,9 +7,8 @@ categories: technology
 
 Google's [DSPL](http://code.google.com/apis/publicdata/) and [Public Data Explorer](http://www.google.com/publicdata/home) help us improve our [reference data web service](http://data.brighterplanet.com) by visualizing it. Working with Jürgen Schwärzler, a statistician for Google, we laid the foundation for an [automobile industry dataset](http://www.google.com/publicdata/overview?ds=z1ctl4c7pbob1_):
 
-<p class="wide">
-  <a href="http://www.google.com/publicdata/overview?ds=z1ctl4c7pbob1_"><img src="/images/2011-03-07-exploring-data-in-partnership-with-google/automobile-industry-dataset.small.png" alt=""/></a>
-</p>
+[![Screenshot](/images/2011-03-07-exploring-data-in-partnership-with-google/automobile-industry-dataset.small.png)](http://www.google.com/publicdata/overview?ds=z1ctl4c7pbob1_)
+{.wide}
 
 It's a demonstration of the power of the cloud to drive value-added aggregation, errata cleanup, record linkage, and ultimately [creative](http://gr.eenerpastur.es/) and [commercial use](http://carbon.brighterplanet.com/).
 
