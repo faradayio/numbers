@@ -1,5 +1,5 @@
 ---
-title: Greensburg named Wind Project of the Year!
+title: Greensburg named Wind Project of the Year
 author: Matt
 layout: post
 categories: company
