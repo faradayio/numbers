@@ -8,11 +8,11 @@ categories: technology
 If you're using [mysql2](http://rubygems.org/gems/mysql2), you should be aware of a memory usage issue:
 
 {% highlight ruby %}
-# mysql2 gem - no way to avoid using a lot of memory
+# mysql2 gem - no way to avoid using a lot of memory if you're streaming a lot of rows
 client = Mysql2::Client.new(:host => "localhost", :username => "root")
 results = client.query("SELECT * FROM users WHERE group='githubbers'")
 
-# mysql gem - keep memory usage flat
+# mysql gem - keep memory usage flat if you're streaming a lot of rows
 dbh = Mysql.init
 dbh.connect "localhost", "root"
 dbh.query_with_result = false
@@ -27,7 +27,7 @@ While working on our [reference data web service](http://data.brighterplanet.com
 
 ### The problem ###
 
-The author of the gem in question, [mysql2](http://rubygems.org/gems/mysql2), knows about [the issue](https://github.com/brianmario/mysql2/issues/85). In a nutshell, the gem's use of <code>mysql_store_result</code> (as opposed to <code>mysql_use_result</code>) leads the underlying <tt>libmysql</tt> library to always load entire resultsets into memory... <strong>even</strong> if <code>:cache_rows => false</code> is passed as a runtime option.
+The author of the gem in question, [mysql2](http://rubygems.org/gems/mysql2), knows about [the issue](https://github.com/brianmario/mysql2/issues/87). In a nutshell, the gem's use of <code>mysql_store_result</code> (as opposed to <code>mysql_use_result</code>) leads the underlying <tt>libmysql</tt> library to always load entire resultsets into memory... <strong>even</strong> if <code>:cache_rows => false</code> is passed as a runtime option. A <code>:streaming => true</code> option would make perfect sense!
 
 ### The solution ###
 
