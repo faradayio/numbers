@@ -33,6 +33,6 @@ The author of the gem in question, [mysql2](http://rubygems.org/gems/mysql2), kn
 
 * I had to modify my gem, [mysql2xxxx](http://rubygems.org/gems/mysql2xxxx) (which provides <tt>mysql2csv</tt>, <tt>mysql2json</tt>, and <tt>mysql2xml</tt>) to use the "old" <tt>mysql</tt> gem.
 * If you're using <tt>mysql2</tt> (it's the default on Rails 3!) then be aware that processing huge resultsets has a different memory impact than it did with <tt>mysql</tt>.
-* Vote up [the issue](https://github.com/brianmario/mysql2/issues/85) on github... it would be nice to optionally use <code>mysql_use_result</code>!
+* Vote up [the issue](https://github.com/brianmario/mysql2/issues/87) on github... it would be nice to optionally use <code>mysql_use_result</code>!
 
 I believe <tt>mysql2</tt> has a promising future and this memory problem will probably be gone soon. Thanks [<tt>brianmario</tt>](https://github.com/brianmario)!
