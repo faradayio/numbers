@@ -1,0 +1,37 @@
+---
+title: Carbon.js
+author: Derek
+layout: post
+categories: technology
+---
+
+Lately, I've been working on a Google Maps mashup that calculates CO2 emissions for automobile, bus, and rail trips. Since Google Maps has such a great JavaScript API, I decided to write the application almost entirely in JavaScript. Thus, [Carbon.js](http://github.com/dkastner/Carbon.js) was born!
+
+Carbon.js makes it simple to calculate emissions. Its design is similar to the Ruby [carbon gem]. For any class that represents an "emission activity", e.g. an [automobile trip](http://carbon.brighterplanet.com/models/automobile_trip), you can extend it with Carbon.js to give it the ability to perform calculations.
+
+Let's look at an example.
+
+    RentalCar = function() {};
+    Carbon.emitter(RentalCar, function(emitter) {
+      emitter.emitAs('automobile');
+      emitter.provide('make_model');
+      emitter.provide('weekly_distance');
+      emitter.provide('timeframe');
+    });
+    
+    var focus = new RentalCar;
+    focus.make_model = 'Ford Focus';
+    focus.weekly_distance = 436;
+    focus.timeframe = '2010-03-08/2010-03-14';
+    
+    focus.getEmissionEstimate(function(estimate) {
+      alert("My Focus' emissions for the rental period of March 8th-14th are: " + estimate.value());
+    });
+
+As you can see, the configuration defined in the `Carbon.emitter` call maps properties on an instance of RentalCar to characteristics defined in automobile's [characteristics API](http://carbon.brighterplanet.com/automobiles/options). In order to calculate emissions, a call to `getEmissionEstimate` with a callback function parameter is required. Within that callback, you can update HTML on a page with the result.
+
+## Future Improvements
+
+* Carbon only maps properties of an object to characteristics. It will be simple to allow an instance function to be mapped to a characteristic.
+* Carbon.js requires that you use jQuery. One improvement would be to use platform-agnostic [XHR](http://en.wikipedia.org/wiki/XHR) and [proxy](http://api.jquery.com/jQuery.proxy/) functions, or intelligently detect available libraries, like Prototype, MooTools, etc.
+* For [DRY](http://en.wikipedia.org/wiki/DRY)ness sake, Carbon.js operates on classes. It may be helpful to be able to decorate any JavaScript object on the fly.
