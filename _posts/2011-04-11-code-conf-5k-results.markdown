@@ -39,4 +39,4 @@ The results are in! We sponsored a morning "Healthy Hacker" 5k run along San Fra
 <tr><td>07</td><td>Rob Tsuk</td><td>34:36.4</td></tr>
 </table>
 
-We also had a great time at CodeConf. It was very well put together and the folks at Github deserve huge kudos. The speakers all had great things to say and the social events were creative and top-notch.
+We also had a great time at [CodeConf](http://codeconf.com). It was very well put together and the folks at [Github](http://github.com) deserve serious kudos. The speakers all had great things to say and the social events were creative and top-notch.
