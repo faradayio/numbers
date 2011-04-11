@@ -62,6 +62,10 @@ ol.posts li>p, .post>p {
   line-height: 1.4;
 }
 
+ol.posts li>table, .post>table {
+  margin: 10px 0 0 150px;
+}
+
 p.meta {
   margin: 0 !important;
   float: left;
