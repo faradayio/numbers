@@ -3,7 +3,7 @@ require 'net/http'
 require 'net/https'
 require 'uri'
 require 'erb'
-require 'lib/stubs'
+require './lib/stubs'
 
 def get(url)
   url = URI.parse url
@@ -50,5 +50,23 @@ namespace :layout do
     File.open File.join(File.dirname(__FILE__), 'favicon.ico'), 'wb' do |f|
       f.puts get("https://github.com/brighterplanet/brighter_planet_layout/raw/master/public/favicon.ico")
     end
+  end
+end
+
+task :post do
+  name = ENV['POST']
+  author = ENV['AUTHOR']
+  filename = "_posts/#{Time.now.strftime('%Y-%m-%d')}-#{name.downcase.gsub(/\s+/,'-')}.markdown"
+  File.open(filename, 'w') do |f|
+    f.puts <<-TEMPLATE
+---
+title: #{name}
+author: #{author}
+layout: post
+categories: technology
+---
+
+Lorem ipsum
+    TEMPLATE
   end
 end
