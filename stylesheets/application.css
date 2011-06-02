@@ -210,7 +210,13 @@ ol.posts li>ul, .post>ul {
   padding: 0 0 0 1em;
 }
 
-ol.posts li>ul>li>p, .post>ul>li>p {
+ol.posts li>ol, .post>ol {
+  margin: 0 0 0 150px;
+  padding: 0 0 0 1em;
+}
+
+ol.posts li>ul>li>p, .post>ul>li>p,
+ol.posts li>ol>li>p, .post>ol>li>p {
   margin: 0;
 }
 
