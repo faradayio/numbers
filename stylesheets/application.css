@@ -263,3 +263,16 @@ ol.posts li blockquote, .post blockquote {
 #elsewhere {
   display: none;
 }
+
+.footnotes {
+  margin: 0 0 0 150px;
+}
+
+.footnotes ol {
+  list-style-position: inside;
+}
+
+.footnotes p {
+  margin: 0 !important;
+  display: inline;
+}
