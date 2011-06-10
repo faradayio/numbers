@@ -180,7 +180,7 @@ describe('Rocket', function() {
   describe('#igniteWhenReady', function() {
     it('ignites if ready', function() {
       rocket.isReady = function() { return true; };
-      rocket.igniteWhenReady();
+      rocket.igniteWhenReady({ launchCode: 12345 });
       expect(rocket.ignite).toHaveBeenCalled();
     });
     it('does not ignite if not ready', function() {
@@ -256,7 +256,7 @@ describe('Rocket', function() {
     describe('.igniteWhenReady', function() {
       it('ignites if ready', function() {
         rocket.isReady = function() { return true; };
-        igniteWhenReady();
+        igniteWhenReady({ launchCode: 12345 });
         expect(rocket.ignite).toHaveBeenCalled();
       });
       it('does not ignite if not ready', function() {
