@@ -53,9 +53,10 @@ namespace :layout do
   end
 end
 
-task :post do
-  name = ENV['POST']
-  author = ENV['AUTHOR']
+desc "Create a new post skeleton with today's date"
+task :post, :name, :author do |t, args|
+  name = args[:name]
+  author = args[:author]
   filename = "_posts/#{Time.now.strftime('%Y-%m-%d')}-#{name.downcase.gsub(/\s+/,'-')}.markdown"
   File.open(filename, 'w') do |f|
     f.puts <<-TEMPLATE
@@ -69,4 +70,5 @@ categories: technology
 Lorem ipsum
     TEMPLATE
   end
+  puts "I put your post in #{filename}"
 end
