@@ -29,55 +29,97 @@ Here's the Ragel part:
 
 {% highlight ragel %}
   machine simple_tokenizer;
-
-  action Keep {
-    # Since we're not in ragel's scanner mode, we'll define our own "ts" variable
-    ts = p
+  action MyTs {
+    my_ts = p
+  }
+  action MyTe {
+    my_te = p
   }
   action Emit {
-    emit data[ts...p].pack('c*')
-    ts = nil
-    prefixing = false
+    emit data[my_ts...my_te].pack('c*')
+    my_ts = nil
+    my_te = nil    
   }
-
-  foo = 'STARTFOO' any+ >Keep %Emit :>> 'ENDFOO';
-
-  main := ( any+ | foo )*;
+  foo = 'STARTFOO' any+ >MyTs :>> 'ENDFOO' >MyTe %Emit;
+  main := ( foo | any+ )*;
 {% endhighlight %}
 
 ...and here's the Ruby reading/buffering mechanism...
 
 {% highlight ruby %}
+  CHUNK_SIZE = 1_000_000 # bytes (instead of reading in the whole file all at once)
+  # Note: use with simple_tokenizer
   def perform
     pe = :ignored
     eof = :ignored
     %% write init;
     # % (this fixes syntax highlighting)
-    prefix = []
-    ts = nil
-    prefixing = false
+    leftover = []
+    my_ts = nil
     File.open(path) do |f|
-      while chunk = f.read(ENV['CHUNK_SIZE'].to_i)
-        data = prefix + chunk.unpack('c*')
+      while chunk = f.read(CHUNK_SIZE)
+        data = leftover + chunk.unpack('c*')
         p = 0
         pe = data.length
         %% write exec;
         # % (this fixes syntax highlighting)
-        if ts
-          prefix = data[ts..-1]
-          ts = 0
-          prefixing = true
-        elsif prefixing
-          prefix = data
-          prefixing = false
+        if my_ts
+          leftover = data[my_ts..-1]
+          my_te = my_te - my_ts if my_te
+          my_ts = 0
         else
-          prefix = []
+          leftover = []
         end
       end
     end
   end
 {% endhighlight %}
 
-Again, you can see more at [ragel_ruby_examples](https://github.com/seamusabshere/ruby_ragel_examples), specifically [simple_tokenizer.rl](https://github.com/seamusabshere/ruby_ragel_examples/blob/master/simple_tokenizer.rl).
+Alternatively you could use Ragel's **scanner** functionality:
+
+{% highlight ragel %}
+  machine simple_scanner;
+  action Emit {
+    emit data[(ts+8)..(te-7)].pack('c*')
+  }
+  foo = 'STARTFOO' any+ :>> 'ENDFOO';
+  main := |*
+    foo => Emit;
+    any;
+  *|;
+{% endhighlight %}
+
+Which requires buffering code like:
+
+{% highlight ruby %}
+  CHUNK_SIZE = 1_000_000 # bytes (instead of reading in the whole file all at once)
+  # Note: use with simple_scanner
+  def perform
+    pe = :ignored
+    eof = :ignored
+    %% write init;
+    # % (this fixes syntax highlighting)
+    leftover = []
+    File.open(path) do |f|
+      while chunk = f.read(CHUNK_SIZE)
+        data = leftover + chunk.unpack('c*')
+        p ||= 0
+        pe = data.length
+        %% write exec;
+        # % (this fixes syntax highlighting)
+        if ts
+          leftover = data[ts..pe]
+          p = p - ts
+          ts = 0
+        else
+          leftover = []
+          p = 0
+        end
+      end
+    end
+  end
+{% endhighlight %}
+
+Again, you can see more at [ragel_ruby_examples](https://github.com/seamusabshere/ruby_ragel_examples), specifically [simple_tokenizer.rl](https://github.com/seamusabshere/ruby_ragel_examples/blob/master/lib/simple_scanner.rl).
 
 Final note: I realize this isn't precisely a parser or even a tokenizer... but these sorts of examples are what I would have wanted when I was getting started with Ragel and Ruby. What's more, hopefully the Ragel community will chime in and improve the examples.
