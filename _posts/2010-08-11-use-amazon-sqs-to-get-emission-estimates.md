@@ -8,7 +8,7 @@ categories: technology
 You can get emission estimates by queueing up messages on [Amazon SQS](http://aws.amazon.com/sqs):
 
 {% highlight console %}
-$ curl -v https://queue.amazonaws.com/121562143717/cm1_production_incoming -X POST --data "Action=SendMessage&Version=2009-02-01&MessageBody=emitter%3Dautomobile%26make%3DNissan%26guid%3DMyFavoriteCar%26key%3D86f7e437faa5a7fce15d1ddcb9eaeaea377667b8"
+$ curl -v https://queue.amazonaws.com/121562143717/cm1_production_incoming -X POST --data "Action=SendMessage&amp;Version=2009-02-01&amp;MessageBody=emitter%3Dautomobile%26make%3DNissan%26guid%3DMyFavoriteCar%26key%3D86f7e437faa5a7fce15d1ddcb9eaeaea377667b8"
 * About to connect() to queue.amazonaws.com port 443 (#0)
 *   Trying 72.21.211.87... connected
 * Connected to queue.amazonaws.com (72.21.211.87) port 443 (#0)
@@ -39,13 +39,13 @@ You need to use this SQS queue: (but you don't need an SQS account, it's just a 
 
 As you can see, the MessageBody is the url-encoded form of a querystring:
 
-    emitter=automobile&make=Nissan&guid=MyFavoriteCar&key=86f7e437faa5a7fce15d1ddcb9eaeaea377667b8
+    emitter=automobile&amp;make=Nissan&amp;guid=MyFavoriteCar&amp;key=86f7e437faa5a7fce15d1ddcb9eaeaea377667b8
 
 ### Wait a minute, isn't that an empty response body?
 
 Correct. This is an asynchronous way of doing things. The [result in JSON format](http://storage.carbon.brighterplanet.com/745c4bcda8234186178e8430ae55f38913a5f042) will appear as soon as it is calculated (usually in a few seconds).
 
-If you need an answer in realtime, then you should skip SQS and hit [mostly the same querystring](http://carbon.brighterplanet.com/automobiles.json?make=Nissan&guid=MyFavoriteCar&key=86f7e437faa5a7fce15d1ddcb9eaeaea377667b8).
+If you need an answer in realtime, then you should skip SQS and hit [mostly the same querystring](http://carbon.brighterplanet.com/automobiles.json?make=Nissan&amp;guid=MyFavoriteCar&amp;key=86f7e437faa5a7fce15d1ddcb9eaeaea377667b8).
 
 ### Why use SQS?
 
@@ -68,4 +68,4 @@ ruby-1.8.7-head > Digest::SHA1.hexdigest('86f7e437faa5a7fce15d1ddcb9eaeaea377667
 
 * We host the storage on [Amazon S3](http://aws.amazon.com/s3), so you'll benefit from high-availability there too.
 * If you're using Ruby, you can use our [carbon gem](http://rubygems.org/gems/carbon) with the <tt>:guid</tt> option.
-* If you would rather have us POST the result back to your waiting servers, you can pass <tt>&callback=http%3A%2F%2Fmyserver.example.com%2Fcallback-receiver.php</tt>.
+* If you would rather have us POST the result back to your waiting servers, you can pass <tt>&amp;callback=http%3A%2F%2Fmyserver.example.com%2Fcallback-receiver.php</tt>.

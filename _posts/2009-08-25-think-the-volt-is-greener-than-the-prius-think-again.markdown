@@ -6,7 +6,7 @@ title: Think the Volt is greener than the Prius? Think again.
 categories: science
 wordpress_url: http://blog.brighterplanet.com/?p=1986
 ---
-GM recently announced <a href="http://media.gm.com/servlet/GatewayServlet?target=http://image.emerald.gm.com/gmnews/viewpressreldetail.do?domain=12&docid=56132">fuel economy figures</a> for the plug-in hybrid Chevy Volt: a whopping 230 miles per gallon! Using the same EPA standards, a rival automaker, Nissan, <a href="http://www.nytimes.com/2009/08/03/automobiles/03iht-auto.html">reported</a> that their all-electric Leaf would get 367 mpg.  
+GM recently announced <a href="http://media.gm.com/servlet/GatewayServlet?target=http://image.emerald.gm.com/gmnews/viewpressreldetail.do?domain=12&amp;docid=56132">fuel economy figures</a> for the plug-in hybrid Chevy Volt: a whopping 230 miles per gallon! Using the same EPA standards, a rival automaker, Nissan, <a href="http://www.nytimes.com/2009/08/03/automobiles/03iht-auto.html">reported</a> that their all-electric Leaf would get 367 mpg.  
 
 Mind-blowing numbers, right? You would think the Volt or the Leaf will blow the <a href="http://www.fueleconomy.gov/feg/findacar.htm">50 mpg Prius</a> off the road. Not true in half of the country. The long and short of it is driving 100 miles in a Prius emits 40 lbs of <a href="http://brighterplanet.com/entries/7">CO<sub>2</sub>e</a> across all states whereas driving 100 miles in a Volt in Kansas emits 53 lbs, in California 19 lbs, and in Massachusetts 25 lbs. When electricity comes from burning coal, the Prius is hands-down greener than charging your Volt from the garage outlet.
 
@@ -19,6 +19,6 @@ While we applaud products that reduce our dependence on foreign oil, it’s time
 For this comparison we used:
 
 * 2010 Toyota Prius – [50 miles per gallon](http://www.fueleconomy.gov/)
-* Chevrolet Volt – [25 kWh per 100 miles](http://media.gm.com/servlet/GatewayServlet?target=http://image.emerald.gm.com/gmnews/viewpressreldetail.do?domain=12&docid=56132) (running on electric only)
+* Chevrolet Volt – [25 kWh per 100 miles](http://media.gm.com/servlet/GatewayServlet?target=http://image.emerald.gm.com/gmnews/viewpressreldetail.do?domain=12&amp;docid=56132) (running on electric only)
 * Gasoline emissions – 19.777 lbs CO2e / gallon (based on [US EPA GHG Inventory](http://epa.gov/climatechange/emissions/usinventoryreport.html))
 * Electricity emissions – year 2005 data from [eGRID2007 v1.1](http://www.epa.gov/cleanenergy/energy-resources/egrid/index.html)
