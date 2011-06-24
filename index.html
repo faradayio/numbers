@@ -9,7 +9,15 @@ layout: default
     <p class="meta">Posted by {{ post.author }} on {{ post.date | date: "%A, %B %d, %Y" }}.</p>
     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 {{ post.content }}
-    <p class="jump"><a href="{{ post.url }}#disqus_thread" title="Permament link to {{ post.title }}" data-disqus-identifier="{{ post.id }}">Discussion</a></p>
+    <p class="jump">
+      <a href="{{ post.url }}" title="Permament link to {{ post.title }}">Read the full post</a>
+      (<a href="{{ post.url }}#disqus_thread" title="Discussion of {{ post.title }}" data-disqus-identifier="{{ post.id }}">Discussion</a>)
+    </p>
   </li>
 {% endfor %}
 </ol>
+
+<!-- TODO Andy fixme -->
+<br/>
+
+<p>Read archived posts in our <a href="/company.html">Company</a>, <a href="/science.html">Science</a>, and <a href="/technology.html">Technology</a> sections.</p>

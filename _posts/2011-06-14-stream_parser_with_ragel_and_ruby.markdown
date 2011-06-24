@@ -5,6 +5,10 @@ layout: post
 categories: technology
 ---
 
+You can use Ragel to make simple stream parsers in Ruby. By "stream parser," I mean one that reads in files a chunk at a time instead of all at once---thereby keeping memory use constant.
+
+<!-- more start -->
+
 Say you have a file like
 
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a
@@ -23,7 +27,7 @@ You want to pull out
     There are lots of great ideas here.
     You just have to look closely
 
-**You can use Ragel for that.** Because of how Ragel works, you can even make a stream parser that reads in one chunk at a time instead of the whole file at once, allowing you to keep memory usage constant. As I show in my [ragel_ruby_examples](https://github.com/seamusabshere/ruby_ragel_examples) tests, you could even read the stream 1 byte at a time.
+As I show in my [ragel_ruby_examples](https://github.com/seamusabshere/ruby_ragel_examples) tests, you could even read the stream 1 byte at a time.
 
 Here's the Ragel part:
 
@@ -56,6 +60,7 @@ Here's the Ragel part:
     # % (this fixes syntax highlighting)
     leftover = []
     my_ts = nil
+    my_te = nil
     File.open(path) do |f|
       while chunk = f.read(CHUNK_SIZE)
         data = leftover + chunk.unpack('c*')
@@ -123,3 +128,5 @@ Which requires buffering code like:
 Again, you can see more at [ragel_ruby_examples](https://github.com/seamusabshere/ruby_ragel_examples), specifically [simple_tokenizer.rl](https://github.com/seamusabshere/ruby_ragel_examples/blob/master/lib/simple_scanner.rl).
 
 Final note: I realize this isn't precisely a parser or even a tokenizer... but these sorts of examples are what I would have wanted when I was getting started with Ragel and Ruby. What's more, hopefully the Ragel community will chime in and improve the examples.
+
+<!-- more end -->

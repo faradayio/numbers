@@ -7,6 +7,8 @@ categories: technology
 
 While working on [Hootroot](http://hootroot.com) and [Careplane](http://careplane.org), I found myself getting frustrated with the way I was having handling events. Over time, however, I stopped fighting the language and learned a pattern that I believe is easiest to test and read.
 
+<!-- more start -->
+
 I'll work with a simple example to show you my thought process.
 
 Initially, I started handling my events with standard closures:
@@ -278,3 +280,5 @@ describe('Rocket', function() {
 The result is much more readable code, easier debugging (when absolutely necessary), and simpler testing without all those nested closures and AJAX stubs. As an added bonus, you get to keep the `this` in your event handlers that refers to the event itself.
 
 This experience has led me to believe that a lot of the problems CoffeeScript tries to solve (like [function binding](http://jashkenas.github.com/coffee-script/#fat_arrow)) can really just be solved using good, simple JavaScript coding practices. I'm happy to hear from anyone who has a better pattern or has had similar experiences.
+
+<!-- more end -->
