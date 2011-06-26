@@ -13,6 +13,8 @@ Still, I got pretty excited when I saw this for the first time:
   <a href="https://spreadsheets.google.com/ccc?key=0AkCJNpm9Ks6JdGdTMXBwbU8xNHYyZXdnWXZoSjNMZ2c&amp;hl=en&amp;authkey=CMeIkagE"><img src="/images/2011-01-06-using-web-services-from-excel/google-docs-importXML.png" alt="screenshot of Google Docs spreadsheet using importXML" /></a>
 </div>
 
+<!-- more start -->
+
 In Google Docs, `importXML` lets you read XML from a web service and then use XPath to select particular elements:
 
     =importXML(A4, "//emission_estimate/emission")
@@ -47,3 +49,5 @@ It took me a while to remember that Excel is essentially functional programming,
 </div>
 
 Now if I change the destination airport, the emission estimate will automatically update.
+
+<!-- more end -->

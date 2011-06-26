@@ -20,6 +20,8 @@ dbh.query("SELECT * FROM users WHERE group='githubbers'")
 results = dbh.use_result
 {% endhighlight %}
 
+<!-- more start -->
+
 While working on our [reference data web service](http://data.brighterplanet.com), I ran these benchmarks:
 
 * Exporting 5,000 rows using <tt>mysql</tt> (the "old" gem) [stays flat on memory](https://github.com/seamusabshere/mysql2xxxx/blob/master/benchmark/results/0.0.4-20110314190640.txt)
@@ -36,3 +38,5 @@ The author of the gem in question, [mysql2](http://rubygems.org/gems/mysql2), kn
 * Vote up [the issue](https://github.com/brianmario/mysql2/issues/87) on github... it would be nice to optionally use <code>mysql_use_result</code>!
 
 I believe <tt>mysql2</tt> has a promising future and this memory problem will probably be gone soon. Thanks [<tt>brianmario</tt>](https://github.com/brianmario)!
+
+<!-- more end -->

@@ -7,6 +7,8 @@ categories: science
 
 Our CM1 [carbon models](http://carbon.brighterplanet.com/models) depend on lots of public energy and emissions data relating to things like buildings and transportation---mostly from government sources like the [EIA](http://www.eia.doe.gov/), [BTS](http://www.bts.gov/), and [EPA](http://www.epa.gov/). Whenever you use or mash up a large dataset you'll likely run into issues like inconsistent file layouts, awkward formats, and human error. So file cleanup is a large part of the process we go through when plugging data into our system and making them available in our free [data clearinghouse](http://data.brighterplanet.com/). Here's a quick look at three of the main things we do; we'll delve into more specifics in subsequent posts:
 
+<!-- more start -->
+
 *	__Error correction.__ Most datasets are pretty good, but with some containing millions of data points, human error is bound to work its way in. We use search algorithms to identify typos and outliers, and then manually correct or delete flawed entries.
 
     *For example:* The [EPA Fuel Economy Guide](http://www.fueleconomy.gov/) files from 1985 through 2010 contain various typos and inconsistencies. We list corrections to each of these in an errata file that we apply during the import process.
@@ -21,3 +23,4 @@ Our CM1 [carbon models](http://carbon.brighterplanet.com/models) depend on lots 
 
 We take all the public data we clean up for our clients' use and post it on [our data site](http://data.brighterplanet.com/) so others can benefit as well. It's available for download in multiple formats. And it's kept up to date using automated import programs that crawl government agency websites and automatically import the latest data updates as soon as they're available.
 
+<!-- more end -->

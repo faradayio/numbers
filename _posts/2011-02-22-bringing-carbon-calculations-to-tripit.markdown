@@ -6,6 +6,8 @@ categories: technology
 ---
 
 It's a privilege to be posting here on Safety in Numbers, and particularly exciting to do so as Brighter Planet's first [Developer Fellow](http://brighterplanet.github.com/fellowship.html). I was an early Brighter Planet cardholder and have watched the team closely, so it's great to get a chance to work with them.
+
+<!-- more start -->
  
 For a few weeks now, I have been working with Brighter Planet [CM1 API](http://carbon.brighterplanet.com/) to create TripCarbon, an automated tool that calculates carbon output from [TripIt](http://www.tripit.com) itineraries.  If you're not familiar with Tripit, you can send it your travel confirmation emails and it creates amazing online itineraries with real-time status updates, loyalty program points tracker (for pro users), refund tracking, and more. I've been using TripIt for several years, and it's one of the most powerful web tools I use.
  
@@ -36,3 +38,4 @@ I'm still working on my app, but I look forward to sharing it with you soon. Tha
 Scott Bulua
 
 Developer Fellow
+<!-- more end -->

@@ -7,6 +7,8 @@ categories: technology
 
 Last week we [announced](http://numbers.brighterplanet.com/2011/03/02/tronprint-measure-the-footprint-of-your-cloud-application) [Tronprint](http://brighterplanet.github.com/tronprint), our Ruby library for measuring an application's carbon footprint in real time. There's a subtlety to the way that my colleague Derek designed Tronprint that didn't hit me for a while: as a piece of monitoring software it's "inside-out" rather than "outside-in." It's a simple distinction that's going to let us continue to address sustainability in this new era of cloud computing.
 
+<!-- more start -->
+
 First, let's look at an old-school web application:
 
 ![Simple server architecture](/images/2011-03-08-virtual-servers-real-impact/diagrams-01.png)
@@ -41,3 +43,5 @@ The answer to this question, it turns out, is the simple distinction that sets T
 I like to imagine Tronprint as being a born-and-bred native resident of the cloud. There are dozens of layers of technology keeping the cloud alive: servers, routers, load balancers, datacenters. But just as we don't need advanced knowledge of astrophysics to carry on our daily lives here on our planet, Tronprint doesn't care about all that. It lives on the surface, among the applications, helping them out.
 
 Subtle, right? I wonder if Derek knew just how clever he'd been :)
+
+<!-- more end -->

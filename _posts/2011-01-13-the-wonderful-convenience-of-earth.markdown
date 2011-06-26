@@ -7,6 +7,8 @@ categories: technology
 
 When I was whipping up [Yaktrak](http://yaktrak.org) I needed to get a (richly annotated) list of zip codes into the app. This is a familiar problem for web app developers: what's the easiest way to get auxiliary data from canonical sources loaded and ready to use?
 
+<!-- more start -->
+
 Lucky for me we have [`earth`](http://github.com/brighterplanet/earth). Look at how easy this is:
 
 {% highlight console %}
@@ -38,3 +40,5 @@ irb(main):002:0> ZipCode.find '53704'
 {% endhighlight %}
 
 Voila! Fresh from the [transparent data crawlers](http://data.brighterplanet.com/zip_codes) at [data.brighterplanet.com](http://data.brighterplanet.com).
+
+<!-- more end -->
