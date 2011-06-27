@@ -37,6 +37,29 @@ Author is your first name, layout should always stay "post", and categories (if 
 
 Whatever goes below this metadata section is your post.
 
+## To specify what goes in "Read More"
+
+Wrap the part that gets hidden with these HTML comments: (verbatim!)
+
+    ---
+    title: some post
+    layout: post
+    ---
+
+    Some intro, this will be visible on the index page.
+
+    <!-- more start -->
+
+    More content, this will not be visible on the index page.
+
+    <!-- more end -->
+
+The "more end" comment should go at the bottom of the document, below everything else.
+
+See 2011-01-13-announcing-our-new-parcel-shipment-model.markdown for a good example and make sure that you always put BOTH comments, "more start" and then "more end".
+
+The process is taken from http://kaspa.rs/2011/04/jekyll-hacks-html-excerpts/
+
 ## To preview your post/changes
 
     $ jekyll --server
