@@ -68,6 +68,12 @@ categories: technology
 ---
 
 Lorem ipsum
+
+<!-- more start -->
+
+Dolor sit amet
+
+<!-- more end -->
     TEMPLATE
   end
   puts "I put your post in #{filename}"
