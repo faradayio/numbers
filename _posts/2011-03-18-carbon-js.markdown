@@ -9,7 +9,7 @@ Lately, I've been working on a Google Maps mashup that calculates CO2 emissions 
 
 <!-- more start -->
 
-Carbon.js makes it simple to calculate emissions. Its design is similar to the Ruby [carbon gem]. For any class that represents an "emission activity", e.g. an [automobile trip](http://carbon.brighterplanet.com/models/automobile_trip), you can extend it with Carbon.js to give it the ability to perform calculations.
+Carbon.js makes it simple to calculate emissions. Its design is similar to the Ruby [carbon gem](http://rubygems.org/gems/carbon). For any class that represents an "emission activity", e.g. an [automobile trip](http://carbon.brighterplanet.com/models/automobile_trip), you can extend it with Carbon.js to give it the ability to perform calculations.
 
 Let's look at an example.
 
