@@ -57,7 +57,7 @@ desc "Create a new post skeleton with today's date"
 task :post, :name, :author do |t, args|
   name = args[:name]
   author = args[:author]
-  filename = "_posts/#{Time.now.strftime('%Y-%m-%d')}-#{name.downcase.gsub(/\s+/,'-')}.markdown"
+  filename = "_posts/#{Time.now.strftime('%Y-%m-%d')}-#{name.downcase.gsub(/[^A-Za-z0-9]+/,'-')}.markdown"
   File.open(filename, 'w') do |f|
     f.puts <<-TEMPLATE
 ---
