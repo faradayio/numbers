@@ -2,7 +2,7 @@
 title: Stream parser with Ragel and Ruby
 author: Seamus
 layout: post
-categories: technology
+categories: technology techresearch
 ---
 
 You can use Ragel to make simple stream parsers in Ruby. By "stream parser," I mean one that reads in files a chunk at a time instead of all at once---thereby keeping memory use constant.

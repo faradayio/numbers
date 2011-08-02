@@ -2,7 +2,7 @@
 title: "Introducing Bombshell: custom interactive consoles for your Ruby libraries"
 author: Andy
 layout: post
-categories: technology
+categories: technology techresearch
 ---
 
 One of the cool features of [`carbon`](http://github.com/brighterplanet/carbon), the Ruby library for our [CM1](http://carbon.brighterplanet.com) web service, is its built-in interactive console for experimenting with the service. At Brighter Planet we use `carbon`'s console all the time to construct one-off calculations and perform simple analyses.

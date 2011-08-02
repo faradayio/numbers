@@ -2,7 +2,7 @@
 title: Resque, the rand() method, and Kernel.fork
 author: Seamus
 layout: post
-categories: technology
+categories: technology techresearch
 ---
 
 We had a seemingly impossible number of tmpdir collisions once we switched our [reference data web service](http://data.brighterplanet.com) from [DelayedJob](https://github.com/collectiveidea/delayed_job) to [Resque](https://github.com/defunkt/resque).

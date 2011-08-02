@@ -2,7 +2,7 @@
 title: A Pattern for JavaScript Events
 author: derek
 layout: post
-categories: technology
+categories: technology techresearch
 ---
 
 While working on [Hootroot](http://hootroot.com) and [Careplane](http://careplane.org), I found myself getting frustrated with the way I was having handling events. Over time, however, I stopped fighting the language and learned a pattern that I believe is easiest to test and read.
