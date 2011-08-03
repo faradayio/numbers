@@ -2,7 +2,7 @@
 title: What you should know about mysql2 memory usage
 author: Seamus
 layout: post
-categories: technology
+categories: technology techresearch
 ---
 
 If you're using [mysql2](http://rubygems.org/gems/mysql2), you should be aware of a memory usage issue:
