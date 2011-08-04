@@ -1,8 +1,8 @@
 ---
-title: Browserify your JavaScript
+title: Add node.js/CommonJS style require() to client-side JavaScript with browserify
 author: Derek
 layout: post
-categories: technology
+categories: technology, techresearch
 ---
 
 While working on [Careplane](http://careplane.org) recently, I ran into a problem that was made easier by [JSONPath](http://goessner.net/articles/JsonPath/). I was already enjoying the ability to test my JavaScript with [Node.js](http://nodejs.org), [Jasmine](), and other [npm](http://npmjs.org/) packages. It would be nice if I could get the same package system I have with npm and use it with my client-side JavaScript.
