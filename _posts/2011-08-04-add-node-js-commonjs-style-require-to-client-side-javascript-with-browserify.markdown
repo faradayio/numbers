@@ -13,7 +13,7 @@ There are three major benefits to using browserify, which I'll detail below.
 
 <!-- more start -->
 
-# Using npm Modules in Your Client-Side Scripts
+### Using npm Modules in Your Client-Side Scripts
 
 In Careplane, I wanted to use the [JSONPath npm package](). With browserify, I can write the following into my client-side code:
 
@@ -45,7 +45,7 @@ Here's an example of use from a web page:
 
 _N.B. Not all npm packages will work client-side, especially ones that depend on core Node.js modules like `fs` or `http`._
 
-# Organize Your Code
+### Organize Your Code
 
 Careplane has a ton of JavaScript split into a separate file for each class. Previously, I was using simple concatenation and a hand-crafted file list to construct an application.js and to determine script load order. Now it can be managed automatically by browserify because each of my class files can require other class files.
 
@@ -87,7 +87,7 @@ For instance, the Kayak class in `src/drivers/Kayak.js` depends on the Driver cl
 
 Super simple!
 
-# Uniformity With Testing Environment
+### Uniformity With Testing Environment
 
 I like to run my [Jasmine](http://pivotal.github.com/jasmine/) JavaScript tests from the command-line and so does our [Continuous Integration](http://martinfowler.com/articles/continuousIntegration.html) system. With [jasmine-node](http://github.com/mhevery/jasmine-node), I had to maintain a list of files in my src directory that were loaded in a certain order in order to run my tests. Now, each spec file can use Node.js' CommonJS `require` statement to require files from my src directory, and all dependencies are automatically managed.
 
@@ -135,7 +135,7 @@ When I visit http://localhost:8888 in my browser, my Jasmine tests all run!
 
 The only drawback is that my code has to be re-browserified whenever it changes. This only adds about a second of overhead while I wait for my [watchr](http://rubygems.org/gems/watchr) script to run the browserification.
 
-# More
+### More
 
 If you'd like to take a look at the environment I set up for Careplane, you can check out the [source](http://github.com/brighterplanet/careplane).
 
