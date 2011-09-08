@@ -1,0 +1,34 @@
+---
+title: "Hipmunk, Amtrak, and sustainability: context is everything"
+author: andy
+layout: post
+categories: technology
+---
+
+![Amtrak on Hipmunk](/images/2011-09-08-hipmunk/hipmunk.png)
+{.wide}
+
+Today Hipmunk announced that it has [added Amtrak trains to flight search results](http://blog.hipmunk.com/post/9957542991/amtrak-train-travel-search). Reactions have been positive (e.g. [VentureBeat](http://venturebeat.com/2011/09/08/hipmunk-amtrak-train/), [Gadling](http://www.gadling.com/2011/09/08/hipmunk-first-online-travel-agent-to-integrate-amtrak-searches/), [Tnooz](http://www.tnooz.com/2011/09/08/news/amtrak-goes-the-hipmunk-route-with-claims-of-exclusive-deal/)) and have focused on the lower prices and oftentimes better schedules that trains can offer travelers versus planes on certain routes.
+
+But we like it for a much different reason: it's a triumph of sustainability.
+
+<!-- more start -->
+
+### Right place at the right time
+
+Take a look at the screenshot above; it's from a [Hipmunk search](http://www.hipmunk.com/#!PHL.WAS,Oct17) from Philadelphia to Washington, DC. Hipmunk does its usual amazing job of showing differences in price and time---here, you'd save at least $10 and an hour and half with the train option. What it doesn't show you is that taking the train will result in 21 lbs. CO<sub>2</sub>e; the flight, 1,737 lbs., nearly a ton.
+
+The dramatic difference between these modes in environmental impact isn't a new thing; Amtrak's been [touting it for a while now](http://www.amtrak.com/servlet/ContentServer?c=Page&pagename=am/Layout&p=1237405732514&cid=1246042626782&WT.mc_t=Travel%20Green2010_HP_WSP&WT.mc_n=TravelGreenpagelink&WT.mc_r=365&tiid=33371&audienceId=0&rtTracking=1) on its homepage, and it's one of the stock green travel tips we hear so often. But when you're trying to get from Point A to Point B, you call up your favorite travel site and hit Search. Let's face it: who is going to assess the flight options, open another tab for Amtrak.com, run another search, and perform an eyeball comparison of the results between tabs?
+
+Thanks to Hipmunk, this is no longer necessary. Travelers benefit from the saved time and money, and the planet---and all of us---benefit from the resulting decrease in climate change emissions. Hipmunk surely didn't add this feature for the environmental effects, but they nevertheless deserve a hearty round of applause for the thousands of tons of CO2 that will *not* be emitted as a result.
+
+### How big is the impact?
+
+As a rule of thumb, travelers can assume that Amtrak results will always be lower-impact than flights. But, as they say, there's safety in numbers, so we added support for this new Hipmunk feature to our [Careplane impact-transparency browser plugin](http://careplane.org):
+
+![Hipmunk with Careplane](/images/2011-09-08-hipmunk/careplane.png)
+{.wide}
+
+The difference between training and flying is no joke. [Install Careplane](http://careplane.org), run a search, and see for yourself.
+
+<!-- more end -->
