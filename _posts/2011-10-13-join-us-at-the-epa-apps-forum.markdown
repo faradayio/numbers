@@ -5,7 +5,7 @@ layout: post
 categories: technology
 ---
 
-Mark your calendards for the [EPA's Apps for the Environment Forum](http://www.epa.gov/appsfortheenvironment/forum.html) in Arlington, Virgina on November 8. Brighter Planet co-founder Andy Rossmeissl is a featured speaker at the event, in addition to EPA Administrator Lisa P. Jackson and others.
+Mark your calendars for the [EPA's Apps for the Environment Forum](http://www.epa.gov/appsfortheenvironment/forum.html) in Arlington, Virgina on November 8. Brighter Planet co-founder Andy Rossmeissl is a featured speaker at the event, in addition to EPA Administrator Lisa P. Jackson and others.
 
 [RSVP now](http://www.epa.gov/appsfortheenvironment/forum.html#reg) (deadline is Tuesday) or read on for more details.
 
