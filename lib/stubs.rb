@@ -1,6 +1,6 @@
 module Link
-  def link_to(text, url)
-    "<a href=\"#{url}\">#{text}</a>"
+  def link_to(text, url, options = {})
+    "<a href=\"#{url}\"#{ ' title="' + options[:title] + '"' if options[:title]}>#{text}</a>"
   end
   def link_to_homesite(text, path = '')
     link_to text, 'http://brighterplanet.com/' + path
@@ -33,9 +33,12 @@ class Footer
   end
 end
 
-class BrighterPlanetLayout
-  def self.application; self end
-  def self.google_analytics_ua_number; 'UA-1667526-19' end
+class BrighterPlanet
+  def self.layout; Layout end
+  class Layout
+    def self.application; self end
+    def self.google_analytics_ua_number; 'UA-1667526-19' end
+  end
 end
 
 class GoogleAnalytics
