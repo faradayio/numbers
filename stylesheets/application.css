@@ -2,6 +2,7 @@
   background: #e1e1e1 url(images/content.png) -137px 0 repeat-y;
   overflow: auto;
   position: relative;
+  border-right: 1px solid #cecece
 }
 
 #head {
@@ -28,7 +29,7 @@ p.summary {
   color: #2DB56A;
 }
 
-#main {
+#articles {
   width: 556px;
   padding: 0 80px 0 0;
   float: left;
@@ -43,8 +44,8 @@ ol.posts li {
   background-position: 0 0;
 }
 
-ol.posts li h2 {
-  margin-top: 35px !important;
+ol.posts li h2, .post h2 {
+  margin: 35px 0 5px 150px !important;
 }
 
 ol.posts li:first-child h2 {
