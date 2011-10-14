@@ -25,6 +25,10 @@ namespace :layout do
       f.puts ERB.new(get('https://raw.github.com/brighterplanet/brighter_planet_layout/master/app/views/layouts/_header.html.erb')).result(Header.new.get_binding)
     end
 
+    File.open File.join(File.dirname(__FILE__), '_includes', 'nav.html'), 'w' do |f|
+      f.puts ERB.new(get('https://raw.github.com/brighterplanet/brighter_planet_layout/master/app/views/layouts/_nav.html.erb')).result(Nav.new.get_binding)
+    end
+
     File.open File.join(File.dirname(__FILE__), '_includes', 'footer.html'), 'w' do |f|
       f.puts ERB.new(get('https://raw.github.com/brighterplanet/brighter_planet_layout/master/app/views/layouts/_footer.html.erb')).result(Footer.new.get_binding)
     end
