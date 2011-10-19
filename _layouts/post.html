@@ -11,34 +11,36 @@
 </head>
 <body>
 {% include google_analytics.html %}
-<div id="content">
-  <div id="main">
-    <div id="head">
-      <h1><a href="/">Safety in Numbers</a></h1>
-      <p class="summary">Brighter Planet's blog</p>
+<div id="main">
+  <div id="content">
+    <div id="articles">
+      <div id="head">
+        <h1><a href="/">Safety in Numbers</a></h1>
+        <p class="summary">Brighter Planet's blog</p>
+      </div>
+      <div class="post {{ page.author | downcase }}">
+        <p class="meta">Posted by {{ page.author }} on {{ page.date | date: "%A, %B %d, %Y" }}.</p>
+        <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+  {{ content }}
+      </div>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_identifier = '{{ page.id }}';
+        (function() {
+         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+         dsq.src = 'http://brighterplanet.disqus.com/embed.js';
+         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=brighterplanet">comments powered by Disqus.</a></noscript>
     </div>
-    <div class="post {{ page.author | downcase }}">
-      <p class="meta">Posted by {{ page.author }} on {{ page.date | date: "%A, %B %d, %Y" }}.</p>
-      <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
-{{ content }}
+    <div id="aux">
+      <h3>What blog is this?</h3>
+      <p><a href="/">Safety in Numbers</a> is Brighter Planet's blog about climate science, Ruby, Rails, data, transparency, and, well, us.</p>
+      {% include who.html %}
     </div>
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-      var disqus_identifier = '{{ page.id }}';
-      (function() {
-       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-       dsq.src = 'http://brighterplanet.disqus.com/embed.js';
-       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=brighterplanet">comments powered by Disqus.</a></noscript>
   </div>
-  <div id="aux">
-    <h3>What blog is this?</h3>
-    <p><a href="/">Safety in Numbers</a> is Brighter Planet's blog about climate science, Ruby, Rails, data, transparency, and, well, us.</p>
-    {% include who.html %}
-  </div>
+  {% include footer.html %}
 </div>
-{% include footer.html %}
 </body>
 </html>
