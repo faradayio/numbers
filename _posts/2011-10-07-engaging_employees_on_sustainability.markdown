@@ -2,7 +2,7 @@
 title: Engaging Employees on Sustainability
 author: Patti
 layout: post
-categories: research
+categories: science
 ---
 
 Our second annual workplace sustainability survey, currently underway, is analyzing trends and best practices in the rapidly growing field of employee environmental engagement. My recent post over at Environmental Defense Fund business blog explains the details:

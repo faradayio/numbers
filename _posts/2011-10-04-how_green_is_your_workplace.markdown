@@ -2,7 +2,7 @@
 title: "How Green is Your Workplace?"
 author: matt
 layout: post
-categories: research
+categories: science
 ---
 
 ![Survery report cover](http://attachments.brighterplanet.com/press_items/local_copies/55/thumbnail/employee_engagement_2009.png?1265816076){.wrapped} This month we're conducting our second annual [employee engagement survey](https://brighterplanet.wufoo.com/forms/how-green-is-your-workplace/), co-sponsored by [Conservation International's](http://www.conservation.org/Pages/default.aspx) Business & Sustainability Council. The survey will benchmark what businesses are doing to involve employees in sustainability and analyze evolutions since last year. We hope you'll participate and also share the survey with your colleagues. To sweeten the deal, we'll hand out $200 to a randomly selected respondent!
