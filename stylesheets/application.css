@@ -91,7 +91,7 @@ p.jump {
   font-style: italic;
 }
 
-p.jump a {
+p.jump a.comments {
   color: inherit;
 }
 
