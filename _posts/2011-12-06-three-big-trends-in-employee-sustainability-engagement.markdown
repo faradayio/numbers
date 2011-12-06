@@ -5,9 +5,7 @@ layout: post
 categories: science
 ---
 
-Two years ago we reported the results of our first survey on employee sustainability engagement, to a surprising amount of interest from non-profits, businesses, and governments. Today we’re releasing our second biennial [survey results](http://attachments.brighterplanet.com/press_items/local_copies/105/original/employee_engagement_2011.pdf?1322867541) on the subject, updating the picture of engagement initiatives, digging deeper into best practices for effective programs, and analyzing trends in this fast-evolving space.
-
-[Read on](/2011/12/06/three-big-trends-in-employee-sustainability-engagement) for more.
+Two years ago we reported the results of our first survey on employee sustainability engagement, to a surprising amount of interest from non-profits, businesses, and governments. Today we’re releasing our second biennial [survey results](http://attachments.brighterplanet.com/press_items/local_copies/105/original/employee_engagement_2011.pdf?1322867541) on the subject, updating the picture of engagement initiatives, digging deeper into best practices for effective programs, and analyzing trends in this fast-evolving space. More on our findings after the jump.
 
 <!-- more start -->
 
