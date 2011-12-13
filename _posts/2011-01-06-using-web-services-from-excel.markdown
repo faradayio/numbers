@@ -19,7 +19,7 @@ In Google Docs, `importXML` lets you read XML from a web service and then use XP
 
     =importXML(A4, "//emission_estimate/emission")
 
-where `A4` is the URL [http://carbon.brighterplanet.com/flights.xml?origin_airport=MSN&destination_airport=ORD](http://carbon.brighterplanet.com/flights.xml?origin_airport=MSN&destination_airport=ORD])... yielding `327.4` kilos of carbon emissions or so.
+where `A4` is the URL [http://carbon.brighterplanet.com/flights.xml?origin_airport=MSN&destination_airport=ORD](http://carbon.brighterplanet.com/flights.xml?origin_airport=MSN&destination_airport=ORD)... yielding `327.4` kilos of carbon emissions or so.
 
 ### What about Excel? ###
 
