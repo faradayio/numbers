@@ -9,7 +9,7 @@ Every year we do a holiday card for our friends (remember [last year's](http://n
 
 [![Happy Holidays from Brighter Planet](/images/let-it-snow.png)](http://snow.brighterplanet.com)
 
-There's some fancy new technology under the hood (more on that in a later blog post), so you'll need a new-ish browser.
+There's some fancy new technology under the hood (more on that <del>in a later blog post</del> [here](http://numbers.brighterplanet.com/2011/12/19/building-snowflakes-the-tech-behind-our-holiday-card)), so you'll need a new-ish browser.
 
 Wishing you all the best in 2012,
 Patti and the team
