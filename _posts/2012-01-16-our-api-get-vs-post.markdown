@@ -18,13 +18,20 @@ To answer this question, W3C has a handy [guide](http://www.w3.org/2001/tag/doc/
     1.3 Quick Checklist for Choosing HTTP GET or POST
     
     Use GET if:
-      The interaction is more like a question (i.e., it is a safe operation such as a query, read operation, or lookup).
+      * The interaction is more like a question (i.e., it
+        is a safe operation such as a query, read operation,
+        or lookup).
     Use POST if:
-      The interaction is more like an order, or
-      The interaction changes the state of the resource in a way that the user would perceive (e.g., a subscription to a service), or
-      The user be held accountable for the results of the interaction.
+      * The interaction is more like an order, or
+      * The interaction changes the state of the
+        resource in a way that the user would perceive
+        (e.g., a subscription to a service), or
+      * The user be held accountable for the results
+        of the interaction.
     
-    However, before the final decision to use HTTP GET or POST, please also consider considerations for sensitive data and practical considerations.
+    However, before the final decision to use HTTP GET
+    or POST, please also consider considerations for
+    sensitive data and practical considerations.
 
 In our case, we have two reasons to use GET:
 1. The calculation request results in the user being billed for usage -- "the user is held accountable" for the results.
