@@ -1,23 +1,19 @@
 ---
-title: Our API: GET vs POST
+title: Why the Brighter Planet API uses POST
 author: derek
 layout: post
 categories: technology
 ---
 
-Today I had one of those moments where I thought we had implemented our API completely wrong. I'm the kind of person who hates it when someone breaks The Rules (especially when playing board games) and I freaked out about the thought of actually being someone who was *breaking* the rules of REST.
+Have we really created a [RESTful](http://en.wikipedia.org/wiki/Representational_state_transfer#RESTful_web_services) web service? If so, why are we [specifying](http://impact.brighterplanet.com/documentation) that users send POST requests to get calculations? I asked this question to the rest of my team and a lively debate ensued among us.
 
 <!-- more start -->
 
-As many web developers know, REST is the philosophy underlying HTTP. You send a GET request to a URI (e.g. `http://brighterplanet.com/about`) to get the HTML data identified by that URI. You send a POST request to `http://mystore.com/order` to create a new order for a product. In general, a GET request doesn't change the data behind the URI, but a POST will create data on the server.
+Under the REST convention we use *GET* requests to retrieve data that represents some entity pointed to by a URI. We use *POST* to create a new entity on the server.
 
-Our [CM1](http://impact.brighterplanet.com) web service specifies that when you run a calculation, you POST to a model URI, e.g. `http://impact.brighterplanet.com/flights.json` with some parameters that tell us about the flight, like `airline=Delta`. In the past I had always thought of this as "creating a new calculation". However, as I thought about it more, I realized the POST isn't really changing any data on the server - it's not creating some new database record that contains the result of the calculation. We're simply running the calculation against preexisting data and returning the result. Uh, oh! This means our API has been breaking the rules of REST since its inception! The alarms in my head sounded!
+When a [CM1](http://impact.brighterplanet.com) user POSTs a calculation request to our service, e.g. POSTing "airline=Delta" to `http://brighterplanet.com/flights.json`, a flight calculation isn't actually stored on our server. Instead, a calculation is run against the data that exists in our database. Why then do we use the POST verb if no resource is actually created?
 
-After some discussion with the other developers, they brought up the point that the calculation request _does_ change data on the server. A user is billed any time that URL is requested.
-
-I understood the logic, but it still didn't seem right to me - a POST should actually create some representation of the URI that the user submits. REST is Representational *State Transfer*, after all, and our POST isn't transferring a new calculation entity onto the server.
-
-After some digging, I found a useful [document](http://www.w3.org/2001/tag/doc/whenToUseGet.html#principles-summary) published by the [W3C](http://www.w3.org). In it they say:
+To answer this question, W3C has a handy [guide](http://www.w3.org/2001/tag/doc/whenToUseGet.html#principles-summary) for determining which verbs are appropriate in different situations:
 
     1.3 Quick Checklist for Choosing HTTP GET or POST
     
@@ -30,8 +26,8 @@ After some digging, I found a useful [document](http://www.w3.org/2001/tag/doc/w
     
     However, before the final decision to use HTTP GET or POST, please also consider considerations for sensitive data and practical considerations.
 
-Aha! The user _is_ held accountable for the results of the interaction - they're billed for usage! In addition, the user's request will include a key parameter, which is secret, and should not be linkable.
-
-So, if you ever wonder why we settled on a POST vs a GET for running impact calculations on CM1, you now have the whole story.
+In our case, we have two reasons to use GET:
+1. The calculation request results in the user being billed for usage -- "the user is held accountable" for the results.
+1. The request contains sensitive information -- the user's API key -- which should not be included in a link to a calcuation. That is, a GET URL should double as a hyperlink reference, but we don't want the API key to be revealed (as in `http://impact.brighterplanet.com/flights.json?key=ABC123`.) Every calculation result includes a GET-able methodology link that doesn't include the API key, so you can safely share the link once the calculation is made.
 
 <!-- more end -->
