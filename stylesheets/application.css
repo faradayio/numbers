@@ -62,6 +62,10 @@ ol.posts li h2 a:hover, .post h2 a:hover {
   color: blue;
 }
 
+ol.posts li h3, .post h3 {
+  margin-left: 150px !important;
+}
+
 ol.posts li>p, .post>p {
   margin: 10px 0 0 150px;
   line-height: 1.4;
@@ -74,6 +78,34 @@ ol.posts li>table, .post>table {
 ol.posts li p img.wrapped, .post p img.wrapped {
   float: left;
   margin: 0 10px 10px 0;
+}
+
+ol.posts li dl, .post dl {
+  border-bottom: 1px solid #ddd;
+  margin: 15px 0;
+}
+
+ol.posts li dl dt, .post dl dt {
+  float: left;
+  width: 139px;
+  border-right: 1px solid #ddd;
+  clear: left;
+  padding-right: 10px;
+  word-wrap: break-word;
+}
+
+ol.posts li dl dd, .post dl dd {
+  margin: 0 0 0 150px;
+  border-left: 1px solid #ddd;
+  padding-left: 10px;
+  position: relative;
+  left: -1px;
+}
+
+ol.posts li dl dd, .post dl dd, ol.posts li dl dt, .post dl dt {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 p.meta {

@@ -5,7 +5,7 @@ layout: post
 categories: technology techresearch
 ---
 
-[fuzzy_match](https://github.com/seamusabshere/fuzzy_match) can help link (cross-reference) records across data sources&mdash;for example, match up aircraft records from the [Bureau of Transportation Statistics](http://www.bts.gov) and the [Federal Aviation Administration](http://www.faa.gov/):
+Our [`fuzzy_match`](https://github.com/seamusabshere/fuzzy_match) library for Ruby can help link (cross-reference) records across data sources&mdash;for example, match up aircraft records from the [Bureau of Transportation Statistics](http://www.bts.gov) and the [Federal Aviation Administration](http://www.faa.gov/):
 
 <p>
   <a href="http://www.transtats.bts.gov/Download_Lookup.asp?Lookup=L_AIRCRAFT_TYPE" title="BTS aircraft data source">
@@ -45,7 +45,8 @@ end
 
 which produces
 
-<pre>$ ruby example.rb
+{% highlight console %}
+$ ruby example.rb
 BTS                     FAA
 Boeing 737-800          737-800, BBJ2
 Boeing 737-5/600lr      737-600
@@ -54,7 +55,8 @@ Boeing 737-400          737-400
 Boeing 737-300lr        737-300
 Boeing 737-300          737-300
 Boeing 737-100/200      737-100
-Boeing 737-200c         737-100</pre>
+Boeing 737-200c         737-100
+{% endhighlight %}
 
 ### Then add rules ####
 
@@ -73,28 +75,29 @@ which produces
 
 You can make the following kinds of rules:
 
-<dl>
-  <dt><tt>:blockings</tt></dt>
-  <dd>group records into blocks (for example, <code>/boeing/i</code>)</dd>
-  <dt><tt>:identities</tt></dt>
-  <dd>patterns that must match on both "sides" (<code>/(F)\-?(\d50)/</code> ensures that "Ford F-150" and "Ford F-250" never match)</dd>
-  <dt><tt>:tighteners</tt></dt>
-  <dd>reduce records to the essentials (<code>/(boeing).*(7\d\d)/i</code> removes "INCORPORATED" from "BOEING INCORPORATED 737")</dd>
-  <dt><tt>:stop words</tt></dt>
-  <dd>ignore common words ([for example, THE or CANNOT](http://www.ranks.nl/resources/stopwords.html))</dd>
-</dl>
+`:blockings`
+: group records into blocks (for example, `/boeing/i`)
+
+`:identities`
+: patterns that must match on both "sides" (`/(F)\-?(\d50)/` ensures that "Ford F-150" and "Ford F-250" never match)
+
+`:tighteners`
+: reduce records to the essentials (`/(boeing).*(7\d\d)/i` removes "INCORPORATED" from "BOEING INCORPORATED 737")
+
+`:stop_words`
+: ignore common words ([for example, THE or CANNOT](http://www.ranks.nl/resources/stopwords.html))
 
 Also check out the options:
 
-<dl>
-  <dt><tt>:must_match_blocking</tt></dt>
-  <dd>don't return a match unless the needle fits into one of the blockings you specified</dd>
-  <dt><tt>:must_match_at_least_one_word</tt></dt>
-  <dd>don't return a match unless the needle shares at least one word with the match</dd>
-  <dt><tt>:first_blocking_decides</tt></dt>
-  <dd>force records into the first blocking they match, rather than choosing a blocking that will give them a higher score</dd>
-</dl>
+`:must_match_blocking`
+: don't return a match unless the needle fits into one of the blockings you specified
 
-Check out the [fuzzy_match documentation](https://github.com/seamusabshere/fuzzy_match) for more information.
+`:must_match_at_least_one_word`
+: don't return a match unless the needle shares at least one word with the match
+
+`:first_blocking_decides`
+: force records into the first blocking they match, rather than choosing a blocking that will give them a higher score
+
+Check out the [`fuzzy_match` documentation](https://github.com/seamusabshere/fuzzy_match) for more information.
 
 <!-- more end -->
