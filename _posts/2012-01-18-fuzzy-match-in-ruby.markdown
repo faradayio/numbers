@@ -18,7 +18,7 @@ Our [`fuzzy_match`](https://github.com/seamusabshere/fuzzy_match) library for Ru
 
 <!-- more start -->
 
-### Start the easy way ####
+### 90% of the way by default ####
 
 Let's look at only the Boeing 737 records for now...
 
@@ -43,7 +43,7 @@ bts_records.each do |bts|
 end
 {% endhighlight %}
 
-which produces
+which produces 
 
 {% highlight console %}
 $ ruby example.rb
@@ -55,25 +55,27 @@ Boeing 737-400          737-400
 Boeing 737-300lr        737-300
 Boeing 737-300          737-300
 Boeing 737-100/200      737-100
-Boeing 737-200c         737-100
+Boeing 737-200c         737-100  # <- oops!
 {% endhighlight %}
 
-### Then add rules ####
+### Add rules to get to 95% ####
 
-Fuzzy matching may catch 90% by itself, but you will have to define rules to get to 95% or 99% accuracy.
+Fuzzy matching may catch 90% by itself, but you will have to define rules to get to 95%.
 
-For example, oops! "Boeing 737-200c" is matching "737-100". Let's tell <code>FuzzyMatch</code> about the "7X7-XXX" <em>identity</em>...
+For example, see above; "Boeing 737-200c" is matching "737-100". Let's use an "identity" rule for "7X7-XXX"...
 
 {% highlight ruby %}
-identities = [ /(7\d7)-?(\d\d\d)/ ] # for records containing 7X7, make sure the last 3 digits match
-matcher = FuzzyMatch.new(faa_records, :identities => identities )
+identities = [
+  %r{(7\d7)-?(\d\d\d)} # when comparing two records that both contain 7X7, make sure all the digits (but not the dash) are equal
+]
+matcher = FuzzyMatch.new(faa_records, :identities => identities)
 {% endhighlight %}
 
-which produces
+which produces the correct match
 
 <pre>Boeing 737-200c         737-200, Surveiller (CT-43, VC-96)</pre>
 
-You can make the following kinds of rules:
+Check out the [`fuzzy_match` documentation](https://github.com/seamusabshere/fuzzy_match) for all the details, but be aware of the different kinds of rules:
 
 `:blockings`
 : group records into blocks (for example, `/boeing/i`)
@@ -81,13 +83,16 @@ You can make the following kinds of rules:
 `:identities`
 : patterns that must match on both "sides" (`/(F)\-?(\d50)/` ensures that "Ford F-150" and "Ford F-250" never match)
 
-`:tighteners`
+`:normalizers`
 : reduce records to the essentials (`/(boeing).*(7\d\d)/i` removes "INCORPORATED" from "BOEING INCORPORATED 737")
 
 `:stop_words`
 : ignore common words ([for example, THE or CANNOT](http://www.ranks.nl/resources/stopwords.html))
 
-Also check out the options:
+There are also options you should be aware of:
+
+`:read`
+: how to interpret records... by default, `to_s` is called. If `:read` is a symbol like :foobar, then `record.send(:foobar)` is called. You can also pass a `Proc`.
 
 `:must_match_blocking`
 : don't return a match unless the needle fits into one of the blockings you specified
@@ -97,7 +102,5 @@ Also check out the options:
 
 `:first_blocking_decides`
 : force records into the first blocking they match, rather than choosing a blocking that will give them a higher score
-
-Check out the [`fuzzy_match` documentation](https://github.com/seamusabshere/fuzzy_match) for more information.
 
 <!-- more end -->
