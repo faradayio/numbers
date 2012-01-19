@@ -78,6 +78,7 @@ ol.posts li>table, .post>table {
 ol.posts li p img.wrapped, .post p img.wrapped {
   float: left;
   margin: 0 10px 10px 0;
+  clear: left;
 }
 
 ol.posts li dl, .post dl {
