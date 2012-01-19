@@ -62,7 +62,7 @@ Boeing 737-200c         737-100  # <- oops!
 
 Fuzzy matching may catch 90% by itself, but you will have to define rules to get to 95%.
 
-For example, see above; "Boeing 737-200c" is matching "737-100". Let's use an "identity" rule for "7X7-XXX"...
+In this case, the error is "Boeing 737-200c" matching "737-100". Let's use an "identity" rule for "7X7-XXX"...
 
 {% highlight ruby %}
 identities = [
@@ -75,32 +75,22 @@ which produces the correct match
 
 <pre>Boeing 737-200c         737-200, Surveiller (CT-43, VC-96)</pre>
 
-Check out the [`fuzzy_match` documentation](https://github.com/seamusabshere/fuzzy_match) for all the details, but be aware of the different kinds of rules:
+### Rules and options ###
 
-`:blockings`
-: group records into blocks (for example, `/boeing/i`)
+Check out the [`fuzzy_match` documentation](https://github.com/seamusabshere/fuzzy_match) for all the kinds of rules...
 
-`:identities`
-: patterns that must match on both "sides" (`/(F)\-?(\d50)/` ensures that "Ford F-150" and "Ford F-250" never match)
+* `:blockings`
+* `:normalizers`
+* `:identities`
+* `:stop_words`
 
-`:normalizers`
-: reduce records to the essentials (`/(boeing).*(7\d\d)/i` removes "INCORPORATED" from "BOEING INCORPORATED 737")
+and also options you can pass to `find`...
 
-`:stop_words`
-: ignore common words ([for example, THE or CANNOT](http://www.ranks.nl/resources/stopwords.html))
+* `:read`
+* `:must_match_blocking`
+* `:must_match_at_least_one_word`
+* `:first_blocking_decides`
 
-There are also options you should be aware of:
-
-`:read`
-: how to interpret records... by default, `to_s` is called. If `:read` is a symbol like :foobar, then `record.send(:foobar)` is called. You can also pass a `Proc`.
-
-`:must_match_blocking`
-: don't return a match unless the needle fits into one of the blockings you specified
-
-`:must_match_at_least_one_word`
-: don't return a match unless the needle shares at least one word with the match
-
-`:first_blocking_decides`
-: force records into the first blocking they match, rather than choosing a blocking that will give them a higher score
+That's it!
 
 <!-- more end -->
