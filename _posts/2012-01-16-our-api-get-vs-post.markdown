@@ -33,7 +33,7 @@ To answer this question, W3C has a handy [guide](http://www.w3.org/2001/tag/doc/
     or POST, please also consider considerations for
     sensitive data and practical considerations.
 
-In our case, we have two reasons to use GET:
+In our case, we have two reasons to use POST:
 1. The calculation request results in the user being billed for usage -- "the user is held accountable" for the results.
 1. The request contains sensitive information -- the user's API key -- which should not be included in a link to a calcuation. That is, a GET URL should double as a hyperlink reference, but we don't want the API key to be revealed (as in `http://impact.brighterplanet.com/flights.json?key=ABC123`.) Every calculation result includes a GET-able methodology link that doesn't include the API key, so you can safely share the link once the calculation is made.
 
