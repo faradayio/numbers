@@ -18,12 +18,12 @@ $ rails new zippy
 In the Gemfile:
 {% highlight ruby %}
 gem 'earth'
-gem 'fastercsv' # not needed if using Ruby 1.9
+gem 'fastercsv' # only if you're on Ruby 1.8
 {% endhighlight %}
 
 And in `config/environment.rb` or an initializer:
 {% highlight ruby %}
-Earth.init 'locality/zip_code'
+Earth.init :locality
 {% endhighlight %}
 
 Back at the shell:
@@ -32,11 +32,11 @@ $ bundle install
 $ rails console
 {% endhighlight %}
 {% highlight rbcon %}
-irb(main):001:0> ZipCode.run_data_miner!
-Schema:        100% |==========================================| Time: 00:00:05
-zip_codes:     100% |==========================================| Time: 00:06:48
-irb(main):002:0> ZipCode.find '53704'
- => #<ZipCode name: "53704", state_postal_abbreviation: "WI", description: "Madison", latitude: "43.121416", longitude: "-89.34968", egrid_subregion_abbreviation: "MROE", climate_division_name: "WI8", created_at: "2010-05-14 22:57:57", updated_at: "2010-05-14 23:03:27">
+1.9.3-p0 :001 > ZipCode.run_data_miner!
+ => nil 
+1.9.3-p0 :002 > ZipCode.find 53703
+  ZipCode Load (22.4ms)  SELECT "zip_codes".* FROM "zip_codes" WHERE "zip_codes"."name" = ? LIMIT 1  [["name", 53703]]
+ => #<ZipCode name: "53703", state_postal_abbreviation: "WI", description: "Madison", latitude: "43.078646", longitude: "-89.37727", egrid_subregion_abbreviation: "MROE", climate_division_name: "WI8">
 {% endhighlight %}
 
 Voila! Fresh from the [transparent data crawlers](http://data.brighterplanet.com/zip_codes) at [data.brighterplanet.com](http://data.brighterplanet.com).
