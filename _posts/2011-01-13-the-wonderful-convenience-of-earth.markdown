@@ -33,7 +33,16 @@ $ rails console
 {% endhighlight %}
 {% highlight rbcon %}
 1.9.3-p0 :001 > ZipCode.run_data_miner!
- => nil 
+   (7.2ms)  DROP TABLE "zip_codes"
+Receiving schema
+Schema:          0% |                                          | ETA:  --:--:--
+Schema:        100% |==========================================| Time: 00:00:01
+Receiving indexes
+Receiving data
+1 tables, 200 records
+zip_codes:     100% |==========================================| Time: 00:00:09
+Resetting sequences
+[...it will also add some related tables...]
 1.9.3-p0 :002 > ZipCode.find 53703
   ZipCode Load (22.4ms)  SELECT "zip_codes".* FROM "zip_codes" WHERE "zip_codes"."name" = ? LIMIT 1  [["name", 53703]]
  => #<ZipCode name: "53703", state_postal_abbreviation: "WI", description: "Madison", latitude: "43.078646", longitude: "-89.37727", egrid_subregion_abbreviation: "MROE", climate_division_name: "WI8">
