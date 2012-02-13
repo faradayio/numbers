@@ -5,6 +5,8 @@ layout: post
 categories: company
 ---
 
+<script language="javascript" src="http://embedtweet.com/javascripts/embed_v2.js">&nbsp;</script>
+
 <ol>
   <li>
     Come at 7:30PM on November 4th to <a href="http://maps.google.com/maps?q=721+Broadway,new+york&amp;hl=en&amp;ll=40.729145,-73.992877&amp;spn=0.002634,0.003691&amp;sll=37.0625,-95.677068&amp;sspn=44.879582,60.46875&amp;vpsrc=0&amp;hnear=721+Broadway,+New+York,+10003&amp;t=m&amp;z=18">Tisch ITP's turn-of-the-century industrial loft</a> and see if there's a project you want to hack on.
