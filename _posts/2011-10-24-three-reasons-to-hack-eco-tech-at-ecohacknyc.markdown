@@ -5,7 +5,7 @@ layout: post
 categories: company
 ---
 
-<script language="javascript" src="http://embedtweet.com/javascripts/embed_v2.js">&nbsp;</script>
+<script type="text/javascript" src="http://embedtweet.com/javascripts/embed_v2.js">&nbsp;</script>
 
 <ol>
   <li>
