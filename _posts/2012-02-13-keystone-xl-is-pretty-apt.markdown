@@ -13,7 +13,7 @@ Naturally we were tinkering with some of the numbers related to Keystone, and on
 
 Wikipedia [tells us](http://en.wikipedia.org/wiki/Keystone_Pipeline#Keystone_XL) the radius and length of the two extensions that make up the "XL" part of Keystone. We plugged that into Wolfram Alpha to get a nice volume calculation:
 
-<script type="text/javascript" id="WolframAlphaScript7299150749347763fc2b9948645e89fa" src="http://www.wolframalpha.com/widget/widget.jsp?id=7299150749347763fc2b9948645e89fa"></script>
+<script type="text/javascript" id="WolframAlphaScript7299150749347763fc2b9948645e89fa" src="http://www.wolframalpha.com/widget/widget.jsp?id=7299150749347763fc2b9948645e89fa">&nbsp;</script>
 
 Take that volume and plug it into CM1's [Fuel Purchase](http://impact.brighterplanet.com/models/fuel_purchase) impact model and we get:
 
