@@ -20,4 +20,5 @@ That's the GHG emissions represented by the oil that would be inside KXL at any 
 "XL" is right.
 
 [^fn]: Wikipedia [tells us](http://en.wikipedia.org/wiki/Keystone_Pipeline#Keystone_XL) the radius and length of the two extensions that make up the "XL" part of Keystone. We plugged that into Wolfram Alpha to get [the volume](http://www.wolframalpha.com/input/?i=pi+*+457^2+millimeters^2+*+1226+km).
+
 <!-- more end -->
