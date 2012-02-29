@@ -7,14 +7,16 @@ categories: technology
 
 Every process will have a __different hash value for the same string__, so cache keys based on `String#hash` will not work as expected!
 
-{% highlight ruby %}
-$ irb
+{% highlight irb %}
 1.9.3-p0 :001 > 'test'.hash
  => 240227015057187339 
 1.9.3-p0 :002 > 'test'.hash
  => 240227015057187339 
-1.9.3-p0 :003 > exit
-$ irb
+{% endhighlight %}
+
+But in another IRB session:
+
+{% highlight irb %}
 1.9.3-p0 :001 > 'test'.hash
  => -2779337368972820904 
 1.9.3-p0 :002 > 'test'.hash
