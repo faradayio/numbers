@@ -23,7 +23,7 @@ $ cd protobuf-2.4.1
 ~/protobuf-2.4.1$ sudo ldconfig | grep proto
   [you should see libprotobuf, etc.]
 ~/protobuf-2.4.1$ cd
-$ git clone git clone https://github.com/keithw/mosh
+$ git clone https://github.com/keithw/mosh
 $ cd mosh
 ~/mosh$ ./autogen.sh 
 ~/mosh$ ./configure PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
@@ -46,7 +46,7 @@ Here's something that's easy to copy-paste:
     sudo ldconfig | grep proto
       [you should see libprotobuf, etc.]
     cd
-    git clone git clone https://github.com/keithw/mosh
+    git clone https://github.com/keithw/mosh
     cd mosh
     ./autogen.sh 
     ./configure PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
