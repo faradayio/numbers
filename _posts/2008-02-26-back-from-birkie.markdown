@@ -19,7 +19,7 @@ A small recycling program was started, diverting countless bags of cardboard fro
 <tbody>
 <tr>
 <td><a id="flickr_www" onclick="window.open(this.href);return false;" href="http://www.flickr.com">www.<strong style="color:#3993ff">flick<span style="color: #ff1c92;">r</span></strong>.com</a>
-<table id="flickr_badge_wrapper" border="0" cellspacing="10" cellpadding="0"><script src="http://www.flickr.com/badge_code_v2.gne?count=3&amp;display=random&amp;size=m&amp;layout=v&amp;source=user_set&amp;user=13949611%40N08&amp;set=72157603995509721&amp;context=in%2Fset-72157603995509721%2F" type="text/javascript"></script></table>
+<table id="flickr_badge_wrapper" border="0" cellspacing="10" cellpadding="0"><script src="http://www.flickr.com/badge_code_v2.gne?count=3&amp;display=random&amp;size=m&amp;layout=v&amp;source=user_set&amp;user=13949611%40N08&amp;set=72157603995509721&amp;context=in%2Fset-72157603995509721%2F" type="text/javascript">&nbsp;</script></table>
 </td>
 </tr>
 </tbody></table>

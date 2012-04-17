@@ -1,0 +1,1244 @@
+Script started on Sat 14 Apr 2012 09:03:30 PM UTC
+ec2-user@ip-10-243-77-192:$ sudo yum install git-core boost-devel libutempter-devel ncurses-devel zlib-devel perl-CPAN cpp make automake gcc-c++
+Loaded plugins: fastestmirror, priorities, security, update-motd
+Loading mirror speeds from cached hostfile
+ * amzn-main: packages.us-east-1.amazonaws.com
+ * amzn-updates: packages.us-east-1.amazonaws.com
+Setting up Install Process
+Resolving Dependencies
+--> Running transaction check
+---> Package automake.noarch 0:1.11.1-2.9.amzn1 will be installed
+--> Processing Dependency: autoconf >= 2.62 for package: automake-1.11.1-2.9.amzn1.noarch
+---> Package boost-devel.x86_64 0:1.41.0-11.8.amzn1 will be installed
+--> Processing Dependency: boost = 1.41.0-11.8.amzn1 for package: boost-devel-1.41.0-11.8.amzn1.x86_64
+--> Processing Dependency: libboost_iostreams-mt.so.1.41.0()(64bit) for package: boost-devel-1.41.0-11.8.amzn1.x86_64
+--> Processing Dependency: libboost_python.so.1.41.0()(64bit) for package: boost-devel-1.41.0-11.8.amzn1.x86_64
+--> Processing Dependency: libboost_regex-mt.so.1.41.0()(64bit) for package: boost-devel-1.41.0-11.8.amzn1.x86_64
+--> Processing Dependency: libboost_regex.so.1.41.0()(64bit) for package: boost-devel-1.41.0-11.8.amzn1.x86_64
+--> Processing Dependency: libboost_iostreams.so.1.41.0()(64bit) for package: boost-devel-1.41.0-11.8.amzn1.x86_64
+--> Processing Dependency: libboost_program_options-mt.so.1.41.0()(64bit) for package: boost-devel-1.41.0-11.8.amzn1.x86_64
+--> Processing Dependency: libboost_system-mt.so.1.41.0()(64bit) for package: boost-devel-1.41.0-11.8.amzn1.x86_64
+--> Processing Dependency: libboost_prg_exec_monitor.so.1.41.0()(64bit) for package: boost-devel-1.41.0-11.8.amzn1.x86_64
+--> Processing Dependency: libboost_serialization-mt.so.1.41.0()(64bit) for package: boost-devel-1.41.0-11.8.amzn1.x86_64
+--> Processing Dependency: libboost_wave-mt.so.1.41.0()(64bit) for package: boost-devel-1.41.0-11.8.amzn1.x86_64
+--> Processing Dependency: libboost_graph.so.1.41.0()(64bit) for package: boost-devel-1.41.0-11.8.amzn1.x86_64
+--> Processing Dependency: libboost_system.so.1.41.0()(64bit) for package: boost-devel-1.41.0-11.8.amzn1.x86_64
+--> Processing Dependency: libboost_wserialization.so.1.41.0()(64bit) for package: boost-devel-1.41.0-11.8.amzn1.x86_64
+--> Processing Dependency: libboost_filesystem-mt.so.1.41.0()(64bit) for package: boost-devel-1.41.0-11.8.amzn1.x86_64
+--> Processing Dependency: libboost_serialization.so.1.41.0()(64bit) for package: boost-devel-1.41.0-11.8.amzn1.x86_64
+--> Processing Dependency: libboost_filesystem.so.1.41.0()(64bit) for package: boost-devel-1.41.0-11.8.amzn1.x86_64
+--> Processing Dependency: libboost_unit_test_framework-mt.so.1.41.0()(64bit) for package: boost-devel-1.41.0-11.8.amzn1.x86_64
+--> Processing Dependency: libboost_signals-mt.so.1.41.0()(64bit) for package: boost-devel-1.41.0-11.8.amzn1.x86_64
+--> Processing Dependency: libboost_thread-mt.so.1.41.0()(64bit) for package: boost-devel-1.41.0-11.8.amzn1.x86_64
+--> Processing Dependency: libboost_graph-mt.so.1.41.0()(64bit) for package: boost-devel-1.41.0-11.8.amzn1.x86_64
+--> Processing Dependency: libboost_signals.so.1.41.0()(64bit) for package: boost-devel-1.41.0-11.8.amzn1.x86_64
+--> Processing Dependency: libboost_date_time-mt.so.1.41.0()(64bit) for package: boost-devel-1.41.0-11.8.amzn1.x86_64
+--> Processing Dependency: libboost_prg_exec_monitor-mt.so.1.41.0()(64bit) for package: boost-devel-1.41.0-11.8.amzn1.x86_64
+--> Processing Dependency: libboost_unit_test_framework.so.1.41.0()(64bit) for package: boost-devel-1.41.0-11.8.amzn1.x86_64
+--> Processing Dependency: libboost_program_options.so.1.41.0()(64bit) for package: boost-devel-1.41.0-11.8.amzn1.x86_64
+--> Processing Dependency: libboost_wserialization-mt.so.1.41.0()(64bit) for package: boost-devel-1.41.0-11.8.amzn1.x86_64
+--> Processing Dependency: libboost_python-mt.so.1.41.0()(64bit) for package: boost-devel-1.41.0-11.8.amzn1.x86_64
+--> Processing Dependency: libboost_date_time.so.1.41.0()(64bit) for package: boost-devel-1.41.0-11.8.amzn1.x86_64
+---> Package cpp.x86_64 0:4.4.6-3.45.amzn1 will be installed
+--> Processing Dependency: libmpfr.so.1()(64bit) for package: cpp-4.4.6-3.45.amzn1.x86_64
+---> Package gcc-c++.x86_64 0:4.4.6-3.45.amzn1 will be installed
+--> Processing Dependency: gcc = 4.4.6-3.45.amzn1 for package: gcc-c++-4.4.6-3.45.amzn1.x86_64
+--> Processing Dependency: libstdc++-devel = 4.4.6-3.45.amzn1 for package: gcc-c++-4.4.6-3.45.amzn1.x86_64
+---> Package git.x86_64 0:1.7.4.5-1.21.amzn1 will be installed
+--> Processing Dependency: perl-Git = 1.7.4.5-1.21.amzn1 for package: git-1.7.4.5-1.21.amzn1.x86_64
+--> Processing Dependency: perl(Error) for package: git-1.7.4.5-1.21.amzn1.x86_64
+--> Processing Dependency: perl(Git) for package: git-1.7.4.5-1.21.amzn1.x86_64
+---> Package libutempter-devel.x86_64 0:1.1.5-4.1.6.amzn1 will be installed
+---> Package make.x86_64 1:3.81-19.6.amzn1 will be installed
+---> Package ncurses-devel.x86_64 0:5.7-3.20090208.9.amzn1 will be installed
+---> Package perl-CPAN.x86_64 0:1.9402-119.12.amzn1 will be installed
+--> Processing Dependency: perl(ExtUtils::MakeMaker) for package: perl-CPAN-1.9402-119.12.amzn1.x86_64
+---> Package zlib-devel.x86_64 0:1.2.3-27.9.amzn1 will be installed
+--> Running transaction check
+---> Package autoconf.noarch 0:2.63-5.1.7.amzn1 will be installed
+---> Package boost.x86_64 0:1.41.0-11.8.amzn1 will be installed
+---> Package boost-date-time.x86_64 0:1.41.0-11.8.amzn1 will be installed
+---> Package boost-filesystem.x86_64 0:1.41.0-11.8.amzn1 will be installed
+---> Package boost-graph.x86_64 0:1.41.0-11.8.amzn1 will be installed
+--> Processing Dependency: libicuuc.so.42()(64bit) for package: boost-graph-1.41.0-11.8.amzn1.x86_64
+--> Processing Dependency: libicui18n.so.42()(64bit) for package: boost-graph-1.41.0-11.8.amzn1.x86_64
+---> Package boost-iostreams.x86_64 0:1.41.0-11.8.amzn1 will be installed
+---> Package boost-program-options.x86_64 0:1.41.0-11.8.amzn1 will be installed
+---> Package boost-python.x86_64 0:1.41.0-11.8.amzn1 will be installed
+---> Package boost-regex.x86_64 0:1.41.0-11.8.amzn1 will be installed
+---> Package boost-serialization.x86_64 0:1.41.0-11.8.amzn1 will be installed
+---> Package boost-signals.x86_64 0:1.41.0-11.8.amzn1 will be installed
+---> Package boost-system.x86_64 0:1.41.0-11.8.amzn1 will be installed
+---> Package boost-test.x86_64 0:1.41.0-11.8.amzn1 will be installed
+---> Package boost-thread.x86_64 0:1.41.0-11.8.amzn1 will be installed
+---> Package boost-wave.x86_64 0:1.41.0-11.8.amzn1 will be installed
+---> Package gcc.x86_64 0:4.4.6-3.45.amzn1 will be installed
+--> Processing Dependency: binutils >= 2.20.51.0.2-5 for package: gcc-4.4.6-3.45.amzn1.x86_64
+--> Processing Dependency: cloog-ppl >= 0.15 for package: gcc-4.4.6-3.45.amzn1.x86_64
+--> Processing Dependency: glibc-devel >= 2.2.90-12 for package: gcc-4.4.6-3.45.amzn1.x86_64
+--> Processing Dependency: libgomp.so.1()(64bit) for package: gcc-4.4.6-3.45.amzn1.x86_64
+---> Package libstdc++-devel.x86_64 0:4.4.6-3.45.amzn1 will be installed
+---> Package mpfr.x86_64 0:2.4.2-1.7.amzn1 will be installed
+---> Package perl-Error.noarch 1:0.17015-4.6.amzn1 will be installed
+---> Package perl-ExtUtils-MakeMaker.x86_64 0:6.55-119.12.amzn1 will be installed
+--> Processing Dependency: perl(Test::Harness) for package: perl-ExtUtils-MakeMaker-6.55-119.12.amzn1.x86_64
+--> Processing Dependency: perl-devel for package: perl-ExtUtils-MakeMaker-6.55-119.12.amzn1.x86_64
+---> Package perl-Git.x86_64 0:1.7.4.5-1.21.amzn1 will be installed
+--> Running transaction check
+---> Package binutils.x86_64 0:2.20.51.0.7-8.29.amzn1 will be installed
+---> Package cloog-ppl.x86_64 0:0.15.7-1.2.5.amzn1 will be installed
+--> Processing Dependency: libppl.so.7()(64bit) for package: cloog-ppl-0.15.7-1.2.5.amzn1.x86_64
+--> Processing Dependency: libppl_c.so.2()(64bit) for package: cloog-ppl-0.15.7-1.2.5.amzn1.x86_64
+---> Package glibc-devel.x86_64 0:2.12-1.47.37.amzn1 will be installed
+--> Processing Dependency: glibc-headers = 2.12-1.47.37.amzn1 for package: glibc-devel-2.12-1.47.37.amzn1.x86_64
+--> Processing Dependency: glibc-headers for package: glibc-devel-2.12-1.47.37.amzn1.x86_64
+---> Package libgomp.x86_64 0:4.6.2-1.27.amzn1 will be installed
+---> Package libicu.x86_64 0:4.2.1-9.9.amzn1 will be installed
+---> Package perl-Test-Harness.x86_64 0:3.17-119.12.amzn1 will be installed
+---> Package perl-devel.x86_64 4:5.10.1-119.12.amzn1 will be installed
+--> Processing Dependency: perl(ExtUtils::ParseXS) for package: 4:perl-devel-5.10.1-119.12.amzn1.x86_64
+--> Running transaction check
+---> Package glibc-headers.x86_64 0:2.12-1.47.37.amzn1 will be installed
+--> Processing Dependency: kernel-headers >= 2.2.1 for package: glibc-headers-2.12-1.47.37.amzn1.x86_64
+--> Processing Dependency: kernel-headers for package: glibc-headers-2.12-1.47.37.amzn1.x86_64
+---> Package perl-ExtUtils-ParseXS.x86_64 1:2.2003.0-119.12.amzn1 will be installed
+---> Package ppl.x86_64 0:0.10.2-11.5.amzn1 will be installed
+--> Running transaction check
+---> Package kernel-headers.x86_64 0:3.2.12-3.2.4.amzn1 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================================================================================================
+ Package                                       Arch                         Version                                       Repository                       Size
+================================================================================================================================================================
+Installing:
+ automake                                      noarch                       1.11.1-2.9.amzn1                              amzn-main                       569 k
+ boost-devel                                   x86_64                       1.41.0-11.8.amzn1                             amzn-main                       5.9 M
+ cpp                                           x86_64                       4.4.6-3.45.amzn1                              amzn-main                       4.2 M
+ gcc-c++                                       x86_64                       4.4.6-3.45.amzn1                              amzn-main                       5.3 M
+ git                                           x86_64                       1.7.4.5-1.21.amzn1                            amzn-main                       4.6 M
+ libutempter-devel                             x86_64                       1.1.5-4.1.6.amzn1                             amzn-main                       4.0 k
+ make                                          x86_64                       1:3.81-19.6.amzn1                             amzn-main                       480 k
+ ncurses-devel                                 x86_64                       5.7-3.20090208.9.amzn1                        amzn-main                       670 k
+ perl-CPAN                                     x86_64                       1.9402-119.12.amzn1                           amzn-main                       257 k
+ zlib-devel                                    x86_64                       1.2.3-27.9.amzn1                              amzn-main                        45 k
+Installing for dependencies:
+ autoconf                                      noarch                       2.63-5.1.7.amzn1                              amzn-main                       932 k
+ binutils                                      x86_64                       2.20.51.0.7-8.29.amzn1                        amzn-main                       3.6 M
+ boost                                         x86_64                       1.41.0-11.8.amzn1                             amzn-main                        17 k
+ boost-date-time                               x86_64                       1.41.0-11.8.amzn1                             amzn-main                        59 k
+ boost-filesystem                              x86_64                       1.41.0-11.8.amzn1                             amzn-main                        73 k
+ boost-graph                                   x86_64                       1.41.0-11.8.amzn1                             amzn-main                       142 k
+ boost-iostreams                               x86_64                       1.41.0-11.8.amzn1                             amzn-main                        57 k
+ boost-program-options                         x86_64                       1.41.0-11.8.amzn1                             amzn-main                       215 k
+ boost-python                                  x86_64                       1.41.0-11.8.amzn1                             amzn-main                       239 k
+ boost-regex                                   x86_64                       1.41.0-11.8.amzn1                             amzn-main                       696 k
+ boost-serialization                           x86_64                       1.41.0-11.8.amzn1                             amzn-main                       389 k
+ boost-signals                                 x86_64                       1.41.0-11.8.amzn1                             amzn-main                        72 k
+ boost-system                                  x86_64                       1.41.0-11.8.amzn1                             amzn-main                        24 k
+ boost-test                                    x86_64                       1.41.0-11.8.amzn1                             amzn-main                       497 k
+ boost-thread                                  x86_64                       1.41.0-11.8.amzn1                             amzn-main                        45 k
+ boost-wave                                    x86_64                       1.41.0-11.8.amzn1                             amzn-main                       246 k
+ cloog-ppl                                     x86_64                       0.15.7-1.2.5.amzn1                            amzn-main                        97 k
+ gcc                                           x86_64                       4.4.6-3.45.amzn1                              amzn-main                        11 M
+ glibc-devel                                   x86_64                       2.12-1.47.37.amzn1                            amzn-main                       1.0 M
+ glibc-headers                                 x86_64                       2.12-1.47.37.amzn1                            amzn-main                       644 k
+ kernel-headers                                x86_64                       3.2.12-3.2.4.amzn1                            amzn-main                       842 k
+ libgomp                                       x86_64                       4.6.2-1.27.amzn1                              amzn-main                       101 k
+ libicu                                        x86_64                       4.2.1-9.9.amzn1                               amzn-main                       7.2 M
+ libstdc++-devel                               x86_64                       4.4.6-3.45.amzn1                              amzn-main                       1.9 M
+ mpfr                                          x86_64                       2.4.2-1.7.amzn1                               amzn-main                       182 k
+ perl-Error                                    noarch                       1:0.17015-4.6.amzn1                           amzn-main                        27 k
+ perl-ExtUtils-MakeMaker                       x86_64                       6.55-119.12.amzn1                             amzn-main                       305 k
+ perl-ExtUtils-ParseXS                         x86_64                       1:2.2003.0-119.12.amzn1                       amzn-main                        44 k
+ perl-Git                                      x86_64                       1.7.4.5-1.21.amzn1                            amzn-main                        16 k
+ perl-Test-Harness                             x86_64                       3.17-119.12.amzn1                             amzn-main                       235 k
+ perl-devel                                    x86_64                       4:5.10.1-119.12.amzn1                         amzn-main                       462 k
+ ppl                                           x86_64                       0.10.2-11.5.amzn1                             amzn-main                       1.6 M
+
+Transaction Summary
+================================================================================================================================================================
+Install      42 Package(s)
+
+Total download size: 55 M
+Installed size: 161 M
+Is this ok [y/N]: y
+Downloading Packages:
+
+Installed:
+  automake.noarch 0:1.11.1-2.9.amzn1             boost-devel.x86_64 0:1.41.0-11.8.amzn1                  cpp.x86_64 0:4.4.6-3.45.amzn1                         
+  gcc-c++.x86_64 0:4.4.6-3.45.amzn1              git.x86_64 0:1.7.4.5-1.21.amzn1                         libutempter-devel.x86_64 0:1.1.5-4.1.6.amzn1          
+  make.x86_64 1:3.81-19.6.amzn1                  ncurses-devel.x86_64 0:5.7-3.20090208.9.amzn1           perl-CPAN.x86_64 0:1.9402-119.12.amzn1                
+  zlib-devel.x86_64 0:1.2.3-27.9.amzn1          
+
+Dependency Installed:
+  autoconf.noarch 0:2.63-5.1.7.amzn1                     binutils.x86_64 0:2.20.51.0.7-8.29.amzn1           boost.x86_64 0:1.41.0-11.8.amzn1                    
+  boost-date-time.x86_64 0:1.41.0-11.8.amzn1             boost-filesystem.x86_64 0:1.41.0-11.8.amzn1        boost-graph.x86_64 0:1.41.0-11.8.amzn1              
+  boost-iostreams.x86_64 0:1.41.0-11.8.amzn1             boost-program-options.x86_64 0:1.41.0-11.8.amzn1   boost-python.x86_64 0:1.41.0-11.8.amzn1             
+  boost-regex.x86_64 0:1.41.0-11.8.amzn1                 boost-serialization.x86_64 0:1.41.0-11.8.amzn1     boost-signals.x86_64 0:1.41.0-11.8.amzn1            
+  boost-system.x86_64 0:1.41.0-11.8.amzn1                boost-test.x86_64 0:1.41.0-11.8.amzn1              boost-thread.x86_64 0:1.41.0-11.8.amzn1             
+  boost-wave.x86_64 0:1.41.0-11.8.amzn1                  cloog-ppl.x86_64 0:0.15.7-1.2.5.amzn1              gcc.x86_64 0:4.4.6-3.45.amzn1                       
+  glibc-devel.x86_64 0:2.12-1.47.37.amzn1                glibc-headers.x86_64 0:2.12-1.47.37.amzn1          kernel-headers.x86_64 0:3.2.12-3.2.4.amzn1          
+  libgomp.x86_64 0:4.6.2-1.27.amzn1                      libicu.x86_64 0:4.2.1-9.9.amzn1                    libstdc++-devel.x86_64 0:4.4.6-3.45.amzn1           
+  mpfr.x86_64 0:2.4.2-1.7.amzn1                          perl-Error.noarch 1:0.17015-4.6.amzn1              perl-ExtUtils-MakeMaker.x86_64 0:6.55-119.12.amzn1  
+  perl-ExtUtils-ParseXS.x86_64 1:2.2003.0-119.12.amzn1   perl-Git.x86_64 0:1.7.4.5-1.21.amzn1               perl-Test-Harness.x86_64 0:3.17-119.12.amzn1        
+  perl-devel.x86_64 4:5.10.1-119.12.amzn1                ppl.x86_64 0:0.10.2-11.5.amzn1                    
+
+Complete!
+ec2-user@ip-10-243-77-192:$ sudo cpan IO::Pty
+
+Would you like me to configure as much as possible automatically? [yes] y
+
+Shall I follow them and prepend them to the queue
+of modules we are processing right now? [yes] y
+
+Installing /usr/local/lib64/perl5/auto/IO/Tty/Tty.so
+Installing /usr/local/lib64/perl5/auto/IO/Tty/Tty.bs
+Installing /usr/local/lib64/perl5/IO/Tty.pm
+Installing /usr/local/lib64/perl5/IO/Pty.pm
+Installing /usr/local/lib64/perl5/IO/Tty/Constant.pm
+Installing /usr/local/share/man/man3/IO::Tty::Constant.3pm
+Installing /usr/local/share/man/man3/IO::Pty.3pm
+Installing /usr/local/share/man/man3/IO::Tty.3pm
+Appending installation info to /usr/lib64/perl5/perllocal.pod
+  TODDR/IO-Tty-1.10.tar.gz
+  /usr/bin/make install  -- OK
+Warning (usually harmless): 'YAML' not installed, will not store persistent state
+ec2-user@ip-10-243-77-192:$ curl -O "http://protobuf.googlecode.com/files/protobuf-2.4.1.tar.gz"
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 1889k  100 1889k    0     0  8272k      0 --:--:-- --:--:-- --:--:-- 10.9M
+ec2-user@ip-10-243-77-192:$ tar -xzf protobuf-2.4.1.tar.gz 
+ec2-user@ip-10-243-77-192:$ cd protobuf-2.4.1
+ec2-user@ip-10-243-77-192:~/protobuf-2.4.1$ ./configure 
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking target system type... x86_64-unknown-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for style of include used by make... GNU
+checking dependency style of gcc... gcc3
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... gcc3
+checking how to run the C++ preprocessor... g++ -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking C++ compiler flags...... use default: -O2  -g -DNDEBUG
+checking whether __SUNPRO_CC is declared... no
+checking for a sed that does not truncate output... /bin/sed
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for ar... ar
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for dlfcn.h... yes
+checking whether we are using the GNU C++ compiler... (cached) yes
+checking whether g++ accepts -g... (cached) yes
+checking dependency style of g++... (cached) gcc3
+checking how to run the C++ preprocessor... g++ -E
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... no
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for ld used by g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... no
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for ANSI C header files... (cached) yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking for inttypes.h... (cached) yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking for stdlib.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for working memcmp... yes
+checking for working strtod... yes
+checking for ftruncate... yes
+checking for memset... yes
+checking for mkdir... yes
+checking for strchr... yes
+checking for strerror... yes
+checking for strtol... yes
+checking zlib version... ok (1.2.0.4 or later)
+checking for library containing zlibVersion... -lz
+checking for the pthreads library -lpthreads... no
+checking whether pthreads work without any flags... no
+checking whether pthreads work with -Kthread... no
+checking whether pthreads work with -kthread... no
+checking for the pthreads library -llthread... no
+checking whether pthreads work with -pthread... yes
+checking for joinable pthread attribute... PTHREAD_CREATE_JOINABLE
+checking if more special flags are required for pthreads... no
+checking whether to check for GCC pthread/shared inconsistencies... yes
+checking whether -pthread is sufficient with -shared... yes
+checking whether what we have so far is sufficient with -nostdlib... no
+checking whether -lpthread saves the day... yes
+checking the location of hash_map... <tr1/unordered_map>
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating protobuf.pc
+config.status: creating protobuf-lite.pc
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+=== configuring in gtest (/home/ec2-user/protobuf-2.4.1/gtest)
+configure: running /bin/sh ./configure --disable-option-checking '--prefix=/usr/local'  --cache-file=/dev/null --srcdir=.
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for style of include used by make... GNU
+checking dependency style of gcc... gcc3
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... gcc3
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for ar... ar
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking whether we are using the GNU C++ compiler... (cached) yes
+checking whether g++ accepts -g... (cached) yes
+checking dependency style of g++... (cached) gcc3
+checking how to run the C++ preprocessor... g++ -E
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... no
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for ld used by g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... no
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for python... /usr/bin/python
+checking for the pthreads library -lpthreads... no
+checking whether pthreads work without any flags... no
+checking whether pthreads work with -Kthread... no
+checking whether pthreads work with -kthread... no
+checking for the pthreads library -llthread... no
+checking whether pthreads work with -pthread... yes
+checking for joinable pthread attribute... PTHREAD_CREATE_JOINABLE
+checking if more special flags are required for pthreads... no
+checking whether to check for GCC pthread/shared inconsistencies... yes
+checking whether -pthread is sufficient with -shared... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating scripts/gtest-config
+config.status: creating build-aux/config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+ec2-user@ip-10-243-77-192:~/protobuf-2.4.1$ make
+make  all-recursive
+make[1]: Entering directory `/home/ec2-user/protobuf-2.4.1'
+Making all in .
+make[2]: Entering directory `/home/ec2-user/protobuf-2.4.1'
+make[2]: Leaving directory `/home/ec2-user/protobuf-2.4.1'
+Making all in src
+make[2]: Entering directory `/home/ec2-user/protobuf-2.4.1/src'
+g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT main.o -MD -MP -MF .deps/main.Tpo -c -o main.o `test -f 'google/protobuf/compiler/main.cc' || echo './'`google/protobuf/compiler/main.cc
+mv -f .deps/main.Tpo .deps/main.Po
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT common.lo -MD -MP -MF .deps/common.Tpo -c -o common.lo `test -f 'google/protobuf/stubs/common.cc' || echo './'`google/protobuf/stubs/common.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT common.lo -MD -MP -MF .deps/common.Tpo -c google/protobuf/stubs/common.cc  -fPIC -DPIC -o .libs/common.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT common.lo -MD -MP -MF .deps/common.Tpo -c google/protobuf/stubs/common.cc -o common.o >/dev/null 2>&1
+mv -f .deps/common.Tpo .deps/common.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT once.lo -MD -MP -MF .deps/once.Tpo -c -o once.lo `test -f 'google/protobuf/stubs/once.cc' || echo './'`google/protobuf/stubs/once.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT once.lo -MD -MP -MF .deps/once.Tpo -c google/protobuf/stubs/once.cc  -fPIC -DPIC -o .libs/once.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT once.lo -MD -MP -MF .deps/once.Tpo -c google/protobuf/stubs/once.cc -o once.o >/dev/null 2>&1
+mv -f .deps/once.Tpo .deps/once.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT extension_set.lo -MD -MP -MF .deps/extension_set.Tpo -c -o extension_set.lo `test -f 'google/protobuf/extension_set.cc' || echo './'`google/protobuf/extension_set.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT extension_set.lo -MD -MP -MF .deps/extension_set.Tpo -c google/protobuf/extension_set.cc  -fPIC -DPIC -o .libs/extension_set.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT extension_set.lo -MD -MP -MF .deps/extension_set.Tpo -c google/protobuf/extension_set.cc -o extension_set.o >/dev/null 2>&1
+mv -f .deps/extension_set.Tpo .deps/extension_set.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT generated_message_util.lo -MD -MP -MF .deps/generated_message_util.Tpo -c -o generated_message_util.lo `test -f 'google/protobuf/generated_message_util.cc' || echo './'`google/protobuf/generated_message_util.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT generated_message_util.lo -MD -MP -MF .deps/generated_message_util.Tpo -c google/protobuf/generated_message_util.cc  -fPIC -DPIC -o .libs/generated_message_util.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT generated_message_util.lo -MD -MP -MF .deps/generated_message_util.Tpo -c google/protobuf/generated_message_util.cc -o generated_message_util.o >/dev/null 2>&1
+mv -f .deps/generated_message_util.Tpo .deps/generated_message_util.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT message_lite.lo -MD -MP -MF .deps/message_lite.Tpo -c -o message_lite.lo `test -f 'google/protobuf/message_lite.cc' || echo './'`google/protobuf/message_lite.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT message_lite.lo -MD -MP -MF .deps/message_lite.Tpo -c google/protobuf/message_lite.cc  -fPIC -DPIC -o .libs/message_lite.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT message_lite.lo -MD -MP -MF .deps/message_lite.Tpo -c google/protobuf/message_lite.cc -o message_lite.o >/dev/null 2>&1
+mv -f .deps/message_lite.Tpo .deps/message_lite.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT repeated_field.lo -MD -MP -MF .deps/repeated_field.Tpo -c -o repeated_field.lo `test -f 'google/protobuf/repeated_field.cc' || echo './'`google/protobuf/repeated_field.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT repeated_field.lo -MD -MP -MF .deps/repeated_field.Tpo -c google/protobuf/repeated_field.cc  -fPIC -DPIC -o .libs/repeated_field.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT repeated_field.lo -MD -MP -MF .deps/repeated_field.Tpo -c google/protobuf/repeated_field.cc -o repeated_field.o >/dev/null 2>&1
+mv -f .deps/repeated_field.Tpo .deps/repeated_field.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT wire_format_lite.lo -MD -MP -MF .deps/wire_format_lite.Tpo -c -o wire_format_lite.lo `test -f 'google/protobuf/wire_format_lite.cc' || echo './'`google/protobuf/wire_format_lite.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT wire_format_lite.lo -MD -MP -MF .deps/wire_format_lite.Tpo -c google/protobuf/wire_format_lite.cc  -fPIC -DPIC -o .libs/wire_format_lite.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT wire_format_lite.lo -MD -MP -MF .deps/wire_format_lite.Tpo -c google/protobuf/wire_format_lite.cc -o wire_format_lite.o >/dev/null 2>&1
+mv -f .deps/wire_format_lite.Tpo .deps/wire_format_lite.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT coded_stream.lo -MD -MP -MF .deps/coded_stream.Tpo -c -o coded_stream.lo `test -f 'google/protobuf/io/coded_stream.cc' || echo './'`google/protobuf/io/coded_stream.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT coded_stream.lo -MD -MP -MF .deps/coded_stream.Tpo -c google/protobuf/io/coded_stream.cc  -fPIC -DPIC -o .libs/coded_stream.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT coded_stream.lo -MD -MP -MF .deps/coded_stream.Tpo -c google/protobuf/io/coded_stream.cc -o coded_stream.o >/dev/null 2>&1
+mv -f .deps/coded_stream.Tpo .deps/coded_stream.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT zero_copy_stream.lo -MD -MP -MF .deps/zero_copy_stream.Tpo -c -o zero_copy_stream.lo `test -f 'google/protobuf/io/zero_copy_stream.cc' || echo './'`google/protobuf/io/zero_copy_stream.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT zero_copy_stream.lo -MD -MP -MF .deps/zero_copy_stream.Tpo -c google/protobuf/io/zero_copy_stream.cc  -fPIC -DPIC -o .libs/zero_copy_stream.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT zero_copy_stream.lo -MD -MP -MF .deps/zero_copy_stream.Tpo -c google/protobuf/io/zero_copy_stream.cc -o zero_copy_stream.o >/dev/null 2>&1
+mv -f .deps/zero_copy_stream.Tpo .deps/zero_copy_stream.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT zero_copy_stream_impl_lite.lo -MD -MP -MF .deps/zero_copy_stream_impl_lite.Tpo -c -o zero_copy_stream_impl_lite.lo `test -f 'google/protobuf/io/zero_copy_stream_impl_lite.cc' || echo './'`google/protobuf/io/zero_copy_stream_impl_lite.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT zero_copy_stream_impl_lite.lo -MD -MP -MF .deps/zero_copy_stream_impl_lite.Tpo -c google/protobuf/io/zero_copy_stream_impl_lite.cc  -fPIC -DPIC -o .libs/zero_copy_stream_impl_lite.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT zero_copy_stream_impl_lite.lo -MD -MP -MF .deps/zero_copy_stream_impl_lite.Tpo -c google/protobuf/io/zero_copy_stream_impl_lite.cc -o zero_copy_stream_impl_lite.o >/dev/null 2>&1
+mv -f .deps/zero_copy_stream_impl_lite.Tpo .deps/zero_copy_stream_impl_lite.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT strutil.lo -MD -MP -MF .deps/strutil.Tpo -c -o strutil.lo `test -f 'google/protobuf/stubs/strutil.cc' || echo './'`google/protobuf/stubs/strutil.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT strutil.lo -MD -MP -MF .deps/strutil.Tpo -c google/protobuf/stubs/strutil.cc  -fPIC -DPIC -o .libs/strutil.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT strutil.lo -MD -MP -MF .deps/strutil.Tpo -c google/protobuf/stubs/strutil.cc -o strutil.o >/dev/null 2>&1
+mv -f .deps/strutil.Tpo .deps/strutil.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT substitute.lo -MD -MP -MF .deps/substitute.Tpo -c -o substitute.lo `test -f 'google/protobuf/stubs/substitute.cc' || echo './'`google/protobuf/stubs/substitute.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT substitute.lo -MD -MP -MF .deps/substitute.Tpo -c google/protobuf/stubs/substitute.cc  -fPIC -DPIC -o .libs/substitute.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT substitute.lo -MD -MP -MF .deps/substitute.Tpo -c google/protobuf/stubs/substitute.cc -o substitute.o >/dev/null 2>&1
+mv -f .deps/substitute.Tpo .deps/substitute.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT structurally_valid.lo -MD -MP -MF .deps/structurally_valid.Tpo -c -o structurally_valid.lo `test -f 'google/protobuf/stubs/structurally_valid.cc' || echo './'`google/protobuf/stubs/structurally_valid.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT structurally_valid.lo -MD -MP -MF .deps/structurally_valid.Tpo -c google/protobuf/stubs/structurally_valid.cc  -fPIC -DPIC -o .libs/structurally_valid.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT structurally_valid.lo -MD -MP -MF .deps/structurally_valid.Tpo -c google/protobuf/stubs/structurally_valid.cc -o structurally_valid.o >/dev/null 2>&1
+mv -f .deps/structurally_valid.Tpo .deps/structurally_valid.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT descriptor.lo -MD -MP -MF .deps/descriptor.Tpo -c -o descriptor.lo `test -f 'google/protobuf/descriptor.cc' || echo './'`google/protobuf/descriptor.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT descriptor.lo -MD -MP -MF .deps/descriptor.Tpo -c google/protobuf/descriptor.cc  -fPIC -DPIC -o .libs/descriptor.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT descriptor.lo -MD -MP -MF .deps/descriptor.Tpo -c google/protobuf/descriptor.cc -o descriptor.o >/dev/null 2>&1
+mv -f .deps/descriptor.Tpo .deps/descriptor.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT descriptor.pb.lo -MD -MP -MF .deps/descriptor.pb.Tpo -c -o descriptor.pb.lo `test -f 'google/protobuf/descriptor.pb.cc' || echo './'`google/protobuf/descriptor.pb.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT descriptor.pb.lo -MD -MP -MF .deps/descriptor.pb.Tpo -c google/protobuf/descriptor.pb.cc  -fPIC -DPIC -o .libs/descriptor.pb.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT descriptor.pb.lo -MD -MP -MF .deps/descriptor.pb.Tpo -c google/protobuf/descriptor.pb.cc -o descriptor.pb.o >/dev/null 2>&1
+mv -f .deps/descriptor.pb.Tpo .deps/descriptor.pb.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT descriptor_database.lo -MD -MP -MF .deps/descriptor_database.Tpo -c -o descriptor_database.lo `test -f 'google/protobuf/descriptor_database.cc' || echo './'`google/protobuf/descriptor_database.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT descriptor_database.lo -MD -MP -MF .deps/descriptor_database.Tpo -c google/protobuf/descriptor_database.cc  -fPIC -DPIC -o .libs/descriptor_database.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT descriptor_database.lo -MD -MP -MF .deps/descriptor_database.Tpo -c google/protobuf/descriptor_database.cc -o descriptor_database.o >/dev/null 2>&1
+mv -f .deps/descriptor_database.Tpo .deps/descriptor_database.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT dynamic_message.lo -MD -MP -MF .deps/dynamic_message.Tpo -c -o dynamic_message.lo `test -f 'google/protobuf/dynamic_message.cc' || echo './'`google/protobuf/dynamic_message.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT dynamic_message.lo -MD -MP -MF .deps/dynamic_message.Tpo -c google/protobuf/dynamic_message.cc  -fPIC -DPIC -o .libs/dynamic_message.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT dynamic_message.lo -MD -MP -MF .deps/dynamic_message.Tpo -c google/protobuf/dynamic_message.cc -o dynamic_message.o >/dev/null 2>&1
+mv -f .deps/dynamic_message.Tpo .deps/dynamic_message.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT extension_set_heavy.lo -MD -MP -MF .deps/extension_set_heavy.Tpo -c -o extension_set_heavy.lo `test -f 'google/protobuf/extension_set_heavy.cc' || echo './'`google/protobuf/extension_set_heavy.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT extension_set_heavy.lo -MD -MP -MF .deps/extension_set_heavy.Tpo -c google/protobuf/extension_set_heavy.cc  -fPIC -DPIC -o .libs/extension_set_heavy.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT extension_set_heavy.lo -MD -MP -MF .deps/extension_set_heavy.Tpo -c google/protobuf/extension_set_heavy.cc -o extension_set_heavy.o >/dev/null 2>&1
+mv -f .deps/extension_set_heavy.Tpo .deps/extension_set_heavy.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT generated_message_reflection.lo -MD -MP -MF .deps/generated_message_reflection.Tpo -c -o generated_message_reflection.lo `test -f 'google/protobuf/generated_message_reflection.cc' || echo './'`google/protobuf/generated_message_reflection.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT generated_message_reflection.lo -MD -MP -MF .deps/generated_message_reflection.Tpo -c google/protobuf/generated_message_reflection.cc  -fPIC -DPIC -o .libs/generated_message_reflection.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT generated_message_reflection.lo -MD -MP -MF .deps/generated_message_reflection.Tpo -c google/protobuf/generated_message_reflection.cc -o generated_message_reflection.o >/dev/null 2>&1
+mv -f .deps/generated_message_reflection.Tpo .deps/generated_message_reflection.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT message.lo -MD -MP -MF .deps/message.Tpo -c -o message.lo `test -f 'google/protobuf/message.cc' || echo './'`google/protobuf/message.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT message.lo -MD -MP -MF .deps/message.Tpo -c google/protobuf/message.cc  -fPIC -DPIC -o .libs/message.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT message.lo -MD -MP -MF .deps/message.Tpo -c google/protobuf/message.cc -o message.o >/dev/null 2>&1
+mv -f .deps/message.Tpo .deps/message.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT reflection_ops.lo -MD -MP -MF .deps/reflection_ops.Tpo -c -o reflection_ops.lo `test -f 'google/protobuf/reflection_ops.cc' || echo './'`google/protobuf/reflection_ops.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT reflection_ops.lo -MD -MP -MF .deps/reflection_ops.Tpo -c google/protobuf/reflection_ops.cc  -fPIC -DPIC -o .libs/reflection_ops.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT reflection_ops.lo -MD -MP -MF .deps/reflection_ops.Tpo -c google/protobuf/reflection_ops.cc -o reflection_ops.o >/dev/null 2>&1
+mv -f .deps/reflection_ops.Tpo .deps/reflection_ops.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT service.lo -MD -MP -MF .deps/service.Tpo -c -o service.lo `test -f 'google/protobuf/service.cc' || echo './'`google/protobuf/service.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT service.lo -MD -MP -MF .deps/service.Tpo -c google/protobuf/service.cc  -fPIC -DPIC -o .libs/service.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT service.lo -MD -MP -MF .deps/service.Tpo -c google/protobuf/service.cc -o service.o >/dev/null 2>&1
+mv -f .deps/service.Tpo .deps/service.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT text_format.lo -MD -MP -MF .deps/text_format.Tpo -c -o text_format.lo `test -f 'google/protobuf/text_format.cc' || echo './'`google/protobuf/text_format.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT text_format.lo -MD -MP -MF .deps/text_format.Tpo -c google/protobuf/text_format.cc  -fPIC -DPIC -o .libs/text_format.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT text_format.lo -MD -MP -MF .deps/text_format.Tpo -c google/protobuf/text_format.cc -o text_format.o >/dev/null 2>&1
+mv -f .deps/text_format.Tpo .deps/text_format.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT unknown_field_set.lo -MD -MP -MF .deps/unknown_field_set.Tpo -c -o unknown_field_set.lo `test -f 'google/protobuf/unknown_field_set.cc' || echo './'`google/protobuf/unknown_field_set.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT unknown_field_set.lo -MD -MP -MF .deps/unknown_field_set.Tpo -c google/protobuf/unknown_field_set.cc  -fPIC -DPIC -o .libs/unknown_field_set.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT unknown_field_set.lo -MD -MP -MF .deps/unknown_field_set.Tpo -c google/protobuf/unknown_field_set.cc -o unknown_field_set.o >/dev/null 2>&1
+mv -f .deps/unknown_field_set.Tpo .deps/unknown_field_set.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT wire_format.lo -MD -MP -MF .deps/wire_format.Tpo -c -o wire_format.lo `test -f 'google/protobuf/wire_format.cc' || echo './'`google/protobuf/wire_format.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT wire_format.lo -MD -MP -MF .deps/wire_format.Tpo -c google/protobuf/wire_format.cc  -fPIC -DPIC -o .libs/wire_format.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT wire_format.lo -MD -MP -MF .deps/wire_format.Tpo -c google/protobuf/wire_format.cc -o wire_format.o >/dev/null 2>&1
+mv -f .deps/wire_format.Tpo .deps/wire_format.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT gzip_stream.lo -MD -MP -MF .deps/gzip_stream.Tpo -c -o gzip_stream.lo `test -f 'google/protobuf/io/gzip_stream.cc' || echo './'`google/protobuf/io/gzip_stream.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT gzip_stream.lo -MD -MP -MF .deps/gzip_stream.Tpo -c google/protobuf/io/gzip_stream.cc  -fPIC -DPIC -o .libs/gzip_stream.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT gzip_stream.lo -MD -MP -MF .deps/gzip_stream.Tpo -c google/protobuf/io/gzip_stream.cc -o gzip_stream.o >/dev/null 2>&1
+mv -f .deps/gzip_stream.Tpo .deps/gzip_stream.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT printer.lo -MD -MP -MF .deps/printer.Tpo -c -o printer.lo `test -f 'google/protobuf/io/printer.cc' || echo './'`google/protobuf/io/printer.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT printer.lo -MD -MP -MF .deps/printer.Tpo -c google/protobuf/io/printer.cc  -fPIC -DPIC -o .libs/printer.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT printer.lo -MD -MP -MF .deps/printer.Tpo -c google/protobuf/io/printer.cc -o printer.o >/dev/null 2>&1
+mv -f .deps/printer.Tpo .deps/printer.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT tokenizer.lo -MD -MP -MF .deps/tokenizer.Tpo -c -o tokenizer.lo `test -f 'google/protobuf/io/tokenizer.cc' || echo './'`google/protobuf/io/tokenizer.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT tokenizer.lo -MD -MP -MF .deps/tokenizer.Tpo -c google/protobuf/io/tokenizer.cc  -fPIC -DPIC -o .libs/tokenizer.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT tokenizer.lo -MD -MP -MF .deps/tokenizer.Tpo -c google/protobuf/io/tokenizer.cc -o tokenizer.o >/dev/null 2>&1
+mv -f .deps/tokenizer.Tpo .deps/tokenizer.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT zero_copy_stream_impl.lo -MD -MP -MF .deps/zero_copy_stream_impl.Tpo -c -o zero_copy_stream_impl.lo `test -f 'google/protobuf/io/zero_copy_stream_impl.cc' || echo './'`google/protobuf/io/zero_copy_stream_impl.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT zero_copy_stream_impl.lo -MD -MP -MF .deps/zero_copy_stream_impl.Tpo -c google/protobuf/io/zero_copy_stream_impl.cc  -fPIC -DPIC -o .libs/zero_copy_stream_impl.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT zero_copy_stream_impl.lo -MD -MP -MF .deps/zero_copy_stream_impl.Tpo -c google/protobuf/io/zero_copy_stream_impl.cc -o zero_copy_stream_impl.o >/dev/null 2>&1
+mv -f .deps/zero_copy_stream_impl.Tpo .deps/zero_copy_stream_impl.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT importer.lo -MD -MP -MF .deps/importer.Tpo -c -o importer.lo `test -f 'google/protobuf/compiler/importer.cc' || echo './'`google/protobuf/compiler/importer.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT importer.lo -MD -MP -MF .deps/importer.Tpo -c google/protobuf/compiler/importer.cc  -fPIC -DPIC -o .libs/importer.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT importer.lo -MD -MP -MF .deps/importer.Tpo -c google/protobuf/compiler/importer.cc -o importer.o >/dev/null 2>&1
+mv -f .deps/importer.Tpo .deps/importer.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT parser.lo -MD -MP -MF .deps/parser.Tpo -c -o parser.lo `test -f 'google/protobuf/compiler/parser.cc' || echo './'`google/protobuf/compiler/parser.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT parser.lo -MD -MP -MF .deps/parser.Tpo -c google/protobuf/compiler/parser.cc  -fPIC -DPIC -o .libs/parser.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT parser.lo -MD -MP -MF .deps/parser.Tpo -c google/protobuf/compiler/parser.cc -o parser.o >/dev/null 2>&1
+mv -f .deps/parser.Tpo .deps/parser.Plo
+/bin/sh ../libtool --tag=CXX   --mode=link g++ -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -version-info 7:0:0 -export-dynamic -no-undefined  -o libprotobuf.la -rpath /usr/local/lib common.lo once.lo extension_set.lo generated_message_util.lo message_lite.lo repeated_field.lo wire_format_lite.lo coded_stream.lo zero_copy_stream.lo zero_copy_stream_impl_lite.lo strutil.lo substitute.lo structurally_valid.lo descriptor.lo descriptor.pb.lo descriptor_database.lo dynamic_message.lo extension_set_heavy.lo generated_message_reflection.lo message.lo reflection_ops.lo service.lo text_format.lo unknown_field_set.lo wire_format.lo gzip_stream.lo printer.lo tokenizer.lo zero_copy_stream_impl.lo importer.lo parser.lo -lpthread -lz 
+libtool: link: g++ -shared -nostdlib /usr/lib/gcc/x86_64-amazon-linux/4.4.6/../../../../lib64/crti.o /usr/lib/gcc/x86_64-amazon-linux/4.4.6/crtbeginS.o  .libs/common.o .libs/once.o .libs/extension_set.o .libs/generated_message_util.o .libs/message_lite.o .libs/repeated_field.o .libs/wire_format_lite.o .libs/coded_stream.o .libs/zero_copy_stream.o .libs/zero_copy_stream_impl_lite.o .libs/strutil.o .libs/substitute.o .libs/structurally_valid.o .libs/descriptor.o .libs/descriptor.pb.o .libs/descriptor_database.o .libs/dynamic_message.o .libs/extension_set_heavy.o .libs/generated_message_reflection.o .libs/message.o .libs/reflection_ops.o .libs/service.o .libs/text_format.o .libs/unknown_field_set.o .libs/wire_format.o .libs/gzip_stream.o .libs/printer.o .libs/tokenizer.o .libs/zero_copy_stream_impl.o .libs/importer.o .libs/parser.o   -lpthread -lz -L/usr/lib/gcc/x86_64-amazon-linux/4.4.6 -L/usr/lib/gcc/x86_64-amazon-linux/4.4.6/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-amazon-linux/4.4.6/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-amazon-linux/4.4.6/crtendS.o /usr/lib/gcc/x86_64-amazon-linux/4.4.6/../../../../lib64/crtn.o  -pthread   -pthread -Wl,-soname -Wl,libprotobuf.so.7 -o .libs/libprotobuf.so.7.0.0
+libtool: link: (cd ".libs" && rm -f "libprotobuf.so.7" && ln -s "libprotobuf.so.7.0.0" "libprotobuf.so.7")
+libtool: link: (cd ".libs" && rm -f "libprotobuf.so" && ln -s "libprotobuf.so.7.0.0" "libprotobuf.so")
+libtool: link: ar cru .libs/libprotobuf.a  common.o once.o extension_set.o generated_message_util.o message_lite.o repeated_field.o wire_format_lite.o coded_stream.o zero_copy_stream.o zero_copy_stream_impl_lite.o strutil.o substitute.o structurally_valid.o descriptor.o descriptor.pb.o descriptor_database.o dynamic_message.o extension_set_heavy.o generated_message_reflection.o message.o reflection_ops.o service.o text_format.o unknown_field_set.o wire_format.o gzip_stream.o printer.o tokenizer.o zero_copy_stream_impl.o importer.o parser.o
+libtool: link: ranlib .libs/libprotobuf.a
+libtool: link: ( cd ".libs" && rm -f "libprotobuf.la" && ln -s "../libprotobuf.la" "libprotobuf.la" )
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT code_generator.lo -MD -MP -MF .deps/code_generator.Tpo -c -o code_generator.lo `test -f 'google/protobuf/compiler/code_generator.cc' || echo './'`google/protobuf/compiler/code_generator.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT code_generator.lo -MD -MP -MF .deps/code_generator.Tpo -c google/protobuf/compiler/code_generator.cc  -fPIC -DPIC -o .libs/code_generator.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT code_generator.lo -MD -MP -MF .deps/code_generator.Tpo -c google/protobuf/compiler/code_generator.cc -o code_generator.o >/dev/null 2>&1
+mv -f .deps/code_generator.Tpo .deps/code_generator.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT command_line_interface.lo -MD -MP -MF .deps/command_line_interface.Tpo -c -o command_line_interface.lo `test -f 'google/protobuf/compiler/command_line_interface.cc' || echo './'`google/protobuf/compiler/command_line_interface.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT command_line_interface.lo -MD -MP -MF .deps/command_line_interface.Tpo -c google/protobuf/compiler/command_line_interface.cc  -fPIC -DPIC -o .libs/command_line_interface.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT command_line_interface.lo -MD -MP -MF .deps/command_line_interface.Tpo -c google/protobuf/compiler/command_line_interface.cc -o command_line_interface.o >/dev/null 2>&1
+mv -f .deps/command_line_interface.Tpo .deps/command_line_interface.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT plugin.lo -MD -MP -MF .deps/plugin.Tpo -c -o plugin.lo `test -f 'google/protobuf/compiler/plugin.cc' || echo './'`google/protobuf/compiler/plugin.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT plugin.lo -MD -MP -MF .deps/plugin.Tpo -c google/protobuf/compiler/plugin.cc  -fPIC -DPIC -o .libs/plugin.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT plugin.lo -MD -MP -MF .deps/plugin.Tpo -c google/protobuf/compiler/plugin.cc -o plugin.o >/dev/null 2>&1
+mv -f .deps/plugin.Tpo .deps/plugin.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT plugin.pb.lo -MD -MP -MF .deps/plugin.pb.Tpo -c -o plugin.pb.lo `test -f 'google/protobuf/compiler/plugin.pb.cc' || echo './'`google/protobuf/compiler/plugin.pb.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT plugin.pb.lo -MD -MP -MF .deps/plugin.pb.Tpo -c google/protobuf/compiler/plugin.pb.cc  -fPIC -DPIC -o .libs/plugin.pb.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT plugin.pb.lo -MD -MP -MF .deps/plugin.pb.Tpo -c google/protobuf/compiler/plugin.pb.cc -o plugin.pb.o >/dev/null 2>&1
+mv -f .deps/plugin.pb.Tpo .deps/plugin.pb.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT subprocess.lo -MD -MP -MF .deps/subprocess.Tpo -c -o subprocess.lo `test -f 'google/protobuf/compiler/subprocess.cc' || echo './'`google/protobuf/compiler/subprocess.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT subprocess.lo -MD -MP -MF .deps/subprocess.Tpo -c google/protobuf/compiler/subprocess.cc  -fPIC -DPIC -o .libs/subprocess.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT subprocess.lo -MD -MP -MF .deps/subprocess.Tpo -c google/protobuf/compiler/subprocess.cc -o subprocess.o >/dev/null 2>&1
+mv -f .deps/subprocess.Tpo .deps/subprocess.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT zip_writer.lo -MD -MP -MF .deps/zip_writer.Tpo -c -o zip_writer.lo `test -f 'google/protobuf/compiler/zip_writer.cc' || echo './'`google/protobuf/compiler/zip_writer.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT zip_writer.lo -MD -MP -MF .deps/zip_writer.Tpo -c google/protobuf/compiler/zip_writer.cc  -fPIC -DPIC -o .libs/zip_writer.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT zip_writer.lo -MD -MP -MF .deps/zip_writer.Tpo -c google/protobuf/compiler/zip_writer.cc -o zip_writer.o >/dev/null 2>&1
+mv -f .deps/zip_writer.Tpo .deps/zip_writer.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT cpp_enum.lo -MD -MP -MF .deps/cpp_enum.Tpo -c -o cpp_enum.lo `test -f 'google/protobuf/compiler/cpp/cpp_enum.cc' || echo './'`google/protobuf/compiler/cpp/cpp_enum.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT cpp_enum.lo -MD -MP -MF .deps/cpp_enum.Tpo -c google/protobuf/compiler/cpp/cpp_enum.cc  -fPIC -DPIC -o .libs/cpp_enum.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT cpp_enum.lo -MD -MP -MF .deps/cpp_enum.Tpo -c google/protobuf/compiler/cpp/cpp_enum.cc -o cpp_enum.o >/dev/null 2>&1
+mv -f .deps/cpp_enum.Tpo .deps/cpp_enum.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT cpp_enum_field.lo -MD -MP -MF .deps/cpp_enum_field.Tpo -c -o cpp_enum_field.lo `test -f 'google/protobuf/compiler/cpp/cpp_enum_field.cc' || echo './'`google/protobuf/compiler/cpp/cpp_enum_field.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT cpp_enum_field.lo -MD -MP -MF .deps/cpp_enum_field.Tpo -c google/protobuf/compiler/cpp/cpp_enum_field.cc  -fPIC -DPIC -o .libs/cpp_enum_field.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT cpp_enum_field.lo -MD -MP -MF .deps/cpp_enum_field.Tpo -c google/protobuf/compiler/cpp/cpp_enum_field.cc -o cpp_enum_field.o >/dev/null 2>&1
+mv -f .deps/cpp_enum_field.Tpo .deps/cpp_enum_field.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT cpp_extension.lo -MD -MP -MF .deps/cpp_extension.Tpo -c -o cpp_extension.lo `test -f 'google/protobuf/compiler/cpp/cpp_extension.cc' || echo './'`google/protobuf/compiler/cpp/cpp_extension.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT cpp_extension.lo -MD -MP -MF .deps/cpp_extension.Tpo -c google/protobuf/compiler/cpp/cpp_extension.cc  -fPIC -DPIC -o .libs/cpp_extension.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT cpp_extension.lo -MD -MP -MF .deps/cpp_extension.Tpo -c google/protobuf/compiler/cpp/cpp_extension.cc -o cpp_extension.o >/dev/null 2>&1
+mv -f .deps/cpp_extension.Tpo .deps/cpp_extension.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT cpp_field.lo -MD -MP -MF .deps/cpp_field.Tpo -c -o cpp_field.lo `test -f 'google/protobuf/compiler/cpp/cpp_field.cc' || echo './'`google/protobuf/compiler/cpp/cpp_field.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT cpp_field.lo -MD -MP -MF .deps/cpp_field.Tpo -c google/protobuf/compiler/cpp/cpp_field.cc  -fPIC -DPIC -o .libs/cpp_field.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT cpp_field.lo -MD -MP -MF .deps/cpp_field.Tpo -c google/protobuf/compiler/cpp/cpp_field.cc -o cpp_field.o >/dev/null 2>&1
+mv -f .deps/cpp_field.Tpo .deps/cpp_field.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT cpp_file.lo -MD -MP -MF .deps/cpp_file.Tpo -c -o cpp_file.lo `test -f 'google/protobuf/compiler/cpp/cpp_file.cc' || echo './'`google/protobuf/compiler/cpp/cpp_file.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT cpp_file.lo -MD -MP -MF .deps/cpp_file.Tpo -c google/protobuf/compiler/cpp/cpp_file.cc  -fPIC -DPIC -o .libs/cpp_file.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT cpp_file.lo -MD -MP -MF .deps/cpp_file.Tpo -c google/protobuf/compiler/cpp/cpp_file.cc -o cpp_file.o >/dev/null 2>&1
+mv -f .deps/cpp_file.Tpo .deps/cpp_file.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT cpp_generator.lo -MD -MP -MF .deps/cpp_generator.Tpo -c -o cpp_generator.lo `test -f 'google/protobuf/compiler/cpp/cpp_generator.cc' || echo './'`google/protobuf/compiler/cpp/cpp_generator.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT cpp_generator.lo -MD -MP -MF .deps/cpp_generator.Tpo -c google/protobuf/compiler/cpp/cpp_generator.cc  -fPIC -DPIC -o .libs/cpp_generator.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT cpp_generator.lo -MD -MP -MF .deps/cpp_generator.Tpo -c google/protobuf/compiler/cpp/cpp_generator.cc -o cpp_generator.o >/dev/null 2>&1
+mv -f .deps/cpp_generator.Tpo .deps/cpp_generator.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT cpp_helpers.lo -MD -MP -MF .deps/cpp_helpers.Tpo -c -o cpp_helpers.lo `test -f 'google/protobuf/compiler/cpp/cpp_helpers.cc' || echo './'`google/protobuf/compiler/cpp/cpp_helpers.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT cpp_helpers.lo -MD -MP -MF .deps/cpp_helpers.Tpo -c google/protobuf/compiler/cpp/cpp_helpers.cc  -fPIC -DPIC -o .libs/cpp_helpers.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT cpp_helpers.lo -MD -MP -MF .deps/cpp_helpers.Tpo -c google/protobuf/compiler/cpp/cpp_helpers.cc -o cpp_helpers.o >/dev/null 2>&1
+mv -f .deps/cpp_helpers.Tpo .deps/cpp_helpers.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT cpp_message.lo -MD -MP -MF .deps/cpp_message.Tpo -c -o cpp_message.lo `test -f 'google/protobuf/compiler/cpp/cpp_message.cc' || echo './'`google/protobuf/compiler/cpp/cpp_message.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT cpp_message.lo -MD -MP -MF .deps/cpp_message.Tpo -c google/protobuf/compiler/cpp/cpp_message.cc  -fPIC -DPIC -o .libs/cpp_message.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT cpp_message.lo -MD -MP -MF .deps/cpp_message.Tpo -c google/protobuf/compiler/cpp/cpp_message.cc -o cpp_message.o >/dev/null 2>&1
+mv -f .deps/cpp_message.Tpo .deps/cpp_message.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT cpp_message_field.lo -MD -MP -MF .deps/cpp_message_field.Tpo -c -o cpp_message_field.lo `test -f 'google/protobuf/compiler/cpp/cpp_message_field.cc' || echo './'`google/protobuf/compiler/cpp/cpp_message_field.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT cpp_message_field.lo -MD -MP -MF .deps/cpp_message_field.Tpo -c google/protobuf/compiler/cpp/cpp_message_field.cc  -fPIC -DPIC -o .libs/cpp_message_field.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT cpp_message_field.lo -MD -MP -MF .deps/cpp_message_field.Tpo -c google/protobuf/compiler/cpp/cpp_message_field.cc -o cpp_message_field.o >/dev/null 2>&1
+mv -f .deps/cpp_message_field.Tpo .deps/cpp_message_field.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT cpp_primitive_field.lo -MD -MP -MF .deps/cpp_primitive_field.Tpo -c -o cpp_primitive_field.lo `test -f 'google/protobuf/compiler/cpp/cpp_primitive_field.cc' || echo './'`google/protobuf/compiler/cpp/cpp_primitive_field.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT cpp_primitive_field.lo -MD -MP -MF .deps/cpp_primitive_field.Tpo -c google/protobuf/compiler/cpp/cpp_primitive_field.cc  -fPIC -DPIC -o .libs/cpp_primitive_field.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT cpp_primitive_field.lo -MD -MP -MF .deps/cpp_primitive_field.Tpo -c google/protobuf/compiler/cpp/cpp_primitive_field.cc -o cpp_primitive_field.o >/dev/null 2>&1
+mv -f .deps/cpp_primitive_field.Tpo .deps/cpp_primitive_field.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT cpp_service.lo -MD -MP -MF .deps/cpp_service.Tpo -c -o cpp_service.lo `test -f 'google/protobuf/compiler/cpp/cpp_service.cc' || echo './'`google/protobuf/compiler/cpp/cpp_service.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT cpp_service.lo -MD -MP -MF .deps/cpp_service.Tpo -c google/protobuf/compiler/cpp/cpp_service.cc  -fPIC -DPIC -o .libs/cpp_service.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT cpp_service.lo -MD -MP -MF .deps/cpp_service.Tpo -c google/protobuf/compiler/cpp/cpp_service.cc -o cpp_service.o >/dev/null 2>&1
+mv -f .deps/cpp_service.Tpo .deps/cpp_service.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT cpp_string_field.lo -MD -MP -MF .deps/cpp_string_field.Tpo -c -o cpp_string_field.lo `test -f 'google/protobuf/compiler/cpp/cpp_string_field.cc' || echo './'`google/protobuf/compiler/cpp/cpp_string_field.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT cpp_string_field.lo -MD -MP -MF .deps/cpp_string_field.Tpo -c google/protobuf/compiler/cpp/cpp_string_field.cc  -fPIC -DPIC -o .libs/cpp_string_field.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT cpp_string_field.lo -MD -MP -MF .deps/cpp_string_field.Tpo -c google/protobuf/compiler/cpp/cpp_string_field.cc -o cpp_string_field.o >/dev/null 2>&1
+mv -f .deps/cpp_string_field.Tpo .deps/cpp_string_field.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT java_enum.lo -MD -MP -MF .deps/java_enum.Tpo -c -o java_enum.lo `test -f 'google/protobuf/compiler/java/java_enum.cc' || echo './'`google/protobuf/compiler/java/java_enum.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT java_enum.lo -MD -MP -MF .deps/java_enum.Tpo -c google/protobuf/compiler/java/java_enum.cc  -fPIC -DPIC -o .libs/java_enum.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT java_enum.lo -MD -MP -MF .deps/java_enum.Tpo -c google/protobuf/compiler/java/java_enum.cc -o java_enum.o >/dev/null 2>&1
+mv -f .deps/java_enum.Tpo .deps/java_enum.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT java_enum_field.lo -MD -MP -MF .deps/java_enum_field.Tpo -c -o java_enum_field.lo `test -f 'google/protobuf/compiler/java/java_enum_field.cc' || echo './'`google/protobuf/compiler/java/java_enum_field.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT java_enum_field.lo -MD -MP -MF .deps/java_enum_field.Tpo -c google/protobuf/compiler/java/java_enum_field.cc  -fPIC -DPIC -o .libs/java_enum_field.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT java_enum_field.lo -MD -MP -MF .deps/java_enum_field.Tpo -c google/protobuf/compiler/java/java_enum_field.cc -o java_enum_field.o >/dev/null 2>&1
+mv -f .deps/java_enum_field.Tpo .deps/java_enum_field.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT java_extension.lo -MD -MP -MF .deps/java_extension.Tpo -c -o java_extension.lo `test -f 'google/protobuf/compiler/java/java_extension.cc' || echo './'`google/protobuf/compiler/java/java_extension.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT java_extension.lo -MD -MP -MF .deps/java_extension.Tpo -c google/protobuf/compiler/java/java_extension.cc  -fPIC -DPIC -o .libs/java_extension.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT java_extension.lo -MD -MP -MF .deps/java_extension.Tpo -c google/protobuf/compiler/java/java_extension.cc -o java_extension.o >/dev/null 2>&1
+mv -f .deps/java_extension.Tpo .deps/java_extension.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT java_field.lo -MD -MP -MF .deps/java_field.Tpo -c -o java_field.lo `test -f 'google/protobuf/compiler/java/java_field.cc' || echo './'`google/protobuf/compiler/java/java_field.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT java_field.lo -MD -MP -MF .deps/java_field.Tpo -c google/protobuf/compiler/java/java_field.cc  -fPIC -DPIC -o .libs/java_field.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT java_field.lo -MD -MP -MF .deps/java_field.Tpo -c google/protobuf/compiler/java/java_field.cc -o java_field.o >/dev/null 2>&1
+mv -f .deps/java_field.Tpo .deps/java_field.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT java_file.lo -MD -MP -MF .deps/java_file.Tpo -c -o java_file.lo `test -f 'google/protobuf/compiler/java/java_file.cc' || echo './'`google/protobuf/compiler/java/java_file.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT java_file.lo -MD -MP -MF .deps/java_file.Tpo -c google/protobuf/compiler/java/java_file.cc  -fPIC -DPIC -o .libs/java_file.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT java_file.lo -MD -MP -MF .deps/java_file.Tpo -c google/protobuf/compiler/java/java_file.cc -o java_file.o >/dev/null 2>&1
+mv -f .deps/java_file.Tpo .deps/java_file.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT java_generator.lo -MD -MP -MF .deps/java_generator.Tpo -c -o java_generator.lo `test -f 'google/protobuf/compiler/java/java_generator.cc' || echo './'`google/protobuf/compiler/java/java_generator.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT java_generator.lo -MD -MP -MF .deps/java_generator.Tpo -c google/protobuf/compiler/java/java_generator.cc  -fPIC -DPIC -o .libs/java_generator.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT java_generator.lo -MD -MP -MF .deps/java_generator.Tpo -c google/protobuf/compiler/java/java_generator.cc -o java_generator.o >/dev/null 2>&1
+mv -f .deps/java_generator.Tpo .deps/java_generator.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT java_helpers.lo -MD -MP -MF .deps/java_helpers.Tpo -c -o java_helpers.lo `test -f 'google/protobuf/compiler/java/java_helpers.cc' || echo './'`google/protobuf/compiler/java/java_helpers.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT java_helpers.lo -MD -MP -MF .deps/java_helpers.Tpo -c google/protobuf/compiler/java/java_helpers.cc  -fPIC -DPIC -o .libs/java_helpers.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT java_helpers.lo -MD -MP -MF .deps/java_helpers.Tpo -c google/protobuf/compiler/java/java_helpers.cc -o java_helpers.o >/dev/null 2>&1
+mv -f .deps/java_helpers.Tpo .deps/java_helpers.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT java_message.lo -MD -MP -MF .deps/java_message.Tpo -c -o java_message.lo `test -f 'google/protobuf/compiler/java/java_message.cc' || echo './'`google/protobuf/compiler/java/java_message.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT java_message.lo -MD -MP -MF .deps/java_message.Tpo -c google/protobuf/compiler/java/java_message.cc  -fPIC -DPIC -o .libs/java_message.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT java_message.lo -MD -MP -MF .deps/java_message.Tpo -c google/protobuf/compiler/java/java_message.cc -o java_message.o >/dev/null 2>&1
+mv -f .deps/java_message.Tpo .deps/java_message.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT java_message_field.lo -MD -MP -MF .deps/java_message_field.Tpo -c -o java_message_field.lo `test -f 'google/protobuf/compiler/java/java_message_field.cc' || echo './'`google/protobuf/compiler/java/java_message_field.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT java_message_field.lo -MD -MP -MF .deps/java_message_field.Tpo -c google/protobuf/compiler/java/java_message_field.cc  -fPIC -DPIC -o .libs/java_message_field.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT java_message_field.lo -MD -MP -MF .deps/java_message_field.Tpo -c google/protobuf/compiler/java/java_message_field.cc -o java_message_field.o >/dev/null 2>&1
+mv -f .deps/java_message_field.Tpo .deps/java_message_field.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT java_primitive_field.lo -MD -MP -MF .deps/java_primitive_field.Tpo -c -o java_primitive_field.lo `test -f 'google/protobuf/compiler/java/java_primitive_field.cc' || echo './'`google/protobuf/compiler/java/java_primitive_field.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT java_primitive_field.lo -MD -MP -MF .deps/java_primitive_field.Tpo -c google/protobuf/compiler/java/java_primitive_field.cc  -fPIC -DPIC -o .libs/java_primitive_field.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT java_primitive_field.lo -MD -MP -MF .deps/java_primitive_field.Tpo -c google/protobuf/compiler/java/java_primitive_field.cc -o java_primitive_field.o >/dev/null 2>&1
+mv -f .deps/java_primitive_field.Tpo .deps/java_primitive_field.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT java_service.lo -MD -MP -MF .deps/java_service.Tpo -c -o java_service.lo `test -f 'google/protobuf/compiler/java/java_service.cc' || echo './'`google/protobuf/compiler/java/java_service.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT java_service.lo -MD -MP -MF .deps/java_service.Tpo -c google/protobuf/compiler/java/java_service.cc  -fPIC -DPIC -o .libs/java_service.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT java_service.lo -MD -MP -MF .deps/java_service.Tpo -c google/protobuf/compiler/java/java_service.cc -o java_service.o >/dev/null 2>&1
+mv -f .deps/java_service.Tpo .deps/java_service.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT java_string_field.lo -MD -MP -MF .deps/java_string_field.Tpo -c -o java_string_field.lo `test -f 'google/protobuf/compiler/java/java_string_field.cc' || echo './'`google/protobuf/compiler/java/java_string_field.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT java_string_field.lo -MD -MP -MF .deps/java_string_field.Tpo -c google/protobuf/compiler/java/java_string_field.cc  -fPIC -DPIC -o .libs/java_string_field.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT java_string_field.lo -MD -MP -MF .deps/java_string_field.Tpo -c google/protobuf/compiler/java/java_string_field.cc -o java_string_field.o >/dev/null 2>&1
+mv -f .deps/java_string_field.Tpo .deps/java_string_field.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..    -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT python_generator.lo -MD -MP -MF .deps/python_generator.Tpo -c -o python_generator.lo `test -f 'google/protobuf/compiler/python/python_generator.cc' || echo './'`google/protobuf/compiler/python/python_generator.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT python_generator.lo -MD -MP -MF .deps/python_generator.Tpo -c google/protobuf/compiler/python/python_generator.cc  -fPIC -DPIC -o .libs/python_generator.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -MT python_generator.lo -MD -MP -MF .deps/python_generator.Tpo -c google/protobuf/compiler/python/python_generator.cc -o python_generator.o >/dev/null 2>&1
+mv -f .deps/python_generator.Tpo .deps/python_generator.Plo
+/bin/sh ../libtool --tag=CXX   --mode=link g++ -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -version-info 7:0:0 -export-dynamic -no-undefined  -o libprotoc.la -rpath /usr/local/lib code_generator.lo command_line_interface.lo plugin.lo plugin.pb.lo subprocess.lo zip_writer.lo cpp_enum.lo cpp_enum_field.lo cpp_extension.lo cpp_field.lo cpp_file.lo cpp_generator.lo cpp_helpers.lo cpp_message.lo cpp_message_field.lo cpp_primitive_field.lo cpp_service.lo cpp_string_field.lo java_enum.lo java_enum_field.lo java_extension.lo java_field.lo java_file.lo java_generator.lo java_helpers.lo java_message.lo java_message_field.lo java_primitive_field.lo java_service.lo java_string_field.lo python_generator.lo -lpthread libprotobuf.la -lz 
+libtool: link: g++ -shared -nostdlib /usr/lib/gcc/x86_64-amazon-linux/4.4.6/../../../../lib64/crti.o /usr/lib/gcc/x86_64-amazon-linux/4.4.6/crtbeginS.o  .libs/code_generator.o .libs/command_line_interface.o .libs/plugin.o .libs/plugin.pb.o .libs/subprocess.o .libs/zip_writer.o .libs/cpp_enum.o .libs/cpp_enum_field.o .libs/cpp_extension.o .libs/cpp_field.o .libs/cpp_file.o .libs/cpp_generator.o .libs/cpp_helpers.o .libs/cpp_message.o .libs/cpp_message_field.o .libs/cpp_primitive_field.o .libs/cpp_service.o .libs/cpp_string_field.o .libs/java_enum.o .libs/java_enum_field.o .libs/java_extension.o .libs/java_field.o .libs/java_file.o .libs/java_generator.o .libs/java_helpers.o .libs/java_message.o .libs/java_message_field.o .libs/java_primitive_field.o .libs/java_service.o .libs/java_string_field.o .libs/python_generator.o   -Wl,-rpath -Wl,/home/ec2-user/protobuf-2.4.1/src/.libs -Wl,-rpath -Wl,/usr/local/lib -lpthread ./.libs/libprotobuf.so -lz -L/usr/lib/gcc/x86_64-amazon-linux/4.4.6 -L/usr/lib/gcc/x86_64-amazon-linux/4.4.6/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-amazon-linux/4.4.6/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-amazon-linux/4.4.6/crtendS.o /usr/lib/gcc/x86_64-amazon-linux/4.4.6/../../../../lib64/crtn.o  -pthread   -pthread -Wl,-soname -Wl,libprotoc.so.7 -o .libs/libprotoc.so.7.0.0
+libtool: link: (cd ".libs" && rm -f "libprotoc.so.7" && ln -s "libprotoc.so.7.0.0" "libprotoc.so.7")
+libtool: link: (cd ".libs" && rm -f "libprotoc.so" && ln -s "libprotoc.so.7.0.0" "libprotoc.so")
+libtool: link: ar cru .libs/libprotoc.a  code_generator.o command_line_interface.o plugin.o plugin.pb.o subprocess.o zip_writer.o cpp_enum.o cpp_enum_field.o cpp_extension.o cpp_field.o cpp_file.o cpp_generator.o cpp_helpers.o cpp_message.o cpp_message_field.o cpp_primitive_field.o cpp_service.o cpp_string_field.o java_enum.o java_enum_field.o java_extension.o java_field.o java_file.o java_generator.o java_helpers.o java_message.o java_message_field.o java_primitive_field.o java_service.o java_string_field.o python_generator.o
+libtool: link: ranlib .libs/libprotoc.a
+libtool: link: ( cd ".libs" && rm -f "libprotoc.la" && ln -s "../libprotoc.la" "libprotoc.la" )
+/bin/sh ../libtool --tag=CXX   --mode=link g++ -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -pthread  -o protoc main.o -lpthread libprotobuf.la libprotoc.la -lz 
+libtool: link: g++ -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -pthread -o .libs/protoc main.o  -lpthread ./.libs/libprotobuf.so ./.libs/libprotoc.so -lz -pthread -Wl,-rpath -Wl,/usr/local/lib
+oldpwd=`pwd` && ( cd . && $oldpwd/protoc -I. --cpp_out=$oldpwd google/protobuf/unittest.proto google/protobuf/unittest_empty.proto google/protobuf/unittest_import.proto google/protobuf/unittest_mset.proto google/protobuf/unittest_optimize_for.proto google/protobuf/unittest_embed_optimize_for.proto google/protobuf/unittest_custom_options.proto google/protobuf/unittest_lite.proto google/protobuf/unittest_import_lite.proto google/protobuf/unittest_lite_imports_nonlite.proto google/protobuf/unittest_no_generic_services.proto google/protobuf/compiler/cpp/cpp_test_bad_identifiers.proto )
+touch unittest_proto_middleman
+make  all-am
+make[3]: Entering directory `/home/ec2-user/protobuf-2.4.1/src'
+/bin/sh ../libtool --tag=CXX   --mode=link g++ -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -version-info 7:0:0 -export-dynamic -no-undefined  -o libprotobuf-lite.la -rpath /usr/local/lib common.lo once.lo extension_set.lo generated_message_util.lo message_lite.lo repeated_field.lo wire_format_lite.lo coded_stream.lo zero_copy_stream.lo zero_copy_stream_impl_lite.lo -lpthread -lz 
+libtool: link: g++ -shared -nostdlib /usr/lib/gcc/x86_64-amazon-linux/4.4.6/../../../../lib64/crti.o /usr/lib/gcc/x86_64-amazon-linux/4.4.6/crtbeginS.o  .libs/common.o .libs/once.o .libs/extension_set.o .libs/generated_message_util.o .libs/message_lite.o .libs/repeated_field.o .libs/wire_format_lite.o .libs/coded_stream.o .libs/zero_copy_stream.o .libs/zero_copy_stream_impl_lite.o   -lpthread -lz -L/usr/lib/gcc/x86_64-amazon-linux/4.4.6 -L/usr/lib/gcc/x86_64-amazon-linux/4.4.6/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-amazon-linux/4.4.6/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-amazon-linux/4.4.6/crtendS.o /usr/lib/gcc/x86_64-amazon-linux/4.4.6/../../../../lib64/crtn.o  -pthread   -pthread -Wl,-soname -Wl,libprotobuf-lite.so.7 -o .libs/libprotobuf-lite.so.7.0.0
+libtool: link: (cd ".libs" && rm -f "libprotobuf-lite.so.7" && ln -s "libprotobuf-lite.so.7.0.0" "libprotobuf-lite.so.7")
+libtool: link: (cd ".libs" && rm -f "libprotobuf-lite.so" && ln -s "libprotobuf-lite.so.7.0.0" "libprotobuf-lite.so")
+libtool: link: ar cru .libs/libprotobuf-lite.a  common.o once.o extension_set.o generated_message_util.o message_lite.o repeated_field.o wire_format_lite.o coded_stream.o zero_copy_stream.o zero_copy_stream_impl_lite.o
+libtool: link: ranlib .libs/libprotobuf-lite.a
+libtool: link: ( cd ".libs" && rm -f "libprotobuf-lite.la" && ln -s "../libprotobuf-lite.la" "libprotobuf-lite.la" )
+make[3]: Leaving directory `/home/ec2-user/protobuf-2.4.1/src'
+make[2]: Leaving directory `/home/ec2-user/protobuf-2.4.1/src'
+make[1]: Leaving directory `/home/ec2-user/protobuf-2.4.1'
+ec2-user@ip-10-243-77-192:~/protobuf-2.4.1$ sudo make install
+Making install in .
+make[1]: Entering directory `/home/ec2-user/protobuf-2.4.1'
+make[2]: Entering directory `/home/ec2-user/protobuf-2.4.1'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/usr/local/lib/pkgconfig" || /bin/mkdir -p "/usr/local/lib/pkgconfig"
+ /usr/bin/install -c -m 644 protobuf.pc protobuf-lite.pc '/usr/local/lib/pkgconfig'
+make[2]: Leaving directory `/home/ec2-user/protobuf-2.4.1'
+make[1]: Leaving directory `/home/ec2-user/protobuf-2.4.1'
+Making install in src
+make[1]: Entering directory `/home/ec2-user/protobuf-2.4.1/src'
+make  install-am
+make[2]: Entering directory `/home/ec2-user/protobuf-2.4.1/src'
+make[3]: Entering directory `/home/ec2-user/protobuf-2.4.1/src'
+test -z "/usr/local/lib" || /bin/mkdir -p "/usr/local/lib"
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libprotobuf-lite.la libprotobuf.la libprotoc.la '/usr/local/lib'
+libtool: install: /usr/bin/install -c .libs/libprotobuf-lite.so.7.0.0 /usr/local/lib/libprotobuf-lite.so.7.0.0
+libtool: install: (cd /usr/local/lib && { ln -s -f libprotobuf-lite.so.7.0.0 libprotobuf-lite.so.7 || { rm -f libprotobuf-lite.so.7 && ln -s libprotobuf-lite.so.7.0.0 libprotobuf-lite.so.7; }; })
+libtool: install: (cd /usr/local/lib && { ln -s -f libprotobuf-lite.so.7.0.0 libprotobuf-lite.so || { rm -f libprotobuf-lite.so && ln -s libprotobuf-lite.so.7.0.0 libprotobuf-lite.so; }; })
+libtool: install: /usr/bin/install -c .libs/libprotobuf-lite.lai /usr/local/lib/libprotobuf-lite.la
+libtool: install: /usr/bin/install -c .libs/libprotobuf.so.7.0.0 /usr/local/lib/libprotobuf.so.7.0.0
+libtool: install: (cd /usr/local/lib && { ln -s -f libprotobuf.so.7.0.0 libprotobuf.so.7 || { rm -f libprotobuf.so.7 && ln -s libprotobuf.so.7.0.0 libprotobuf.so.7; }; })
+libtool: install: (cd /usr/local/lib && { ln -s -f libprotobuf.so.7.0.0 libprotobuf.so || { rm -f libprotobuf.so && ln -s libprotobuf.so.7.0.0 libprotobuf.so; }; })
+libtool: install: /usr/bin/install -c .libs/libprotobuf.lai /usr/local/lib/libprotobuf.la
+libtool: install: warning: relinking `libprotoc.la'
+libtool: install: (cd /home/ec2-user/protobuf-2.4.1/src; /bin/sh /home/ec2-user/protobuf-2.4.1/libtool  --tag CXX --mode=relink g++ -pthread -Wall -Wwrite-strings -Woverloaded-virtual -Wno-sign-compare -O2 -g -DNDEBUG -version-info 7:0:0 -export-dynamic -no-undefined -o libprotoc.la -rpath /usr/local/lib code_generator.lo command_line_interface.lo plugin.lo plugin.pb.lo subprocess.lo zip_writer.lo cpp_enum.lo cpp_enum_field.lo cpp_extension.lo cpp_field.lo cpp_file.lo cpp_generator.lo cpp_helpers.lo cpp_message.lo cpp_message_field.lo cpp_primitive_field.lo cpp_service.lo cpp_string_field.lo java_enum.lo java_enum_field.lo java_extension.lo java_field.lo java_file.lo java_generator.lo java_helpers.lo java_message.lo java_message_field.lo java_primitive_field.lo java_service.lo java_string_field.lo python_generator.lo -lpthread libprotobuf.la -lz )
+libtool: relink: g++ -shared -nostdlib /usr/lib/gcc/x86_64-amazon-linux/4.4.6/../../../../lib64/crti.o /usr/lib/gcc/x86_64-amazon-linux/4.4.6/crtbeginS.o  .libs/code_generator.o .libs/command_line_interface.o .libs/plugin.o .libs/plugin.pb.o .libs/subprocess.o .libs/zip_writer.o .libs/cpp_enum.o .libs/cpp_enum_field.o .libs/cpp_extension.o .libs/cpp_field.o .libs/cpp_file.o .libs/cpp_generator.o .libs/cpp_helpers.o .libs/cpp_message.o .libs/cpp_message_field.o .libs/cpp_primitive_field.o .libs/cpp_service.o .libs/cpp_string_field.o .libs/java_enum.o .libs/java_enum_field.o .libs/java_extension.o .libs/java_field.o .libs/java_file.o .libs/java_generator.o .libs/java_helpers.o .libs/java_message.o .libs/java_message_field.o .libs/java_primitive_field.o .libs/java_service.o .libs/java_string_field.o .libs/python_generator.o   -Wl,-rpath -Wl,/usr/local/lib -lpthread -L/usr/local/lib -lprotobuf -lz -L/usr/lib/gcc/x86_64-amazon-linux/4.4.6 -L/usr/lib/gcc/x86_64-amazon-linux/4.4.6/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-amazon-linux/4.4.6/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-amazon-linux/4.4.6/crtendS.o /usr/lib/gcc/x86_64-amazon-linux/4.4.6/../../../../lib64/crtn.o  -pthread   -pthread -Wl,-soname -Wl,libprotoc.so.7 -o .libs/libprotoc.so.7.0.0
+libtool: install: /usr/bin/install -c .libs/libprotoc.so.7.0.0T /usr/local/lib/libprotoc.so.7.0.0
+libtool: install: (cd /usr/local/lib && { ln -s -f libprotoc.so.7.0.0 libprotoc.so.7 || { rm -f libprotoc.so.7 && ln -s libprotoc.so.7.0.0 libprotoc.so.7; }; })
+libtool: install: (cd /usr/local/lib && { ln -s -f libprotoc.so.7.0.0 libprotoc.so || { rm -f libprotoc.so && ln -s libprotoc.so.7.0.0 libprotoc.so; }; })
+libtool: install: /usr/bin/install -c .libs/libprotoc.lai /usr/local/lib/libprotoc.la
+libtool: install: /usr/bin/install -c .libs/libprotobuf-lite.a /usr/local/lib/libprotobuf-lite.a
+libtool: install: chmod 644 /usr/local/lib/libprotobuf-lite.a
+libtool: install: ranlib /usr/local/lib/libprotobuf-lite.a
+libtool: install: /usr/bin/install -c .libs/libprotobuf.a /usr/local/lib/libprotobuf.a
+libtool: install: chmod 644 /usr/local/lib/libprotobuf.a
+libtool: install: ranlib /usr/local/lib/libprotobuf.a
+libtool: install: /usr/bin/install -c .libs/libprotoc.a /usr/local/lib/libprotoc.a
+libtool: install: chmod 644 /usr/local/lib/libprotoc.a
+libtool: install: ranlib /usr/local/lib/libprotoc.a
+libtool: finish: PATH="/sbin:/bin:/usr/sbin:/usr/bin:/sbin" ldconfig -n /usr/local/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/local/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the `LD_RUN_PATH' environment variable
+     during linking
+   - use the `-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to `/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+test -z "/usr/local/bin" || /bin/mkdir -p "/usr/local/bin"
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c protoc '/usr/local/bin'
+libtool: install: /usr/bin/install -c .libs/protoc /usr/local/bin/protoc
+test -z "/usr/local/include" || /bin/mkdir -p "/usr/local/include"
+/bin/mkdir -p '/usr/local/include/google/protobuf'
+ /usr/bin/install -c -m 644  google/protobuf/descriptor.proto '/usr/local/include/google/protobuf'
+/bin/mkdir -p '/usr/local/include/google/protobuf/compiler'
+ /usr/bin/install -c -m 644  google/protobuf/compiler/plugin.proto '/usr/local/include/google/protobuf/compiler'
+test -z "/usr/local/include" || /bin/mkdir -p "/usr/local/include"
+/bin/mkdir -p '/usr/local/include/google/protobuf/compiler/java'
+ /usr/bin/install -c -m 644  google/protobuf/compiler/java/java_generator.h '/usr/local/include/google/protobuf/compiler/java'
+/bin/mkdir -p '/usr/local/include/google/protobuf/compiler/cpp'
+ /usr/bin/install -c -m 644  google/protobuf/compiler/cpp/cpp_generator.h '/usr/local/include/google/protobuf/compiler/cpp'
+/bin/mkdir -p '/usr/local/include/google/protobuf'
+ /usr/bin/install -c -m 644  google/protobuf/descriptor.h google/protobuf/descriptor.pb.h google/protobuf/descriptor_database.h google/protobuf/dynamic_message.h google/protobuf/extension_set.h google/protobuf/generated_message_util.h google/protobuf/generated_message_reflection.h google/protobuf/message.h google/protobuf/message_lite.h google/protobuf/reflection_ops.h google/protobuf/repeated_field.h google/protobuf/service.h google/protobuf/text_format.h google/protobuf/unknown_field_set.h google/protobuf/wire_format.h google/protobuf/wire_format_lite.h google/protobuf/wire_format_lite_inl.h '/usr/local/include/google/protobuf'
+/bin/mkdir -p '/usr/local/include/google/protobuf/compiler/python'
+ /usr/bin/install -c -m 644  google/protobuf/compiler/python/python_generator.h '/usr/local/include/google/protobuf/compiler/python'
+/bin/mkdir -p '/usr/local/include/google/protobuf/compiler'
+ /usr/bin/install -c -m 644  google/protobuf/compiler/code_generator.h google/protobuf/compiler/command_line_interface.h google/protobuf/compiler/importer.h google/protobuf/compiler/parser.h google/protobuf/compiler/plugin.h google/protobuf/compiler/plugin.pb.h '/usr/local/include/google/protobuf/compiler'
+/bin/mkdir -p '/usr/local/include/google/protobuf/io'
+ /usr/bin/install -c -m 644  google/protobuf/io/coded_stream.h google/protobuf/io/gzip_stream.h google/protobuf/io/printer.h google/protobuf/io/tokenizer.h google/protobuf/io/zero_copy_stream.h google/protobuf/io/zero_copy_stream_impl.h google/protobuf/io/zero_copy_stream_impl_lite.h '/usr/local/include/google/protobuf/io'
+/bin/mkdir -p '/usr/local/include/google/protobuf/stubs'
+ /usr/bin/install -c -m 644  google/protobuf/stubs/common.h google/protobuf/stubs/once.h '/usr/local/include/google/protobuf/stubs'
+make[3]: Leaving directory `/home/ec2-user/protobuf-2.4.1/src'
+make[2]: Leaving directory `/home/ec2-user/protobuf-2.4.1/src'
+make[1]: Leaving directory `/home/ec2-user/protobuf-2.4.1/src'
+ec2-user@ip-10-243-77-192:~/protobuf-2.4.1$ sudo echo "/usr/local/lib" > /etc/ld.so.conf.d/usr_local_lib.conf
+ec2-user@ip-10-243-77-192:~/protobuf-2.4.1$ sudo ldconfig | grep proto
+	libprotoc.so.7 (libc6,x86-64) => /usr/local/lib/libprotoc.so.7
+	libprotoc.so (libc6,x86-64) => /usr/local/lib/libprotoc.so
+	libprotobuf.so.7 (libc6,x86-64) => /usr/local/lib/libprotobuf.so.7
+	libprotobuf.so (libc6,x86-64) => /usr/local/lib/libprotobuf.so
+	libprotobuf-lite.so.7 (libc6,x86-64) => /usr/local/lib/libprotobuf-lite.so.7
+	libprotobuf-lite.so (libc6,x86-64) => /usr/local/lib/libprotobuf-lite.so
+ec2-user@ip-10-243-77-192:~/protobuf-2.4.1$ cd
+ec2-user@ip-10-243-77-192:$ git clone git clone https://github.com/keithw/mosh
+Cloning into mosh...
+Resolving deltas: 100% (2670/2670), done.
+ec2-user@ip-10-243-77-192:$ cd mosh
+ec2-user@ip-10-243-77-192:~/mosh$ ./autogen.sh 
+configure.ac:6: installing `./install-sh'
+configure.ac:6: installing `./missing'
+src/crypto/Makefile.am: installing `./depcomp'
+ec2-user@ip-10-243-77-192:~/mosh$ ./configure PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking for gcc... gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for style of include used by make... GNU
+checking dependency style of gcc... gcc3
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... gcc3
+checking for ranlib... ranlib
+checking for protoc... /usr/local/bin/protoc
+checking whether C compiler accepts -fno-strict-overflow... yes
+checking whether C++ compiler accepts -fno-strict-overflow... yes
+checking whether C compiler accepts -D_FORTIFY_SOURCE=2... yes
+checking whether C++ compiler accepts -D_FORTIFY_SOURCE=2... yes
+checking whether C compiler accepts -fstack-protector-all... yes
+checking whether C++ compiler accepts -fstack-protector-all... yes
+checking whether C compiler accepts -Wstack-protector... yes
+checking whether C++ compiler accepts -Wstack-protector... yes
+checking whether C compiler accepts --param ssp-buffer-size=1... yes
+checking whether C++ compiler accepts --param ssp-buffer-size=1... yes
+checking whether C compiler accepts -fPIE... yes
+checking whether C++ compiler accepts -fPIE... yes
+checking whether the linker accepts -fPIE -pie... yes
+checking whether the linker accepts -Wl,-z,relro... yes
+checking whether the linker accepts -Wl,-z,now... (cached) yes
+checking whether C++ compiler accepts -fno-default-inline... yes
+checking whether C++ compiler accepts -pipe... yes
+checking for library containing utempter_remove_added_record... -lutempter
+checking for library containing compress... -lz
+checking for boostlib >= 1.20.0... yes
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking whether signalfd is declared... yes
+checking arpa/inet.h usability... yes
+checking arpa/inet.h presence... yes
+checking for arpa/inet.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking langinfo.h usability... yes
+checking langinfo.h presence... yes
+checking for langinfo.h... yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking netinet/in.h usability... yes
+checking netinet/in.h presence... yes
+checking for netinet/in.h... yes
+checking stddef.h usability... yes
+checking stddef.h presence... yes
+checking for stddef.h... yes
+checking for stdint.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking sys/ioctl.h usability... yes
+checking sys/ioctl.h presence... yes
+checking for sys/ioctl.h... yes
+checking sys/resource.h usability... yes
+checking sys/resource.h presence... yes
+checking for sys/resource.h... yes
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking term.h usability... yes
+checking term.h presence... yes
+checking for term.h... yes
+checking termios.h usability... yes
+checking termios.h presence... yes
+checking for termios.h... yes
+checking for unistd.h... (cached) yes
+checking wchar.h usability... yes
+checking wchar.h presence... yes
+checking for wchar.h... yes
+checking wctype.h usability... yes
+checking wctype.h presence... yes
+checking for wctype.h... yes
+checking pty.h usability... yes
+checking pty.h presence... yes
+checking for pty.h... yes
+checking util.h usability... no
+checking util.h presence... no
+checking for util.h... no
+checking libutil.h usability... no
+checking libutil.h presence... no
+checking for libutil.h... no
+checking endian.h usability... yes
+checking endian.h presence... yes
+checking for endian.h... yes
+checking sys/endian.h usability... no
+checking sys/endian.h presence... no
+checking for sys/endian.h... no
+checking for stdbool.h that conforms to C99... yes
+checking for _Bool... yes
+checking for inline... inline
+checking for int64_t... yes
+checking for pid_t... yes
+checking for C/C++ restrict keyword... __restrict
+checking for size_t... yes
+checking for ssize_t... yes
+checking for uint16_t... yes
+checking for uint32_t... yes
+checking for uint64_t... yes
+checking for uint8_t... yes
+checking for uintptr_t... yes
+checking vfork.h usability... no
+checking vfork.h presence... no
+checking for vfork.h... no
+checking for fork... yes
+checking for vfork... yes
+checking for working fork... yes
+checking for working vfork... (cached) yes
+checking whether mbrtowc and mbstate_t are properly declared... yes
+checking for gettimeofday... yes
+checking for setrlimit... yes
+checking for inet_ntoa... yes
+checking for iswprint... yes
+checking for memchr... yes
+checking for memset... yes
+checking for nl_langinfo... yes
+checking for posix_memalign... yes
+checking for setenv... yes
+checking for setlocale... yes
+checking for sigaction... yes
+checking for socket... yes
+checking for strchr... yes
+checking for strdup... yes
+checking for strerror... yes
+checking for strtol... yes
+checking for wcwidth... yes
+checking for library containing clock_gettime... -lrt
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for TINFO... yes
+checking for poll in -lpoll... no
+checking whether __builtin_bswap64 is declared... yes
+checking whether __builtin_ctz is declared... yes
+checking whether mach_absolute_time is declared... no
+checking whether pipe2 is declared... yes
+checking whether forkpty is declared... no
+checking whether htobe64 is declared... yes
+checking whether IP_MTU_DISCOVER is declared... yes
+checking whether __STDC_ISO_10646__ is declared... yes
+checking whether IUTF8 is declared... yes
+checking for protobuf... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating third/Makefile
+config.status: creating third/libstddjb/Makefile
+config.status: creating src/Makefile
+config.status: creating src/crypto/Makefile
+config.status: creating src/frontend/Makefile
+config.status: creating src/network/Makefile
+config.status: creating src/protobufs/Makefile
+config.status: creating src/statesync/Makefile
+config.status: creating src/terminal/Makefile
+config.status: creating src/util/Makefile
+config.status: creating scripts/Makefile
+config.status: creating src/examples/Makefile
+config.status: creating src/tests/Makefile
+config.status: creating man/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+ec2-user@ip-10-243-77-192:~/mosh$ make
+make  all-recursive
+make[1]: Entering directory `/home/ec2-user/mosh'
+Making all in third
+make[2]: Entering directory `/home/ec2-user/mosh/third'
+make[3]: Entering directory `/home/ec2-user/mosh/third'
+make[3]: Nothing to be done for `all-am'.
+make[3]: Leaving directory `/home/ec2-user/mosh/third'
+make[2]: Leaving directory `/home/ec2-user/mosh/third'
+Making all in src
+make[2]: Entering directory `/home/ec2-user/mosh/src'
+Making all in protobufs
+make[3]: Entering directory `/home/ec2-user/mosh/src/protobufs'
+  GEN    userinput.pb.cc
+  GEN    hostinput.pb.cc
+  GEN    transportinstruction.pb.cc
+make  all-am
+make[4]: Entering directory `/home/ec2-user/mosh/src/protobufs'
+  CXX    userinput.pb.o
+  CXX    hostinput.pb.o
+  CXX    transportinstruction.pb.o
+  AR     libmoshprotos.a
+make[4]: Leaving directory `/home/ec2-user/mosh/src/protobufs'
+make[3]: Leaving directory `/home/ec2-user/mosh/src/protobufs'
+Making all in util
+make[3]: Entering directory `/home/ec2-user/mosh/src/util'
+  CXX    locale_utils.o
+  CXX    swrite.o
+  CXX    sigfd.o
+  AR     libmoshutil.a
+make[3]: Leaving directory `/home/ec2-user/mosh/src/util'
+Making all in crypto
+make[3]: Entering directory `/home/ec2-user/mosh/src/crypto'
+  CXX    base64.o
+  CXX    crypto.o
+  CXX    ocb.o
+  CXX    rijndael-alg-fst.o
+  AR     libmoshcrypto.a
+make[3]: Leaving directory `/home/ec2-user/mosh/src/crypto'
+Making all in terminal
+make[3]: Entering directory `/home/ec2-user/mosh/src/terminal'
+  CXX    parseraction.o
+  CXX    parser.o
+  CXX    parserstate.o
+  CXX    terminal.o
+  CXX    terminaldispatcher.o
+  CXX    terminaldisplay.o
+  CXX    terminaldisplayinit.o
+  CXX    terminalframebuffer.o
+  CXX    terminalfunctions.o
+  CXX    terminaluserinput.o
+  AR     libmoshterminal.a
+make[3]: Leaving directory `/home/ec2-user/mosh/src/terminal'
+Making all in network
+make[3]: Entering directory `/home/ec2-user/mosh/src/network'
+  CXX    network.o
+  CXX    networktransport.o
+  CXX    transportfragment.o
+  CXX    transportsender.o
+  CXX    compressor.o
+  AR     libmoshnetwork.a
+make[3]: Leaving directory `/home/ec2-user/mosh/src/network'
+Making all in statesync
+make[3]: Entering directory `/home/ec2-user/mosh/src/statesync'
+  CXX    completeterminal.o
+  CXX    user.o
+  AR     libmoshstatesync.a
+make[3]: Leaving directory `/home/ec2-user/mosh/src/statesync'
+Making all in frontend
+make[3]: Entering directory `/home/ec2-user/mosh/src/frontend'
+  CXX    mosh-client.o
+  CXX    stmclient.o
+  CXX    terminaloverlay.o
+  CXXLD  mosh-client
+  CXX    mosh-server.o
+  CXXLD  mosh-server
+make[3]: Leaving directory `/home/ec2-user/mosh/src/frontend'
+Making all in examples
+make[3]: Entering directory `/home/ec2-user/mosh/src/examples'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/ec2-user/mosh/src/examples'
+Making all in tests
+make[3]: Entering directory `/home/ec2-user/mosh/src/tests'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/ec2-user/mosh/src/tests'
+make[3]: Entering directory `/home/ec2-user/mosh/src'
+make[3]: Nothing to be done for `all-am'.
+make[3]: Leaving directory `/home/ec2-user/mosh/src'
+make[2]: Leaving directory `/home/ec2-user/mosh/src'
+Making all in scripts
+make[2]: Entering directory `/home/ec2-user/mosh/scripts'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/ec2-user/mosh/scripts'
+Making all in man
+make[2]: Entering directory `/home/ec2-user/mosh/man'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/ec2-user/mosh/man'
+make[2]: Entering directory `/home/ec2-user/mosh'
+make[2]: Leaving directory `/home/ec2-user/mosh'
+make[1]: Leaving directory `/home/ec2-user/mosh'
+ec2-user@ip-10-243-77-192:~/mosh$ sudo make install
+Making install in third
+make[1]: Entering directory `/home/ec2-user/mosh/third'
+make[2]: Entering directory `/home/ec2-user/mosh/third'
+make[3]: Entering directory `/home/ec2-user/mosh/third'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/ec2-user/mosh/third'
+make[2]: Leaving directory `/home/ec2-user/mosh/third'
+make[1]: Leaving directory `/home/ec2-user/mosh/third'
+Making install in src
+make[1]: Entering directory `/home/ec2-user/mosh/src'
+Making install in protobufs
+make[2]: Entering directory `/home/ec2-user/mosh/src/protobufs'
+make  install-am
+make[3]: Entering directory `/home/ec2-user/mosh/src/protobufs'
+make[4]: Entering directory `/home/ec2-user/mosh/src/protobufs'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/home/ec2-user/mosh/src/protobufs'
+make[3]: Leaving directory `/home/ec2-user/mosh/src/protobufs'
+make[2]: Leaving directory `/home/ec2-user/mosh/src/protobufs'
+Making install in util
+make[2]: Entering directory `/home/ec2-user/mosh/src/util'
+make[3]: Entering directory `/home/ec2-user/mosh/src/util'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/ec2-user/mosh/src/util'
+make[2]: Leaving directory `/home/ec2-user/mosh/src/util'
+Making install in crypto
+make[2]: Entering directory `/home/ec2-user/mosh/src/crypto'
+make[3]: Entering directory `/home/ec2-user/mosh/src/crypto'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/ec2-user/mosh/src/crypto'
+make[2]: Leaving directory `/home/ec2-user/mosh/src/crypto'
+Making install in terminal
+make[2]: Entering directory `/home/ec2-user/mosh/src/terminal'
+make[3]: Entering directory `/home/ec2-user/mosh/src/terminal'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/ec2-user/mosh/src/terminal'
+make[2]: Leaving directory `/home/ec2-user/mosh/src/terminal'
+Making install in network
+make[2]: Entering directory `/home/ec2-user/mosh/src/network'
+make[3]: Entering directory `/home/ec2-user/mosh/src/network'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/ec2-user/mosh/src/network'
+make[2]: Leaving directory `/home/ec2-user/mosh/src/network'
+Making install in statesync
+make[2]: Entering directory `/home/ec2-user/mosh/src/statesync'
+make[3]: Entering directory `/home/ec2-user/mosh/src/statesync'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/ec2-user/mosh/src/statesync'
+make[2]: Leaving directory `/home/ec2-user/mosh/src/statesync'
+Making install in frontend
+make[2]: Entering directory `/home/ec2-user/mosh/src/frontend'
+make[3]: Entering directory `/home/ec2-user/mosh/src/frontend'
+test -z "/usr/local/bin" || /bin/mkdir -p "/usr/local/bin"
+  /usr/bin/install -c mosh-client mosh-server '/usr/local/bin'
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/ec2-user/mosh/src/frontend'
+make[2]: Leaving directory `/home/ec2-user/mosh/src/frontend'
+Making install in examples
+make[2]: Entering directory `/home/ec2-user/mosh/src/examples'
+make[3]: Entering directory `/home/ec2-user/mosh/src/examples'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/ec2-user/mosh/src/examples'
+make[2]: Leaving directory `/home/ec2-user/mosh/src/examples'
+Making install in tests
+make[2]: Entering directory `/home/ec2-user/mosh/src/tests'
+make[3]: Entering directory `/home/ec2-user/mosh/src/tests'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/ec2-user/mosh/src/tests'
+make[2]: Leaving directory `/home/ec2-user/mosh/src/tests'
+make[2]: Entering directory `/home/ec2-user/mosh/src'
+make[3]: Entering directory `/home/ec2-user/mosh/src'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/ec2-user/mosh/src'
+make[2]: Leaving directory `/home/ec2-user/mosh/src'
+make[1]: Leaving directory `/home/ec2-user/mosh/src'
+Making install in scripts
+make[1]: Entering directory `/home/ec2-user/mosh/scripts'
+make[2]: Entering directory `/home/ec2-user/mosh/scripts'
+test -z "/usr/local/bin" || /bin/mkdir -p "/usr/local/bin"
+ /usr/bin/install -c mosh '/usr/local/bin'
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/home/ec2-user/mosh/scripts'
+make[1]: Leaving directory `/home/ec2-user/mosh/scripts'
+Making install in man
+make[1]: Entering directory `/home/ec2-user/mosh/man'
+make[2]: Entering directory `/home/ec2-user/mosh/man'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/usr/local/share/man/man1" || /bin/mkdir -p "/usr/local/share/man/man1"
+ /usr/bin/install -c -m 644 mosh.1 mosh-client.1 mosh-server.1 '/usr/local/share/man/man1'
+make[2]: Leaving directory `/home/ec2-user/mosh/man'
+make[1]: Leaving directory `/home/ec2-user/mosh/man'
+make[1]: Entering directory `/home/ec2-user/mosh'
+make[2]: Entering directory `/home/ec2-user/mosh'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/home/ec2-user/mosh'
+make[1]: Leaving directory `/home/ec2-user/mosh'
+ec2-user@ip-10-243-77-192:~/mosh$ exit
+exit
+
+Script done on Sat 14 Apr 2012 09:18:21 PM UTC

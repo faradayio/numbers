@@ -319,3 +319,7 @@ ol.posts li blockquote, .post blockquote {
   margin: 0 !important;
   display: inline;
 }
+
+div.highlight {
+  clear: left;
+}
