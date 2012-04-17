@@ -5,13 +5,13 @@ layout: post
 categories: science
 ---
 
-Following the surge in sales of the Chevy Volt in March, we thought it could be interesting to revisit [our post from August 2009](http://numbers.brighterplanet.com/2009/08/25/think-the-volt-is-greener-than-the-prius-think-again/) comparing the greenhouse gas emissions of the Volt to the Prius.
+Following the surge in sales of the Chevy Volt in March, we thought it could be interesting to revisit [our post from August 2009](http://numbers.brighterplanet.com/2009/08/25/think-the-volt-is-greener-than-the-prius-think-again/) comparing the greenhouse gas emissions of the Volt to the Toyota Prius.
 
 Sneak peak: the Prius still rules in most of the US.
 
 <!-- more start -->
 
-The EPA rates the [2012 Chevy Volt](http://www.fueleconomy.gov/feg/Find.do?action=sbs&id=31618) at 97 miles per gallon equivalent (36 kilowatt hours per 100 miles) when running on electricity alone, or 60 miles per gallon for a combination of electric- and gasoline-powered driving. That handily beats the [2012 Prius](http://www.fueleconomy.gov/feg/Find.do?action=sbs&id=31767)' 50 miles per gallon. And yet the Prius is still the greener option for two thirds of Americans.
+The EPA rates the [2012 Chevy Volt](http://www.fueleconomy.gov/feg/Find.do?action=sbs&id=31618) at 97 miles per gallon equivalent (36 kilowatt hours per 100 miles) when running on electricity alone, or 60 miles per gallon for a combination of electric- and gasoline-powered driving. That handily beats the [2012 Toyota Prius](http://www.fueleconomy.gov/feg/Find.do?action=sbs&id=31767)' 50 miles per gallon. And yet the Prius is still the greener option for two thirds of Americans.
 
 How can this be? When running on electricity the Volt doesn't eliminate emissions, it just shifts them from its tailpipe to a power plant smokestack. And throughout much of the country electricity is more than twice as dirty as gasoline. This map shows where, based on the dirtiness of the power grid, it's still better to drive a Prius. We've assumed the Volt operates in electric-only mode - the Prius would dominate even more if we compared mixed-mode driving.
 
