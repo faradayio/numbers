@@ -17,7 +17,7 @@ How can this be? When running on electricity the Volt doesn't eliminate emission
 
 ![Map](/images/2012-04-17-prius-volt-reprise/prius_versus_volt.png)
 
-*Based on [eGRID2010 v1.1](http://www.epa.gov/cleanenergy/energy-resources/egrid/index.html) subregion emission factors*
+*Based on [eGRID2010 v1.1](http://www.epa.gov/cleanenergy/energy-resources/egrid/index.html) [subregion emission factors](http://data.brighterplanet.com/egrid_subregions)*
 
 Our goal here isn't to denigrate the Volt or plug-in hybrids in general. On the contrary we're excited to see these vehicles entering the mainstream. In the long run electric cars will be cleaner than the most efficient hybrid imaginable, and they're already the greener choice for anyone who generates their own power from renewable sources or has access to relatively clean grid electricity. Rather we want to emphasize the importance of shifting to cleaner electricity sources in tandem with our transition to efficient electric vehicles. Until we do, so-called "zero emissions vehicles" will remain anything but.
 
