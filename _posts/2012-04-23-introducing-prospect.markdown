@@ -1,5 +1,5 @@
 ---
-title: Introducing: Prospect
+title: Introducing Prospect
 author: dkastner
 layout: post
 categories: technology
