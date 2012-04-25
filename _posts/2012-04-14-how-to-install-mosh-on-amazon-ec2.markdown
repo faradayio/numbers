@@ -9,6 +9,18 @@ Here's how to install [mosh](http://mosh.mit.edu/) on [Amazon EC2 instances](htt
 
 <!-- more start -->
 
+## Using EPEL
+
+Thanks to [@masnick's instructions on the mosh wiki](https://github.com/keithw/mosh/wiki/Build-Instructions):
+
+1. [Enable the EPEL repository](http://aws.amazon.com/amazon-linux-ami/faqs/#epel).
+2. `sudo yum install protobuf-compiler protobuf-devel libutempter-devel ncurses ncurses-devel zlib-devel boost-devel`
+3. Download the latest release from [http://mosh.mit.edu](http://mosh.mit.edu), unzip, and `./configure`, `make`, `sudo make install`.
+
+## Without EPEL
+
+You have to install `protobuf-compiler` and `protobuf-devel` manually. Most of the rest is the same.
+
 {% highlight console %}
 $ sudo yum install git-core boost-devel libutempter-devel ncurses-devel zlib-devel perl-CPAN cpp make automake gcc-c++
 $ sudo cpan IO::Pty
