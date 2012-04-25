@@ -5,7 +5,7 @@ layout: post
 categories: science
 ---
 
-We have released the results of our latest research, focused on assessing the efficiency of 46,000 individual US hotels. The report, [Hotel Carbon & Energy Efficiency](), presents efficiency rankings for 75 of the largest hotel chains, examines key drivers of efficiency, and analyzes industry trends.
+We have released the results of our latest research, focused on assessing the efficiency of 46,000 individual US hotels. The report, [Hotel Carbon & Energy Efficiency](http://brighterplanet.com/research), presents efficiency rankings for 75 of the largest hotel chains, examines key drivers of efficiency, and analyzes industry trends.
 
 ![Average hotel emissions intensity by state](/images/2012-04-26-a-new-perspective-on-hotel-sustainability/average_hotel_emissions_intensity_by_state.png)
 
