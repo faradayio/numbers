@@ -29,6 +29,29 @@ Author is your first name (first letter capped), layout should always stay "post
 
 Whatever goes below this metadata section is your post.
 
+## Images
+
+### Normal images
+
+These can be up to **370px** wide.
+
+### Wrapped images
+
+Text will flow around the image if you do it like:
+
+    ![Alt text](/images/pic.png){.wrapped}
+    
+(Obviously wrapped images should be much narrower.)
+
+### Wide images
+
+You can use wide images like this:
+
+    ![Alt text](/images/pic.png)
+    {.wide}
+    
+These should be **651px** wide.
+
 ## To specify what goes in "Read More"
 
 Wrap the part that gets hidden with these HTML comments: (verbatim!)
