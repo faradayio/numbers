@@ -11,11 +11,12 @@ I wanted to take a moment to share some of the principles and technologies we us
 
 ## Make the API client simple
 
-Think of your developers and first-timers. You don't want your developers to waste time with sign-ups and weird object instantiation patterns. A good API is one that takes very little configuration and setup. If I want to run a query, I want to do it with as few lines of code as possible. With our carbon gem you can be up and running with a single function call:
+Give first-time developers early wins by avoiding signups. Don't waste developers' time with weird object instantiation patterns. A good API is one that takes very little configuration and setup. If I want to run a query, I want to do it with as few lines of code as possible. With our carbon gem you can be up and running with a single function call:
 
 {% highlight ruby %}
     result = Carbon.query('Flight', {
-      :origin_airport => 'MSN', :destination_airport => 'ORD'
+      :origin_airport => 'MSN',
+      :destination_airport => 'ORD'
     })
     puts "Carbon for my cross country flight: #{result.carbon}"
 {% endhighlight %}
@@ -44,17 +45,17 @@ Another benefit of a simple API is that it's easier to mock out when testing an 
 
 ## Craft well-written documentation
 
-Good documentation is key. Never assume a new user is familiar with all of the terminology your API uses and explain it well. Note that the simpler your API is, the easier it'll be to write documentation.
+Document your client library's code, README, and website. Never assume a new user is familiar with all of the terminology your API uses and explain it well. Note that the simpler your API is, the easier it'll be to write documentation.
 
-### Ruby docs with RDoc
+### Ruby docs with YARDoc
 
-Ruby gems can be commented to provide RDoc-formatted documents. RDoc has some handy features for marking up your documentation. 
+You may be familiar with Ruby's RDoc documentation generator. [YARDoc](http://yardoc.org/) is similar, but adds some handy directives that better format your documentation.
 
 The `@param` directive - `@param [<type>] <name> <description>` - defines a parameter that a function accepts.
 
 The `@return` directive - `@return [<type>]` - specifies the return value of the function.
 
-Each `@overload` directive - `@overload <function>(<param>) - tells RDoc that the function can be called with different method signatures.
+Each `@overload` directive - `@overload <function>(<param>) - tells YARDoc that the function can be called with different method signatures.
 
 Here's an example from the carbon gem:
 
@@ -72,6 +73,10 @@ Here's an example from the carbon gem:
     def Carbon.query(*params)
 {% endhighlight %}
 
+And here's the YARDoc output:
+
+![yardoc output sample](/images/2012-06-19-how-to-write-a-great-http-api-client/yardoc.png)
+
 These directives are important for dynamically typed languages like Ruby.
 
 ### Docco
@@ -85,7 +90,7 @@ Having a dedicated web page for your client or API can be a big help. For exampl
 
 ## Eat your own dog food
 
-By using your API for your own projects, you instantly become a critic of your own work. The great benefit is that because you own the API, you get to change it if you don't like it! This is particularly useful in early stages of API development.
+It should go without saying, but by using your API for your own projects, you instantly become a constructive critic of your own work. The great benefit is that because you own the API, you get to change it if you don't like it! This is particularly useful in early stages of API development.
 
 ## Use VCR or other HTTP mocking libraries
 
@@ -130,7 +135,7 @@ The carbon gem first creates a Celluloid worker pool:
     end
 {% endhighlight %}
 
-Then it hands out executes each query to workers in the pool:
+Then it hands out each query to workers in the pool:
 
 {% highlight ruby %}
     queries.each do |query|
