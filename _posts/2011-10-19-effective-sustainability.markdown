@@ -2,7 +2,7 @@
 title: Effective Sustainability
 author: Robbie
 layout: post
-categories: Company
+categories: company
 ---
 
 Last week I joined a panel on effective sustainability at the World Energy Engineering Conference (WEEEC). I used the findings from our 2010 employee engagement in sustainability survey to argue that effective sustainability programs bring sustainability information to the right people in the right places. Something, according to our survey, far too few organizations are doing.
