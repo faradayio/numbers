@@ -9,7 +9,7 @@ I wanted to take a moment to share some of the principles and technologies we us
 
 <!-- more start -->
 
-## Make the API client simple
+### Make the API client simple
 
 Give first-time developers early wins by avoiding signups. Don't waste developers' time with weird object instantiation patterns. A good API is one that takes very little configuration and setup. If I want to run a query, I want to do it with as few lines of code as possible. With our carbon gem you can be up and running with a single function call:
 
@@ -43,11 +43,11 @@ Our JavaScript client works similarly:
 
 Another benefit of a simple API is that it's easier to mock out when testing an application against it.
 
-## Craft well-written documentation
+### Craft well-written documentation
 
 Document your client library's code, README, and website. Never assume a new user is familiar with all of the terminology your API uses and explain it well. Note that the simpler your API is, the easier it'll be to write documentation.
 
-### Ruby docs with YARDoc
+#### Ruby docs with YARDoc
 
 You may be familiar with Ruby's RDoc documentation generator. [YARDoc](http://yardoc.org/) is similar, but adds some handy directives that better format your documentation.
 
@@ -79,20 +79,20 @@ And here's the YARDoc output:
 
 These directives are important for dynamically typed languages like Ruby.
 
-### Docco
+#### Docco
 
 [Docco](http://jashkenas.github.com/docco/) provides "narrative" style documentation that reads more like a manual than your typical API reference. It turns your comments into documentation on one side of the page, with the actual code on the other side. CM1.js [uses Docco to great effect](http://dkastner.github.com/CM1.js).
 ![a docco sample](/images/2012-06-19-how-to-write-a-great-http-api-client/docco.png)
 
-### HTML
+#### HTML
 
 Having a dedicated web page for your client or API can be a big help. For example, our [CM1 site](http://impact.brighterplanet.com/), rather than being a brochure for our service, is a guide to using our API and an introduction to our language-specific API clients.
 
-## Eat your own dog food
+### Eat your own dog food
 
 It should go without saying, but by using your API for your own projects, you instantly become a constructive critic of your own work. The great benefit is that because you own the API, you get to change it if you don't like it! This is particularly useful in early stages of API development.
 
-## Use VCR or other HTTP mocking libraries
+### Use VCR or other HTTP mocking libraries
 
 [VCR](http://github.com/myronmarston/vcr) is a great testing tool that fakes out HTTP requests so that your tests run quickly and are run against real responses. A nice feature of VCR is that you can configure it to refresh response data, say, every month so you can verify that your client still works with your latest API.
 
@@ -115,7 +115,7 @@ Here's an example from the carbon gem:
 
 In JavaScript land, a tool called [replay](http://documentup.com/assaf/node-replay) provides similar functionality.
 
-## Do the multithreading for them
+### Do the multithreading for them
 
 It's best to save developers the trouble of handling performance issues by providing a solution. This goes hand-in-hand with eating your own dog food. We took our own pattern of parallelizing CM1 requests and baked it into the carbon gem. Simply pass `Carbon.query` an array of calculations to perform, and we'll use the amazing [Celluloid gem](http://rubygems.org/gems/celluloid) to parallelize the requests. Celluloid provides a pool of threaded workers for this task.
 
@@ -145,7 +145,7 @@ Then it hands out each query to workers in the pool:
 
 This is a super-simple way to provide parallelism to your API users.
 
-## Make it asynchronous
+### Make it asynchronous
 
 An interesting trend among API providers has been the idea of providing a queued interface. This makes asynchronous processing much easier for developers and also takes some load off of your web servers. We even played around with an SQS-based client at one time with our carbon gem. In the future, we could see a Socket.IO-based, asynchronous API for our JavaScript client.
 
