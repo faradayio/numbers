@@ -1,5 +1,5 @@
 ---
-title: How to write a great HTTP API client
+title: Striving for a great API client
 author: derek
 layout: post
 categories: technology
