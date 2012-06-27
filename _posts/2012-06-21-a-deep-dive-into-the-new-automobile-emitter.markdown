@@ -17,7 +17,7 @@ We now support automobile variants like flex fuel and diesel vehicles. If you wa
 
 Alternatively, you can specify an [automobile_fuel](http://data.brighterplanet.com/automobile_fuels) and the correct model will be used by CM1:
 
-[http://impact.brighterplanet.com/automobiles?make=Ford&modelF150&year=2012&automobile_fuel=ethanol](http://impact.brighterplanet.com/automobiles?make=Ford&model=F150&year=2012&automobile_fuel=ethanol)
+[http://impact.brighterplanet.com/automobiles?make=Ford&modelF150&year=2012&automobile_fuel=E85](http://impact.brighterplanet.com/automobiles?make=Ford&model=F150&year=2012&automobile_fuel=E85)
 
 Alternative fuels like electricity, compressed natural gas (CNG) and hydrogen are also supported. One of the most difficult tasks facing anyone trying to calculate automobile emissions is to convert from the EPA's miles per gallon rating to alternative fuel consumption, then convert that fuel value to emissions. We do this all for you, all you need to tell us is distance travelled.
 
