@@ -1,0 +1,28 @@
+---
+title: CompSust'12
+author: Ian
+layout: post
+categories: [science, company]
+---
+
+I'm just back from the [3rd international conference on computational sustainbality](http://www.computational-sustainability.org/compsust12/index.php) in Copenhagen, Denmark. A beautiful scandinavian city, a jazz festival, and the latest on using machine learning and linear programming to develop intelligent energy management systems, integrate electric vehicles into the electricity grid, and optimize logistics - who could ask for more?
+
+<!-- more start -->
+
+One of the things I liked was the conference's size. At a bit less than 100 people it was big enough to have a variety of sessions but small enough that you could track down anyone you'd missed or had questions for. It was also a refreshing change to go to an academic conference as opposed to a professional one.
+
+Some of the presentations I particularly enjoyed included:
+
+Developing an intelligent system that automatically learns the characteristics of your home and your energy use patterns and then provides energy-saving tips (Nick Jennings).
+
+A model that improves short-term local wind forecasts by analysing spatio-temporal correlations in forecast versus actual wind speed across all of Denmark (Julija Tastu).
+
+Optimizing purchasing and distribution logistics for biomass power plants (Niels Kjeldsen).
+
+Automating the repositioning a shipping fleet (Kevin Tierney).
+
+Predicting future vegetation cover in the arctic (Theo Damoulas).
+
+All in all a great summary of how computational techniques are being applied to sustainability issues.
+
+<!-- more end -->
