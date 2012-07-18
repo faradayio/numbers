@@ -64,6 +64,7 @@ ol.posts li h2 a:hover, .post h2 a:hover {
 
 ol.posts li h3, .post h3 {
   margin-left: 150px !important;
+  border-bottom: 1px solid silver;
 }
 
 ol.posts li>p, .post>p {
@@ -254,7 +255,7 @@ ol.posts li>ul, .post>ul {
 }
 
 ol.posts li>ol, .post>ol {
-  margin: 0 0 0 150px;
+  margin: 10px 0 0 150px;
   padding: 0 0 0 1em;
 }
 
@@ -322,4 +323,12 @@ ol.posts li blockquote, .post blockquote {
 
 div.highlight {
   clear: left;
+}
+
+.gist {
+  margin-top: 10px;
+}
+
+.gist-file, .gist-data {
+  width: 634px;
 }
