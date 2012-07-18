@@ -115,4 +115,8 @@ This is what we did with [Sparkwire](http://sparkwire.io), and **boy was it a be
 If we truly want to empower energy consumers, we must replace Green Button's "download/upload" torture with a modern, OAuth-powered **"app and platform"** model. To do this, we either have to prevail upon utilities nationwide to *get with the program*, or we use a proxy like Sparkwire and write drivers for the [3,000-odd](http://data.brighterplanet.com/electric_utilities) electric utilities around the country.
 
 Either way, it's daunting. But it's gotta happen. **Who's in?**
+
+### P.S.
+
+How incredible is it that they're even *thinking* about something as obscure as energy use data exchange formats in the top advisory levels of the White House? Heady times!
 <!-- more end -->
