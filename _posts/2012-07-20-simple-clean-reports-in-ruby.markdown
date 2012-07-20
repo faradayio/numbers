@@ -80,6 +80,27 @@ class Tps < Report
 end
 {% endhighlight %}
 
+And here's how you generate it:
+
+{% highlight ruby %}
+>> t = Tps.new('ABC123')
+=> #<Tps:0x00000101426998 @code="ABC123">
+>> t.xlsx.path
+  Employee Load (36.1ms)  SELECT `employees`.* FROM `employees` ORDER BY last_name ASC
+  Employee Load (0.3ms)  SELECT `employees`.* FROM `employees` ORDER BY birthdate DESC
+=> "/var/folders/Nm/Nm0HFsHAH90Zyt7NLDUZUE+++TI/-Tmp-/133538737_Report__Xlsx.xlsx"
+>> t.pdf.path
+  Employee Load (0.2ms)  SELECT `employees`.* FROM `employees` ORDER BY last_name ASC
+  Employee Load (0.1ms)  SELECT `employees`.* FROM `employees` ORDER BY birthdate DESC
+=> "/var/folders/Nm/Nm0HFsHAH90Zyt7NLDUZUE+++TI/-Tmp-/133548261_Report__Pdf.pdf"
+>> t.csv.paths
+  Employee Load (0.3ms)  SELECT `employees`.* FROM `employees` ORDER BY last_name ASC
+  Employee Load (0.2ms)  SELECT `employees`.* FROM `employees` ORDER BY birthdate DESC
+=> ["/var/folders/Nm/Nm0HFsHAH90Zyt7NLDUZUE+++TI/-Tmp-/133553761_Report__Csv__Table_Hierarchy.csv", "/var/folders/Nm/Nm0HFsHAH90Zyt7NLDUZUE+++TI/-Tmp-/133553767_Report__Csv__Table_Seniority.csv"]
+{% endhighlight %}
+
+You get paths to files in the tmp dir. Only the CSV output format gives you multiple files.
+
 ### Three output formats: XLSX, PDF, and CSV ###
 
 You've already seen the XLSX output format - it's currently the most advanced.
