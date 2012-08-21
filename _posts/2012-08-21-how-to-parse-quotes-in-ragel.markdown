@@ -11,7 +11,7 @@ The key to parsing quotes in Ragel is <tt>([^'\\]&nbsp;|&nbsp;/\\./)*</tt> as fo
 
 ### Making it work with single and double quotes
 
-Here's the heart of [a working example](/images/2012-08-21-how-to-parse-quotes-in-ragel/not_scanner.rl) that covers both single and double quotes:
+Here's the heart of [a working example](/images/2012-08-21-how-to-parse-quotes-in-ragel/not_scanner.rl.txt) that covers both single and double quotes:
 
 {% highlight ragel %}
 %%{
@@ -61,7 +61,7 @@ State ➃ is eating the escaped double quote and therefore preventing the machin
 
 ### You can also do it with a scanner
 
-Here's what you would do in [a scanner](/images/2012-08-21-how-to-parse-quotes-in-ragel/scanner.rl):
+Here's what you would do in [a scanner](/images/2012-08-21-how-to-parse-quotes-in-ragel/scanner.rl.txt):
 
 {% highlight ragel %}
 %%{
