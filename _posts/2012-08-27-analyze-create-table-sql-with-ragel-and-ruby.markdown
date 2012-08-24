@@ -32,7 +32,7 @@ You can use the new [<tt>create_table</tt> library](https://github.com/seamusabs
 
 ### Uses Ragel for parsing
 
-<tt>create_table</tt> uses Ragel internally for parsing.
+The library uses [Ragel](http://www.complang.org/ragel/) internally for parsing.
 
 Check out the [column parser code](https://github.com/seamusabshere/create_table/blob/master/lib/create_table/column.rl), for example.
 
