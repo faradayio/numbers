@@ -9,7 +9,7 @@ The Graphite and statsd systems have been popular choices lately for recording s
 
 <!-- more start -->
 
-# Graphite + statsd - the rundown
+### Graphite + statsd - the rundown
 
 The graphite and statsd system consists of three main applications
 
@@ -17,7 +17,7 @@ The graphite and statsd system consists of three main applications
 * statsd: a node server that provides an easier and more performant, UDP-based protocol for receiving stats which are passed off to carbon
 * graphite: a web app that creates graphs out of the statistics recorded by carbon
 
-# Use graphiti
+### Use graphiti
 
 Several alternative front-ends to graphite have been written. I chose to use graphiti because it had the most customizable graphs. Note that graphiti is just a facade on top of graphite - you still need the graphite web app running for it to work. Graphiti makes it easy to quickly create graphs. I'll cover this later.
 
@@ -27,13 +27,13 @@ The flow looks like:
 
     |.wsp file| ==> |graphite| ==> |graphiti| ==> |pretty graphs on your dashboard|
 
-# Use chef-solo to install it
+### Use chef-solo to install it
 
 If you're familiar with chef, you can use the cookboos that the community has already developed for installing graphite and friends. If not, this would be a good opportunity to learn. You can use chef-solo to easily deploy graphite to a single server. I plan to write a "getting started with chef-solo" post soon, so stay tuned!
 
 Chef saved me a ton of time setting up python, virtualenv, graphite, carbon, whisper, statsd, and many other tools since there are no OS-specific packages for some of these.
 
-# Use sensible storage schemas
+### Use sensible storage schemas
 
 The default chef setup of graphite stores all stats with the following storage schema rule:
 
@@ -48,7 +48,7 @@ The retentions setting is the most important. It's a comma-delimited list of dat
 
 Alternatively, you can specify retentions using time format shortcuts. For example, 1m:7d means "store 7 days worth of 1-minute granular data."
 
-# Use a good stats client
+### Use a good stats client
 
 In the ruby world, there are two popular client libraries: fozzie and statsd-ruby. Both provide the standard operations like counting events, timing, and gauging values.
 
@@ -56,15 +56,17 @@ Fozzie differs in that it integrates with Rails or rack apps by adding a rack mi
 
 If you want more control over your namespacing, statsd-ruby is the way to go. Otherwise, fozzie may be worth using for its added conveniences.
 
-# Make sure you don't run out of disk space
+### Make sure you don't run out of disk space
 
 Seriously, if you do run out of disk, the graphite (whisper) data files can become corrupted and force you to delete them and start over. I learned this the hard way :) Make sure your storage schemas are strict enough because each separate stat requires its own file that can be several megabytes in size.
 
-# Use graphiti for building graphs and dashboards
+### Use graphiti for building graphs and dashboards
 
 Graphiti has a great interface for building graphs. You can even fork it and deploy your own custom version that fits your company's needs and/or style. It's a small rack app that uses redis to store graph and dashboard settings. There's even a chef cookbook for it!
 
-# Use graphite's built-in functions for summarizing and calculating data
+When setting up graphiti, remember to set up a cron job to run `rake graphiti:metrics` periodically so that you can search for metric namespaces from graphiti.
+
+### Use graphite's built-in functions for summarizing and calculating data
 
 Graphiti provides a wealth of functions that run aggregate operations on data before it is graphed.
 
@@ -95,7 +97,7 @@ Here's an example of sumSeries and alias used together. Note that the order matt
       ]
     ]
 
-# Different graph areaMode for different applications
+### Different graph areaMode for different applications
 
 While not well documented, graphiti has a few options for displaying graph lines. By default, the "stacked" area mode stacks each measurement on top of each other into an area chart that combines multiple measurements that are uniquely shaded. This can be good for seeing grand totals. The blank option plots each measurement as a line on a line chart. This is preferable for comparing measurements.
 
