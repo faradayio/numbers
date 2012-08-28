@@ -1,5 +1,5 @@
 ---
-title: Graphite and statsd: Beyond the Basics
+title: Graphite and statsd – beyond the basics
 author: derek
 layout: post
 categories: technology
