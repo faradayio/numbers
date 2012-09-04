@@ -43,13 +43,17 @@ Upsert was 83% faster than create + rescue/find/update
 
 `upsert` was inspired by the MongoDB upsert method &ndash; AKA [mongo-ruby-driver's update method](http://api.mongodb.org/ruby/1.6.4/Mongo/Collection.html#update-instance_method) &ndash; and involves a "selector" (how to find the row to be inserted or updated) and a "document" (attributes that should be set once the record has been found.)
 
-Selector: `:name => 'Jerry'`
-Document: `:age => 5`
-Expression: `upsert.row({:name => 'Jerry'}, :age => 5)`
+#### Example 1
 
-Selector: `:id => 45`
-Document: `:updated_at => Time.now`
-Expression: `upsert.row({:id => 45}, :updated_at => Time.now)`
+* Selector: `:name => 'Jerry'`
+* Document: `:age => 5`
+* Expression: `upsert.row({:name => 'Jerry'}, :age => 5)`
+
+#### Example 2
+
+* Selector: `:id => 45`
+* Document: `:updated_at => Time.now`
+* Expression: `upsert.row({:id => 45}, :updated_at => Time.now)`
 
 Unfortunately, you currently **can't** do things like `:counter => 'counter + 1'`.
 
