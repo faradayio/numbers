@@ -8,7 +8,7 @@ categories: technology techresearch
 [`sgrep`](http://www.cs.helsinki.fi/u/jjaakkol/sgrepman.html) is better than [`split`](http://en.wikipedia.org/wiki/Split_%28Unix%29) or [`csplit`](http://en.wikipedia.org/wiki/Csplit) for breaking up XML files by element &ndash; you can even use it to create a constant-memory streaming "parser."
 
 {% highlight console %}
-$ sgrep -o "XXXSTART%rSTOPXXX" '"<TourismEntity" ... "</TourismEntity"' transmission_file.xml
+$ sgrep -o "XXXSTART%rSTOPXXX" '"<TourismEntity" .. "</TourismEntity"' transmission_file.xml
 XXXSTART<TourismEntity>
     <State>New York</State>
     <Saying>I♥NY</Saying>
