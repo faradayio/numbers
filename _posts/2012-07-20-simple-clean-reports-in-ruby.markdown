@@ -115,7 +115,7 @@ The PDF output format starts each table on its own page:
 
 The CSV output format puts each table into its own file:
 
-{% highlight csv %}
+{% highlight text %}
 TPS code,ABC123
 Date,2012-07-19
 Section,Hierarchy

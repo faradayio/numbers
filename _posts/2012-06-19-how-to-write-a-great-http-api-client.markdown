@@ -55,7 +55,7 @@ The `@param` directive - `@param [<type>] <name> <description>` - defines a para
 
 The `@return` directive - `@return [<type>]` - specifies the return value of the function.
 
-Each `@overload` directive - `@overload <function>(<param>) - tells YARDoc that the function can be called with different method signatures.
+Each `@overload` directive `@overload <function>(<param>)` tells YARDoc that the function can be called with different method signatures.
 
 Here's an example from the carbon gem:
 
