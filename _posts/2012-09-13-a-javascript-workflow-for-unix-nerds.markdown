@@ -345,7 +345,7 @@ You can also save the library user some time with a custom entry point for brows
     window.MyLibrary = require('my-library');
 {% endhighlight %}
 
-Then run `browserify -e browser.js -o build/my-library.js
+Then run `browserify -e browser.js -o build/my-library.js`
 
 And the library user would use it thusly:
 
